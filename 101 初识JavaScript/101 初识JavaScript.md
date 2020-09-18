@@ -1,4 +1,4 @@
-# 001 初识JavaScript
+# 101 初识JavaScript
 
 
 
