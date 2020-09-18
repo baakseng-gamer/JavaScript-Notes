@@ -6,4 +6,84 @@
 
 * <a href="101 初识JavaScript\101 初识JavaScript.md">101 初识JavaScript</a>
 * <a href="102 JS初体验\102 JS初体验.md">102 JS初体验</a>
+* <a href="103 开发者控制台\103 开发者控制台.md">103 开发者控制台</a>
+* <a href="104 Javascript用法\104 Javascript用法.md">104 Javascript用法</a>
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+## 其它
+
+优雅降级和渐进增强
+
+CSS3中的方案
+
+```
+.transition {   /* 渐进增强写法 */
+  -webkit-transition: all .5s;
+     -moz-transition: all .5s;
+       -o-transition: all .5s;
+          transition: all .5s;  
+} 
+.transition {   /* 优雅降级写法 */ 
+          transition: all .5s;
+       -o-transition: all .5s;
+     -moz-transition: all .5s;
+  -webkit-transition: all .5s;
+}
+```
+
+推荐第一种写法，即渐进增强
+
+
+
+推荐写法
+在写CSS3的时候，推荐渐进增强
+在写JS的时候，推荐优雅降级；
