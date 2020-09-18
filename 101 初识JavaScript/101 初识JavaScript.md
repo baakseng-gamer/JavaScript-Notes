@@ -108,7 +108,7 @@ JavaScript 的能力很大程度上依赖于它执行的环境。例如：Node.j
 
 * JavaScript 通过互联网可以轻松地和当前网页域名的服务器进行通讯。但是从其他网站/域名的服务器中获取数据的能力是受限的。尽管这可以实现，但是需要来自远程服务器的明确协议（在 HTTP header 中）。这也是为了用户的数据安全。
 
-  ![001-01](001-01.png)
+  ![101-01](101-01.png)
   
   浏览器环境外的 JavaScript 一般没有这些限制。例如服务端的 JavaScript 就没有这些限制。现代浏览器还允许安装可能会要求扩展权限的插件或扩展。
 
@@ -190,31 +190,11 @@ JavaScript web 开发人员必须学习的 3 门语言中的一门：
   windows.location.href
   ```
 
-  
 
-## 2.0 实例
 
-点击后把一个段落改成时间
 
-```
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>我的第一个JS程序</title>
-    <script>
-        function showDate(){
-            document.getElementById("demo").innerHTML=Date();
-        }
-    </script>
-</head>
-<body>
-    <h1>我的第一个JS程序</h1>
-    <p id="demo">这是一个段落</p>
-    <button type="button" onclick="showDate()">点击显示时间</button>
-</body>
-</html>
-```
+## 总结
 
-实例： [first_JS.html](first_JS.html) 
+* JavaScript 最开始是为浏览器设计的一门语言，但是现在也被用于很多其他的环境。
+* 现在，JavaScript 是一门在浏览器中使用最广、并且能够很好集成 HTML/CSS 的语言。
+* 有很多其他的语言可以被编译成 JavaScript，这些语言还提供了更多的功能。最好还是了解一下这些语言，至少在掌握了 JavaScript 之后简单地看一下。

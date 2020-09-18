@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>菜鸟教程(runoob.com)</title>
+  </head>
+  <body>
+    <h1>JS能改变内容</h1>
+    <p id="change">这是一个段落（此处要被改动)</p>
+    <script>
+      function hellojs() {
+        var x = document.getElementById("change"); //找到元素
+        x.innerHTML = "Hello JavaScript!";  //改变内容
+      }
+    </script>
+    <button type="button" onclick="hellojs()">点击这里</button>
+  </body>
+</html>

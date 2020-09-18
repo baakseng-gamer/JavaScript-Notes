@@ -4,5 +4,6 @@
 
 ## 一、基础知识
 
-* <a href="001 初识JavaScript\001 初识JavaScript.md">001 初识JavaScript</a>
+* <a href="101 初识JavaScript\101 初识JavaScript.md">101 初识JavaScript</a>
+* <a href="102 JS初体验\102 JS初体验.md">102 JS初体验</a>
 

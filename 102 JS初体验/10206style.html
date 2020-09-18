@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        #box{
+            width: 200px;
+            height: 200px;
+            background: lightseagreen;
+        }
+    </style>
+  </head>
+  <body>
+    <h1>JS能改变样式</h1>
+    <p id="colorchange">这是一个段落（能改色）</p>
+    <button type="button" onclick="colorChange()">给段落改色</button>
+    <hr />
+    <div id="box" onclick="bgchange()">点击这方块试试看</div>
+
+    <script>
+      function colorChange() {
+        var colorRed = document.getElementById("colorchange");
+        colorRed.style.color = "#CE0000";
+        // colorRed.style.color="red";
+        // 上一行的颜色名也可以
+      }
+      function bgchange() {
+          var bgTomato = document.getElementById("box");
+          bgTomato.style.background = "tomato"
+      }
+    </script>
+  </body>
+</html>

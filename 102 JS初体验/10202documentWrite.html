@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            width: 100px;
+            height: 100px;
+            background: lightseagreen;
+        }
+    </style>
+</head>
+<body>
+    <p>JS能够直接写入HTML输出流中</p>
+    <hr>
+    <script>
+        document.write("<h1>这是一个标题</h1>");
+        document.write("<p>这是一个段落</p>");
+        document.write("<p style='color:tomato'>这是一个段落</p>");
+        document.write("<div style='width: 200px; height: 200px; background: tomato;'></div>")
+        document.write("<div class='box'>div.class</div>");
+    </script>
+    <hr>
+    <div style="width: 200px; height: 200px; background: tomato;">body内的div设置style</div>
+</body>
+</html>
