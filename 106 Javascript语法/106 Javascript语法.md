@@ -1,5 +1,7 @@
 
 
+# 106 Javascript语法
+
 JavaScript 是一个程序语言。语法规则定义了语言结构。
 
 
