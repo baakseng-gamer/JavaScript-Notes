@@ -8,11 +8,16 @@
 * <a href="102 JS初体验\102 JS初体验.md">102 JS初体验</a>
 * <a href="103 开发者控制台\103 开发者控制台.md">103 开发者控制台</a>
 * <a href="104 Javascript用法\104 Javascript用法.md">104 Javascript用法</a>
-* <a href="105 Javascript输出\105 Javascript输出.md">105 Javascript输出法</a>
+* <a href="105 Javascript输出\105 Javascript输出.md">105 Javascript输出</a>
+* <a href="106 Javascript语法\106 Javascript语法.md">106 Javascript语法</a>
 
 
 
+备忘录：
 
+笔记里的电灯泡 添加还有更简洁的JS代码
+
+https://www.runoob.com/js/js-intro.html 看下同学的笔记
 
 
 

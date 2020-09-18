@@ -13,7 +13,7 @@ JavaScript 可以通过不同的方式来输出数据：
 
 
 
-## 1.2 使用window.alert()
+## 1.2 使用window.alert()弹出警告框
 
 ```
     <p>使用window.alert()</p>
@@ -31,7 +31,7 @@ JavaScript 可以通过不同的方式来输出数据：
 
 
 
-## 1.3 使用document.write()
+## 1.3 使用document.write()写到HTML文档中
 
 ```
     <script>
@@ -57,3 +57,52 @@ JavaScript 可以通过不同的方式来输出数据：
 
 实例： [10502documentwrite.html](10502documentwrite.html) 
 
+**注意**
+
+```
+请使用 document.write() 仅仅向文档输出写内容。
+如果在文档已完成加载后执行 document.write，整个 HTML 页面将被覆盖。
+```
+
+
+
+## 1.4 使用innerHTML = " "写入到HTML元素
+
+如需从 JavaScript 访问某个 HTML 元素，您可以使用 document.getElementById(id) 方法。
+请使用 "id" 属性来标识 HTML 元素，并 innerHTML 来获取或插入元素内容。
+
+```
+    <p>使用innerHTML = " "写入到HTML元素</p>
+    <p id="change">这是一个要被改动的段落</p>
+    <script>
+        document.getElementById("change").innerHTML = "段落已修改";
+    </script>
+```
+
+实例： [10503innerHTML.html](10503innerHTML.html) 
+
+
+
+## 1.5 使用 console.log() 写入到浏览器的控制台。
+
+如果您的浏览器支持调试，你可以使用 console.log() 方法在浏览器中显示 JavaScript 值。
+
+浏览器中使用 F12 来启用调试模式， 在调试窗口中点击 "Console" 菜单。
+
+```
+    <script>
+        console.log(100); // 100
+        a = 1;
+        b = 5;
+        c = a + b;
+        console.log(c); // 6
+    </script>
+```
+
+实例： [10504consoleLog.html](10504consoleLog.html) 
+
+
+
+## 总结
+
+测试输出时尽量用console.log()，或者alert()也可以，不建议用document.write = (" ")，因为会改写或覆盖HTML文档内容。
