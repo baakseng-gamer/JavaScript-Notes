@@ -8,6 +8,7 @@
 * <a href="102 JS初体验\102 JS初体验.md">102 JS初体验</a>
 * <a href="103 开发者控制台\103 开发者控制台.md">103 开发者控制台</a>
 * <a href="104 Javascript用法\104 Javascript用法.md">104 Javascript用法</a>
+* <a href="105 Javascript输出\105 Javascript输出.md">105 Javascript输出法</a>
 
 
 
