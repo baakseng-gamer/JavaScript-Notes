@@ -2,7 +2,7 @@
 
 
 
-## 1.1 JavaScript历史
+## 1. JavaScript历史
 
 * 布兰登·艾奇（Brendan Eich，1961年～）。
 * 神奇的大哥用10天完成 JavaScript 设计。
@@ -10,7 +10,7 @@
 
 
 
-## 1.2 JavaScript是什么
+## 2. JavaScript是什么
 
 * **JavaScript** 最初的目的是为了“**赋予网页生命**”。
 * 这种编程语言我们称之为 **脚本**。它们可以写在 HTML 中，在页面加载的时候会自动执行。
@@ -59,7 +59,7 @@ JavaScript 在刚诞生的时候，它的名字叫 “LiveScript”。但是因�
 
 
 
-## 1.3 浏览器中的 JavaScript 能做什么？
+## 3. 浏览器中的 JavaScript 能做什么？
 
 现代的 JavaScript 是一种“安全”语言。它不提供对内存或 CPU 的底层访问，因为它最初是为浏览器创建的，不需要这些功能。
 
@@ -88,7 +88,7 @@ JavaScript 的能力很大程度上依赖于它执行的环境。例如：Node.j
 
 
 
-## 1.4 浏览器中的 JavaScript 不能做什么？
+## 4. 浏览器中的 JavaScript 不能做什么？
 
 为了用户的（信息）安全，在浏览器中的 JavaScript 的能力是有限的。这样主要是为了阻止邪恶的网站获得或修改用户的私人数据。
 
@@ -112,7 +112,7 @@ JavaScript 的能力很大程度上依赖于它执行的环境。例如：Node.j
   
   浏览器环境外的 JavaScript 一般没有这些限制。例如服务端的 JavaScript 就没有这些限制。现代浏览器还允许安装可能会要求扩展权限的插件或扩展。
 
-## 1.5 是什么使得 JavaScript 与众不同？
+## 5. 是什么使得 JavaScript 与众不同？
 
 ```
 和 HTML/CSS 完全的集成。
@@ -128,7 +128,7 @@ JavaScript 的能力很大程度上依赖于它执行的环境。例如：Node.j
 
 
 
-## 1.6 为什么学习 JavaScript?
+## 6. 为什么学习 JavaScript?
 
 JavaScript web 开发人员必须学习的 3 门语言中的一门：
 
@@ -138,7 +138,7 @@ JavaScript web 开发人员必须学习的 3 门语言中的一门：
 
 
 
-## 1.7 比 JavaScript “更好”的语言
+## 7. 比 JavaScript “更好”的语言
 
 不同的人喜欢不同的功能，JavaScript 的语法也不能够满足所有人的需求。
 
@@ -161,7 +161,7 @@ JavaScript web 开发人员必须学习的 3 门语言中的一门：
 
 
 
-## 1.8 JavaScript由哪些部分组成
+## 8. JavaScript由哪些部分组成
 
 **由三部分组成：**
 
