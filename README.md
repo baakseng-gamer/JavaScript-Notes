@@ -6,11 +6,12 @@
 
 * <a href="101 初识JavaScript\101 初识JavaScript.md">101 初识JavaScript</a>
 * <a href="102 JS初体验\102 JS初体验.md">102 JS初体验</a>
-* <a href="103 开发者控制台\103 开发者控制台.md">103 开发者控制台</a>
-* <a href="104 Javascript用法\104 Javascript用法.md">104 Javascript用法</a>
-* <a href="105 Javascript输出\105 Javascript输出.md">105 Javascript输出</a>
-* <a href="106 Javascript语法\106 Javascript语法.md">106 Javascript语法</a>
-* <a href="107 Javascript语句\107 Javascript语句.md">107 Javascript语句</a>
+* <a href="103 开发者控制台\103 开发者控制台.md">103 开发者控制台</a> Devtools
+* <a href="104 Javascript用法\104 Javascript用法.md">104 Javascript用法</a> Howto
+* <a href="105 Javascript输出\105 Javascript输出.md">105 Javascript输出</a> Output
+* <a href="106 Javascript语法\106 Javascript语法.md">106 Javascript语法</a> Syntax
+* <a href="107 Javascript语句\107 Javascript语句.md">107 Javascript语句</a> Statements
+* <a href="108 Javascript注释\108 Javascript注释.md">108 Javascript注释</a> Comments
 
 
 
