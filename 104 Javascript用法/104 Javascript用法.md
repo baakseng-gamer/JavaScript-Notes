@@ -1,5 +1,7 @@
 # 104 Javascript用法
 
+HTML 中的脚本必须位于` <script>` 与` </script>` 标签之间。
+
 ## 1. script标签
 
 JavaScript 程序可以在` <script> `标签的帮助下插入到 HTML 文档的任何地方。
@@ -159,7 +161,7 @@ function dianji() {
 
 
 
-**WARING**
+**!WARING!**
 
 如果设置了 src 特性，script 标签内容将会被忽略。
 一个单独的` <script>` 标签不能同时有 src 特性和内部包裹的代码。

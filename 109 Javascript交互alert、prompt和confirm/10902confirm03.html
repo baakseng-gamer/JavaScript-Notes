@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>点击按钮来选择，页面会显示什么</h2>
+    <input type="button" value="按钮" onclick="OKorCancel()">
+    <p id="OC"></p>
+</body>
+<script>
+    function OKorCancel(){
+        var x = confirm("按下按钮");
+        var y;
+        if (x == true ){
+            y = "你按下了\"确定\"按钮！";
+        }else {
+            y = "你按下了\"取消\"按钮！";
+        }
+        document.getElementById("OC").innerHTML = y;
+    }
+</script>
+</html>
