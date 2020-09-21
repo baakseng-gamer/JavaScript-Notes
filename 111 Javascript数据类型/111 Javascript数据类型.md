@@ -165,6 +165,8 @@ JavaScript中数值的最大值和最小值
 
 ### 2.4NaN
 
+Not a Number的简写
+
 代表一个计算错误。它是一个不正确的或者一个未定义的数学操作所得到的结果。
 
 ```
@@ -593,7 +595,7 @@ var cars=   new Array;
 var person= new Object;
 ```
 
-
+**注意：以上的typeof都为`object`。**
 
 
 
@@ -637,6 +639,15 @@ typeof alert // "function"  (3)
 1. `Math` 是一个提供数学运算的内建 `object`。后面会学习到它。此处仅作为一个 `object` 的示例。
 2. `typeof null` 的结果是 `"object"`。这是官方承认的 `typeof` 的行为上的错误，这个问题来自于 JavaScript 语言的早期，并为了兼容性而保留了下来。`null` 绝对不是一个 `object`。`null` 有自己的类型，它是一个特殊值。
 3. `typeof alert` 的结果是 `"function"`，因为 `alert` 在 JavaScript 语言中是一个函数。后面会学习函数，那时会了解到，在 JavaScript 语言中没有一个特别的 “function” 类型。函数隶属于 `object` 类型。但是 `typeof` 会对函数区分对待，并返回 `"function"`。这也是来自于 JavaScript 语言早期的问题。从技术上讲，这种行为是不正确的，但在实际编程中却非常方便。
+
+
+
+**补充：**
+
+```
+typeof NaN; //number
+typeof abc; //undefined 因为没有被赋值
+```
 
 
 

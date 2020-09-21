@@ -17,6 +17,7 @@
 * <a href="109 Javascript交互alert、prompt和confirm\109 Javascript交互alert、prompt和confirm.md">109 Javascript交互alert、prompt和confirm</a> 
 * <a href="110 Javascript变量\110 Javascript变量.md">110 Javascript变量</a>  Variables
 * <a href="111 Javascript数据类型\111 Javascript数据类型.md">111 Javascript数据类型</a> Datatypes
+* <a href="112 类型转换\112 类型转换.md">112 类型转换</a> Type-conversion
 
 
 
