@@ -1,6 +1,6 @@
 # JavaScript-Notes
 
-由于排版问题，我把[导学](#导学)放到末尾处
+由于排版问题，[导学](#导学)放到末尾处
 
 **索引**
 
@@ -24,7 +24,7 @@
 
 
 
-备忘录：
+## 备忘录：
 
 
 
@@ -75,19 +75,25 @@ CSS3中的方案
 
 ## 导学
 
-做笔记时采用一边看视频教程，一边看两个文档，三位一体，法力无边！！！
+学完基本的HTML,CSS以后，可能基本了解常见网页的布局，制作静态的网页，但是还没真正学会制作网页，因为经常逛不少已经成熟运行的网站，很多东西都完全不知道如何运行。其实这个网站不少功能是由JavaScript制作出来的。
+
+掌握JS以后，能知道很多交互效果的原理了，而且JavaScript是前端重中之中的技术，以后再深入学习的时候，会碰到jQuery，Vue，React，Angular, Nodejs等等，如果你掌握了JavaScript，后面学的时候会如虎添翼。一名优秀的前端开发，JavaScript必定是熟练掌握的。
+
+
+
+做笔记时采用一边看视频教程，一边看文档的方式。不使用电脑时，可以看书籍。**三相之力，法力无边**！！！
 
 
 
 **视频**
 
-web前端开发必会的技能，JavaScript从零基础入门到精通(黑马程序员Pink老师)
+* web前端开发必会的技能，JavaScript从零基础入门到精通(黑马程序员Pink老师)
 
-https://www.bilibili.com/video/BV1ux411d75J
+  https://www.bilibili.com/video/BV1ux411d75J
 
-前端基础进阶-JavaScript核心 DOM BOM操作(黑马程序员Pink老师)
+* 前端基础进阶-JavaScript核心 DOM BOM操作(黑马程序员Pink老师)
 
-https://www.bilibili.com/video/BV1k4411w7sV
+  https://www.bilibili.com/video/BV1k4411w7sV
 
 以上都有本地视频和配套的资料与源码
 
@@ -95,9 +101,17 @@ https://www.bilibili.com/video/BV1k4411w7sV
 
 **文档**
 
-菜鸟教程: https://www.runoob.com/
+* 菜鸟教程: https://www.runoob.com/
+* 现代Javascript: https://zh.javascript.info/
 
-现代Javascript: https://zh.javascript.info/
+
+
+
+
+**书籍**
+
+* 《JavaScript 高级程序设计》
+* 《JavaScript DOM 编程艺术》
 
 
 
