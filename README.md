@@ -18,6 +18,7 @@
 * <a href="110 Javascript变量\110 Javascript变量.md">110 Javascript变量</a>  Variables
 * <a href="111 Javascript数据类型\111 Javascript数据类型.md">111 Javascript数据类型</a> Datatypes
 * <a href="112 类型转换\112 类型转换.md">112 类型转换</a> Type-conversion
+* <a href="113 运算符\113 运算符.md">113 运算符</a> Operator
 
 
 
@@ -29,9 +30,9 @@
 
 
 
+https://www.runoob.com/js/js-operators.html
 
-
-
+https://www.bilibili.com/video/BV1ux411d75J?p=42
 
 
 

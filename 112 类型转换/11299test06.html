@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let userName = prompt("阁下，您的大名？"),
+            userAge  = prompt("阁下，您的芳龄？"),
+            userSex = prompt("公的还是母的？");
+
+        let show_userSex;
+        if(userSex == "公"){
+            show_userSex = "男";
+        }else if(userSex == "母"){
+            show_userSex = "女";
+        }else{
+            show_userSex = "不男不女？";
+        }
+        alert("您的姓名：" + userName + "\n" + 
+              "您的年龄：" + userAge + "\n" +
+              "您的性别：" + show_userSex);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
