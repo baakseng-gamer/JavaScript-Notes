@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function sum(){
+            let inputNum1 = prompt("请输入第1个数字");
+            let inputNum2;
+            if (isNaN(inputNum1) == true){
+                alert("输入错误，请再输入");
+                return sum();
+            }else{
+                function Num2(){
+                    inputNum2 = prompt("请输入第2个数字");
+                    if(isNaN(inputNum2) == true){
+                        alert("输入错误，请再输入");
+                        return Num2();
+                    }
+                }
+                Num2();
+            }
+            alert("两个数总和为" + (parseFloat(inputNum1) + parseFloat(inputNum2)) )
+        }
+        sum();
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

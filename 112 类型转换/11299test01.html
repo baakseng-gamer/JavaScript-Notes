@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+
+        let showAge = function(){
+            let birthYear = prompt("请输入您的出生年份，最好是正确的数字。");
+            if(isNaN(birthYear) == false && birthYear.length == 4 && birthYear.slice(0,2) > 18){
+                let nowYear = (new Date()).getFullYear();
+                alert( "您今年" + (nowYear - Number(birthYear)) + "岁啦！");
+            }else{
+                alert("请正确输入！");
+                birthYear = setTimeout(showAge, 500);
+            }
+        }
+        showAge();
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

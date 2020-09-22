@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function sum(){
+            let inputNum1,
+                inputNum2;
+            let num1 = function(){
+                inputNum1 = prompt("请输入第1个数字");
+                if(isNaN(inputNum1) == true){
+                    alert("输入错误，请再次输入");
+                    return num1();
+                }
+            }
+            let num2 = function(){
+                inputNum2 = prompt("请输入第2个数字");
+                if(isNaN(inputNum2) == true){
+                    alert("输入错误，请再次输入");
+                    return num2();
+                }
+            }
+            num1();
+            num2();
+            alert("sum=" + (parseFloat(inputNum1) + parseFloat(inputNum2) ) );
+        }
+        sum();
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
