@@ -30,9 +30,7 @@
 
 
 
-https://www.runoob.com/js/js-operators.html
 
-https://www.bilibili.com/video/BV1ux411d75J?p=42
 
 
 
