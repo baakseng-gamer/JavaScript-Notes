@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let fullHours = 89;
+        let timeDays = parseInt(fullHours / 24);
+        let timeHours = fullHours % 24;
+        let DaysHours = timeDays + "天" + timeHours + "小时";
+        function jisuan(){
+            document.getElementById("Times").innerHTML = DaysHours;
+        }
+    </script>
+</head>
+<body>
+    <p>为抵抗洪水，战士连续作战89小时，计算多少天又多少小时？</p>
+    <button type="button" onclick="jisuan()">计算</button>
+    <p id="Times">多少天多少小时</p>
+</body>
+</html>

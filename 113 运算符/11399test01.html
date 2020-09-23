@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function panduan(){
+            let num1 = document.getElementById("beichushu").value;
+            let num2 = document.getElementById("chushu").value;
+            let YESNO = document.getElementById("yesno");
+            let YUSHU = document.getElementById("yushu");
+            if (num1 % num2 == 0){
+                YESNO.innerHTML = "是";
+            }else{
+                YESNO.innerHTML = "否";
+                YUSHU.innerHTML =  (num1 % num2);
+            }
+
+        }
+    </script>
+</head>
+<body>
+    <h2>判断是否能被整除</h2>
+    <p>请输入被除数</p>
+    <input type="text" id="beichushu">
+</br>
+</br>
+    <p>请输入除数</p>
+    <input type="text" id="chushu">
+    </br>
+    </br>
+    <button type="button" onclick="panduan()">提交</button>
+
+    <p>是否能被整除：<span id="yesno"></span></p>
+    <p>如果不能被整除，那么余数是多少:<span id="yushu"></span></p>
+    
+</body>
+</html>

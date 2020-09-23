@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function tohuashidu(){
+            let Cdu = document.getElementById("sheshidu").value;
+            document.getElementById("huashidu").value = 32 + 1.8 * Cdu;
+        }
+        function tosheshidu(){
+            let Fdu = document.getElementById("huashidu").value;
+            console.log(Fdu);
+            document.getElementById("sheshidu").value = (Fdu - 32) / 1.8;
+        }
+
+    </script>
+</head>
+<body>
+    <h2>摄氏度与华氏度转换</h2>
+    <input type="text" id="sheshidu">
+    <span>&#8451;</span>
+    <button type="button" onclick="tohuashidu()">转华氏度</button>
+
+</br>
+    <input type="text" id="huashidu">
+    <span>&#8457;</span>
+    <button type="button" onclick="tosheshidu()">转摄氏度</button>
+
+</body>
+</html>

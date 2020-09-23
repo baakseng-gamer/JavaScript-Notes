@@ -1,0 +1,15 @@
+<script>
+    let a = [myName = "baakseng", age = 30];
+    let b = [msg = "ABC"];
+    console.log(a || 6 == 3); //(2) ["baakseng", 30]
+
+    console.log(6 == 3 || b); //["ABC"]
+    console.log(6 > 3 || b); //true
+    console.log(b || 6 > 3); //["ABC"]
+    console.log(b || a); //["ABC"]
+
+    console.log( null || null); //null
+    console.log(5 > 1 || null || null); //true 有true优先返回true
+    console.log(5 < 1 || null || null); //null 无视false
+
+</script>
