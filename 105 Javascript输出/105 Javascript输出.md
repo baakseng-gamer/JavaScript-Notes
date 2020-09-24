@@ -8,7 +8,7 @@
 
 [4使用innerHTML写入到HTML元素](#4使用innerHTML写入到HTML元素)
 
-[5使用consolelog写入到浏览器的控制台。](#5使用consolelog写入到浏览器的控制台。)
+[5使用consolelog写入到浏览器的控制台](#5使用consolelog写入到浏览器的控制台)
 
 [总结](#总结)
 
@@ -103,7 +103,7 @@ innerHTML = ...
 
 
 
-## 5使用consolelog写入到浏览器的控制台。
+## 5使用consolelog写入到浏览器的控制台
 
 console.log()
 
