@@ -2,7 +2,7 @@
 
 # 106 Javascript语法
 
-[1JavaScript 字面量](#1JavaScript 字面量) [2JavaScript变量](#2JavaScript变量) [3JavaScript 操作符](#3JavaScript 操作符) [4JavaScript语句](#4JavaScript语句) [5JavaScript 关键字](#5JavaScript 关键字) [6JavaScript 注释](#6JavaScript 注释) [7JavaScript 数据类型](#7JavaScript 数据类型) [8JavaScript 函数](#8JavaScript 函数) [9JavaScript 字母大小写](#9JavaScript 字母大小写) [10JavaScript 字符集](#10JavaScript 字符集) [11驼峰法命名](#11驼峰法命名)
+[1JavaScript 字面量](#1JavaScript 字面量)
 
 [总结](#总结)
 
