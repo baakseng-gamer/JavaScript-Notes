@@ -58,7 +58,11 @@ default为可选的第2个参数，input框的初始值
     alert(`You are ${x} years old!`);
 ```
 
-**注意**上面代码段的第二行中的 ` 号（数字1键的左边），还有$号，后面会学到。
+**==注意==**
+
+上面代码段的第二行中的 ` 号（数字1键的左边），还有$号，后面会学到。
+
+
 
 实例： [10901prompt03.html](10901prompt03.html) 
 
@@ -70,7 +74,7 @@ default为可选的第2个参数，input框的初始值
 
 
 
-**!WARING!**
+**==!WARING==!**
 
 IE 浏览器会提供默认值
 第二个参数是可选的。但是如果我们不提供的话，Internet Explorer 会把 "undefined" 插入到 prompt。

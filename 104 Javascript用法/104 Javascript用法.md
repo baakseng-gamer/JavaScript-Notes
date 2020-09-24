@@ -161,7 +161,7 @@ function dianji() {
 
 
 
-**!WARING!**
+**==!WARING!==**
 
 如果设置了 src 特性，script 标签内容将会被忽略。
 一个单独的` <script>` 标签不能同时有 src 特性和内部包裹的代码。

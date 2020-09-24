@@ -57,7 +57,7 @@ JavaScript 可以通过不同的方式来输出数据：
 
 实例： [10502documentwrite.html](10502documentwrite.html) 
 
-**注意**
+**==注意==**
 
 ```
 请使用 document.write() 仅仅向文档输出写内容。

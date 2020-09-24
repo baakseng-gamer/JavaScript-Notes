@@ -202,8 +202,6 @@ console.log("not a number" * 9 - 3); //NaN
 
 
 
-
-
 ## 3. String 字符串型
 
 由0个或多个16位unicode字符组成；
@@ -345,7 +343,7 @@ var str3 = "";
 console.log(str3.length); // 0
 ```
 
-没有任何东西则返回值为0；
+没有任何东西的字符串长度返回值为0；
 
 
 
@@ -420,7 +418,7 @@ console.log(text3); //12311
 
 ## 4. Boolean 布尔型（逻辑类型）
 
-boolean 类型仅包含两个值：`true` 和 `false`。
+Boolean 类型仅包含两个值：`true` 和 `false`。
 
 * `true`表示 真（对）
 * `false`表示假（错）
@@ -443,7 +441,7 @@ boolean可以用来校验：
         console.log(typeof(a == b)); //boolean
 ```
 
-检查a和b是不是一样，结果是false，即错的。
+检查a和b是否相等，结果是false，即错的。
 
 
 
@@ -532,7 +530,7 @@ boolean可以用来校验：
 
 
 
-**注意**
+**==注意==**
 
 使用 `nul`l 将一个“空”或者“未知”的值写入变量中，而 `undefined` 则保留作为未进行初始化的事物的默认初始值。
 
@@ -595,7 +593,9 @@ var cars=   new Array;
 var person= new Object;
 ```
 
-**注意：以上的typeof都为`object`。**
+**==注意==**
+
+上面的typeof都为`object`
 
 
 
@@ -605,8 +605,8 @@ var person= new Object;
 
 它支持两种语法形式：
 
-* 作为运算符：typeof x。
-* 函数形式：typeof(x)。
+* 作为运算符：typeof a。
+* 函数形式：typeof(a)。
 
 总之，有括号和没有括号，得到的结果是一样的。
 

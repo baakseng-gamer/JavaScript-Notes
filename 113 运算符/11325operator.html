@@ -3,4 +3,28 @@
     console.log(3 > 1 && Number("ABC")); //NaN
     console.log(undefined &&  1 < 0); //undefined
     console.log("1" === 1 && null); //false
+
+    let a = {
+        personalID : 10086,
+        personalName : "zhongguoyidong",
+        personalAge : 18}
+
+    let b = {
+        msg : "Baakseng"
+    }
+
+    let c = 100;
+    let d = 5;
+
+    console.log(a && b); //bc对象
+    console.log(b && a); //a对象
+    console.log(b&& 5>4); //true
+    console.log(5>4 && b); //b对象
+
+    let c = 100;
+    let d = 5;
+    console.log(c && d); //5 第1个是操作数就返回第2个操作数
+    console.log(d && c); //100 第1个是操作数就返回第2个操作数
+
+    
 </script>

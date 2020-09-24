@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script>
-        let Cdu = prompt("请输入摄氏度 \u2103");
-        let Fdu = 32 + 1.8 * Cdu;
-        alert("华氏度为：" + Fdu + "\u2109");
+        let Fdu = prompt("请输入华氏度 \u2109");
+        let Cdu = ((Fdu - 32) * 5 / 9).toFixed(1);
+        alert("华氏度为：" + Cdu + "\u2103");
     </script>
 </head>
 <body>

@@ -12,4 +12,8 @@
     console.log(5 > 1 || null || null); //true 有true优先返回true
     console.log(5 < 1 || null || null); //null 无视false
 
+    let c = 100;
+    let d = 5;
+    console.log(c || d); //100 两个操作数都是对象，则返回第一个操作数；
+    console.log(d || c); //5   两个操作数都是对象，则返回第一个操作数；
 </script>
