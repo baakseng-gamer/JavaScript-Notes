@@ -502,7 +502,7 @@ boolean可以用来校验：
 
 
 
-## 6.Undefined未定义的值
+## 6. Undefined未定义的值
 
 特殊值 `undefined` 和 `null` 一样自成类型。
 
@@ -573,7 +573,7 @@ boolean可以用来校验：
 
 
 
-## 8.Symbol
+## 8. Symbol
 
 **symbol** 类型用于创建对象的唯一标识符。我们在这里提到 symbol 类型是为了完整性，但要在学完 **object** 类型后再学习它。
 
@@ -599,7 +599,7 @@ var person= new Object;
 
 
 
-## 10.typeof运算符
+## 10. typeof运算符
 
 `typeof` 运算符返回参数的类型。当我们想要分别处理不同类型值的时候，或者想快速进行数据类型检验时，非常有用。
 
