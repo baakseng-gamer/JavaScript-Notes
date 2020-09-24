@@ -2,13 +2,13 @@
 
 [1JavaScript显示数据](#1JavaScript显示数据)
 
-[2使用window.alert弹出警告框](#2使用window.alert弹出警告框)
+[2使用windowalert弹出警告框](#2使用windowalert弹出警告框)
 
-[3使用document.write写到HTML文档中](#3使用document.write写到HTML文档中)
+[3使用documentwrite写到HTML文档中](#3使用documentwrite写到HTML文档中)
 
 [4使用innerHTML写入到HTML元素](#4使用innerHTML写入到HTML元素)
 
-[5使用console.log写入到浏览器的控制台。](#5使用console.log写入到浏览器的控制台。)
+[5使用consolelog写入到浏览器的控制台。](#5使用consolelog写入到浏览器的控制台。)
 
 [总结](#总结)
 
@@ -27,7 +27,9 @@ JavaScript 可以通过不同的方式来输出数据：
 
 
 
-## 2使用window.alert弹出警告框
+## 2使用windowalert弹出警告框
+
+window.alert()
 
 ```
     <p>使用window.alert()</p>
@@ -45,7 +47,9 @@ JavaScript 可以通过不同的方式来输出数据：
 
 
 
-## 3使用document.write写到HTML文档中
+## 3使用documentwrite写到HTML文档中
+
+document.write()
 
 ```
     <script>
@@ -82,6 +86,8 @@ JavaScript 可以通过不同的方式来输出数据：
 
 ## 4使用innerHTML写入到HTML元素
 
+innerHTML = ...
+
 如需从 JavaScript 访问某个 HTML 元素，您可以使用 document.getElementById(id) 方法。
 请使用 "id" 属性来标识 HTML 元素，并 innerHTML 来获取或插入元素内容。
 
@@ -97,7 +103,9 @@ JavaScript 可以通过不同的方式来输出数据：
 
 
 
-## 5使用console.log写入到浏览器的控制台。
+## 5使用consolelog写入到浏览器的控制台。
+
+console.log()
 
 如果您的浏览器支持调试，你可以使用 console.log() 方法在浏览器中显示 JavaScript 值。
 
