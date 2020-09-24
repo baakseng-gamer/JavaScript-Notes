@@ -19,6 +19,8 @@
 * <a href="111 Javascript数据类型\111 Javascript数据类型.md">111 Javascript数据类型</a> Datatypes
 * <a href="112 类型转换\112 类型转换.md">112 类型转换</a> Type-conversion
 * <a href="113 运算符\113 运算符.md">113 运算符</a> Operator
+* <a href="114 流程控制语句\114 流程控制语句.md">114 流程控制语句</a> 
+* <a href="115 分支语句\115 分支语句.md">115 分支语句</a> if...else & switch
 
 
 
@@ -28,7 +30,9 @@
 
 ## 备忘录：
 
+https://zh.javascript.info/ifelse
 
+https://www.bilibili.com/video/BV1ux411d75J?p=57
 
 
 
