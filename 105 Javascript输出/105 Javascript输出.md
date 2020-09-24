@@ -2,13 +2,13 @@
 
 [1JavaScript显示数据](#1JavaScript显示数据)
 
- [2使用window.alert()弹出警告框](#2使用window.alert()弹出警告框) 
+[2使用window.alert弹出警告框](#2使用window.alert弹出警告框)
 
-[3使用document.write()写到HTML文档中](#3使用document.write()写到HTML文档中)
+[3使用document.write写到HTML文档中](#3使用document.write写到HTML文档中)
 
 [4使用innerHTML写入到HTML元素](#4使用innerHTML写入到HTML元素)
 
-[5使用console.log()写入到浏览器的控制台。](#5使用console.log()写入到浏览器的控制台。)
+[5使用console.log写入到浏览器的控制台。](#5使用console.log写入到浏览器的控制台。)
 
 [总结](#总结)
 
@@ -27,7 +27,7 @@ JavaScript 可以通过不同的方式来输出数据：
 
 
 
-## 2使用window.alert()弹出警告框
+## 2使用window.alert弹出警告框
 
 ```
     <p>使用window.alert()</p>
@@ -45,7 +45,7 @@ JavaScript 可以通过不同的方式来输出数据：
 
 
 
-## 3使用document.write()写到HTML文档中
+## 3使用document.write写到HTML文档中
 
 ```
     <script>
@@ -97,7 +97,7 @@ JavaScript 可以通过不同的方式来输出数据：
 
 
 
-## 5使用console.log()写入到浏览器的控制台。
+## 5使用console.log写入到浏览器的控制台。
 
 如果您的浏览器支持调试，你可以使用 console.log() 方法在浏览器中显示 JavaScript 值。
 
