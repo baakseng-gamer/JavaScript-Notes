@@ -2,9 +2,17 @@
 
 为了方便信息的输入输出，JS提供了一些输入输出语句。
 
+**目录**
+- [109 Javascript交互alert、prompt和confirm](#109-javascript交互alertprompt和confirm)
+- [1. alert](#1-alert)
+- [2. prompt](#2-prompt)
+- [3. confirm](#3-confirm)
+- [总结](#总结)
 
 
-## 1. alert
+***
+
+# 1. alert
 
 这个我们前面已经看到过了。它会显示一条信息，并等待用户按下 “OK”。
 
@@ -16,7 +24,7 @@ alert("Hello Javascript!");
 
 
 
-## 2. prompt
+# 2. prompt
 
 浏览器弹出输入框，用户可以输入。是一个带有文本消息的模态窗口，还有 input 框和确定/取消按钮。
 
@@ -95,7 +103,7 @@ let test = prompt("Test", ''); //  用于 IE 浏览器
 
 
 
-## 3. confirm
+# 3. confirm
 
 如果用户点击确定按钮，则 confirm() 返回 true。如果点击取消按钮，则 confirm() 返回 false。
 
@@ -157,7 +165,7 @@ confirm 函数显示一个带有 question 以及确定和取消两个按钮的�
 
 
 
-## 总结
+# 总结
 
 我们学习了与用户交互的 3 个浏览器的特定函数：
 

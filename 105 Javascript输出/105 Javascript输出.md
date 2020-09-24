@@ -2,7 +2,21 @@
 
 JavaScript 没有任何打印或者输出的函数。
 
-## 1. JavaScript显示数据
+
+
+**目录**
+- [105 Javascript输出](#105-javascript输出)
+- [1. JavaScript显示数据](#1-javascript显示数据)
+- [2. 使用window.alert()弹出警告框](#2-使用windowalert弹出警告框)
+- [3. 使用document.write()写到HTML文档中](#3-使用documentwrite写到html文档中)
+- [4. 使用inner.HTML = " "写入到HTML元素](#4-使用innerhtml---写入到html元素)
+- [5. 使用console.log()写入到浏览器的控制台](#5-使用consolelog写入到浏览器的控制台)
+- [总结](#总结)
+
+
+***
+
+# 1. JavaScript显示数据
 
 JavaScript 可以通过不同的方式来输出数据：
 
@@ -13,7 +27,7 @@ JavaScript 可以通过不同的方式来输出数据：
 
 
 
-## 2. 使用window.alert()弹出警告框
+# 2. 使用window.alert()弹出警告框
 
 ```
     <p>使用window.alert()</p>
@@ -31,7 +45,7 @@ JavaScript 可以通过不同的方式来输出数据：
 
 
 
-## 3. 使用document.write()写到HTML文档中
+# 3. 使用document.write()写到HTML文档中
 
 ```
     <script>
@@ -66,7 +80,7 @@ JavaScript 可以通过不同的方式来输出数据：
 
 
 
-## 4. 使用inner.HTML = " "写入到HTML元素
+# 4. 使用inner.HTML = " "写入到HTML元素
 
 如需从 JavaScript 访问某个 HTML 元素，您可以使用 document.getElementById(id) 方法。
 请使用 "id" 属性来标识 HTML 元素，并 innerHTML 来获取或插入元素内容。
@@ -83,7 +97,7 @@ JavaScript 可以通过不同的方式来输出数据：
 
 
 
-## 5. 使用console.log()写入到浏览器的控制台
+# 5. 使用console.log()写入到浏览器的控制台
 
 如果您的浏览器支持调试，你可以使用 console.log() 方法在浏览器中显示 JavaScript 值。
 
@@ -103,6 +117,6 @@ JavaScript 可以通过不同的方式来输出数据：
 
 
 
-## 总结
+# 总结
 
 测试输出时尽量用console.log()，或者alert()也可以，不建议用document.write = (" ")，因为会改写或覆盖HTML文档内容。

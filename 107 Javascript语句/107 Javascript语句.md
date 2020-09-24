@@ -1,12 +1,28 @@
 # 107 Javascript语句
 
+**目录**
+- [107 Javascript语句](#107-javascript语句)
+- [概要](#概要)
+- [1. 分号](#1-分号)
+- [2. JavaScript代码](#2-javascript代码)
+- [3. JavasScript代码块](#3-javasscript代码块)
+- [4. JavaScript语句标识符](#4-javascript语句标识符)
+- [5. 空格](#5-空格)
+- [6. 对代码进行折行](#6-对代码进行折行)
+- [总结](#总结)
+
+
+***
+
+# 概要
+
 JavaScript 语句是发给浏览器的命令。
 
 这些命令的作用是告诉浏览器要做的事情。
 
 
 
-## 1. 分号
+# 1. 分号
 
 分号用于分隔 JavaScript 语句。
 
@@ -106,7 +122,7 @@ alert("There will be an error")[1, 2].forEach(alert)
 
 
 
-## 2. JavaScript代码
+# 2. JavaScript代码
 
 JavaScript 代码是 JavaScript 语句的序列。
 
@@ -121,7 +137,7 @@ document.getElementById("myDIV").innerHTML="你係边度？";
 
 
 
-## 3. JavasScript代码块
+# 3. JavasScript代码块
 
 JavaScript 可以分批地组合起来。
 
@@ -142,7 +158,7 @@ function fn() {
 
 
 
-## 4. JavaScript语句标识符
+# 4. JavaScript语句标识符
 
 通常以一个 语句标识符 为开始，并执行该语句。
 
@@ -169,7 +185,7 @@ function fn() {
 
 
 
-## 5. 空格
+# 5. 空格
 
 JavaScript 会忽略多余的空格。您可以向脚本添加空格，来提高其可读性。下面的两行代码是等效的：
 
@@ -180,7 +196,7 @@ var person = "Baakseng";
 
 
 
-## 6. 对代码进行折行
+# 6. 对代码进行折行
 
 您可以在文本字符串中使用反斜杠对代码行进行换行。
 
@@ -202,6 +218,6 @@ document.write \
 
 
 
-## 总结
+# 总结
 
 分号，代码，代码块，语句标识符，空格等等的使用方法，如何避免错误

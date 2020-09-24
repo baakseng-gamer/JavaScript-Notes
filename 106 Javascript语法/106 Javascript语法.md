@@ -1,18 +1,41 @@
-
-
 # 106 Javascript语法
 
 JavaScript 是一个程序语言。语法规则定义了语言结构。
 
 
 
-## 1. JavaScript字面量
+**目录**
+
+- [106 Javascript语法](#106-javascript语法)
+- [1. JavaScript字面量](#1-javascript字面量)
+  - [1.1 数字(Number)字面量](#11-数字number字面量)
+  - [1.2 字符串（String）字面量](#12-字符串string字面量)
+  - [1.3 表达式字面量](#13-表达式字面量)
+  - [1.4 数组（Array）字面量](#14-数组array字面量)
+  - [1.5 对象（Object）字面量](#15-对象object字面量)
+  - [1.6 函数（Function）字面量](#16-函数function字面量)
+- [2. JavaScript变量](#2-javascript变量)
+- [3. JavaScript 操作符](#3-javascript-操作符)
+- [4. JavaScript语句](#4-javascript语句)
+- [5. JavaScript 关键字](#5-javascript-关键字)
+- [6. JavaScript 注释](#6-javascript-注释)
+- [7. JavaScript 数据类型](#7-javascript-数据类型)
+- [8. JavaScript 函数](#8-javascript-函数)
+- [9. JavaScript 字母大小写](#9-javascript-字母大小写)
+- [10. JavaScript 字符集](#10-javascript-字符集)
+- [11. 驼峰法命名](#11-驼峰法命名)
+- [总结](#总结)
+
+
+***
+
+# 1. JavaScript字面量
 
 在编程语言中，一般固定值称为字面量，如 3.14、"Baakseng"等等
 
 
 
-### 1.1 数字(Number)字面量
+## 1.1 数字(Number)字面量
 
 整数或者是小数，或者是科学计数(e)。
 
@@ -29,7 +52,7 @@ JavaScript 是一个程序语言。语法规则定义了语言结构。
 
 
 
-### 1.2 字符串（String）字面量 
+## 1.2 字符串（String）字面量 
 
 可以使用单引号或双引号
 
@@ -44,7 +67,7 @@ JavaScript 是一个程序语言。语法规则定义了语言结构。
 
 
 
-### 1.3 表达式字面量
+## 1.3 表达式字面量
 
 用于计算
 
@@ -57,7 +80,7 @@ JavaScript 是一个程序语言。语法规则定义了语言结构。
 
 
 
-### 1.4 数组（Array）字面量
+## 1.4 数组（Array）字面量
 
 定义一个数组
 
@@ -67,7 +90,7 @@ JavaScript 是一个程序语言。语法规则定义了语言结构。
 
 
 
-### 1.5 对象（Object）字面量 
+## 1.5 对象（Object）字面量 
 
 定义一个对象
 
@@ -77,7 +100,7 @@ JavaScript 是一个程序语言。语法规则定义了语言结构。
 
 
 
-### 1.6 函数（Function）字面量 
+## 1.6 函数（Function）字面量 
 
 定义一个函数
 
@@ -87,7 +110,7 @@ function myFunction(a, b) { return a * b;}
 
 
 
-## 2. JavaScript变量
+# 2. JavaScript变量
 
 在编程语言中，变量用于存储数据值。
 
@@ -114,7 +137,7 @@ JavaScript 使用关键字 var 来定义变量， 使用等号来为变量赋值
 
 
 
-## 3. JavaScript 操作符
+# 3. JavaScript 操作符
 
 JavaScript使用 算术运算符 来计算值
 
@@ -154,7 +177,7 @@ JavaScript语言有多种类型的运算符，后面会讲到
 
 
 
-## 4. JavaScript语句
+# 4. JavaScript语句
 
 语句是执行行为（action）的语法结构和命令。
 
@@ -179,7 +202,7 @@ alert('World');
 
 
 
-## 5. JavaScript 关键字
+# 5. JavaScript 关键字
 
 JavaScript 关键字用于标识要执行的操作。
 
@@ -216,7 +239,7 @@ JavaScript 同样保留了一些关键字，这些关键字在当前的语言版
 
 
 
-## 6. JavaScript 注释
+# 6. JavaScript 注释
 
 不是所有的 JavaScript 语句都是"命令"。双斜杠 // 后的内容将会被浏览器忽略：
 
@@ -226,7 +249,7 @@ JavaScript 同样保留了一些关键字，这些关键字在当前的语言版
 
 
 
-## 7. JavaScript 数据类型
+# 7. JavaScript 数据类型
 
 JavaScript 有多种数据类型：数字，字符串，数组，对象等等：
 
@@ -262,7 +285,7 @@ var person = {firstName:"John", lastName:"Doe"};  // Object 通过对象字面�
 
 
 
-## 8. JavaScript 函数
+# 8. JavaScript 函数
 
 JavaScript 语句可以写在函数内，函数可以重复引用：
 
@@ -276,7 +299,7 @@ function myFunction(a, b) {
 
 
 
-## 9. JavaScript 字母大小写
+# 9. JavaScript 字母大小写
 
 JavaScript 对大小写是敏感的。
 
@@ -288,7 +311,7 @@ JavaScript 对大小写是敏感的。
 
 
 
-## 10. JavaScript 字符集
+# 10. JavaScript 字符集
 
 JavaScript 使用 Unicode 字符集。
 
@@ -298,7 +321,7 @@ Unicode 覆盖了所有的字符，包含标点等字符。
 
 
 
-## 11. 驼峰法命名
+# 11. 驼峰法命名
 
 当变量名或函式名是由一个或多个单词连结在一起，而构成的唯一识别字时，第一个单词以小写字母开始；第二个单词的首字母大写或每一个单词的首字母都采用大写字母，例如：myFirstName、myLastName，这样的变量名看上去就像骆驼峰一样此起彼伏，故得名。
 
@@ -316,6 +339,6 @@ var first_name='maizi';//下划线法
 
 
 
-## 总结
+# 总结
 
 好好了解以上几个语法的作用、规则等等

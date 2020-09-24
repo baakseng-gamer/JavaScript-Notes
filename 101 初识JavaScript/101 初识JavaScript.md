@@ -1,8 +1,19 @@
 # 101 初识JavaScript
 
+**目录**
+- [101 初识JavaScript](#101-初识javascript)
+- [1. JavaScript历史](#1-javascript历史)
+- [2. JavaScript是什么](#2-javascript是什么)
+- [3. 浏览器中的 JavaScript 能做什么？](#3-浏览器中的-javascript-能做什么)
+- [4. 浏览器中的 JavaScript 不能做什么？](#4-浏览器中的-javascript-不能做什么)
+- [5. 是什么使得 JavaScript 与众不同？](#5-是什么使得-javascript-与众不同)
+- [6. 为什么学习 JavaScript?](#6-为什么学习-javascript)
+- [7. 比 JavaScript “更好”的语言](#7-比-javascript-更好的语言)
+- [8. JavaScript由哪些部分组成](#8-javascript由哪些部分组成)
+- [总结](#总结)
 
 
-## 1. JavaScript历史
+# 1. JavaScript历史
 
 * 布兰登·艾奇（Brendan Eich，1961年～）。
 * 神奇的大哥用10天完成 JavaScript 设计。
@@ -10,7 +21,7 @@
 
 
 
-## 2. JavaScript是什么
+# 2. JavaScript是什么
 
 * **JavaScript** 最初的目的是为了“**赋予网页生命**”。
 * 这种编程语言我们称之为 **脚本**。它们可以写在 HTML 中，在页面加载的时候会自动执行。
@@ -60,7 +71,7 @@
 
 
 
-## 3. 浏览器中的 JavaScript 能做什么？
+# 3. 浏览器中的 JavaScript 能做什么？
 
 现代的 JavaScript 是一种“安全”语言。它不提供对内存或 CPU 的底层访问，因为它最初是为浏览器创建的，不需要这些功能。
 
@@ -89,7 +100,7 @@ JavaScript 的能力很大程度上依赖于它执行的环境。例如：Node.j
 
 
 
-## 4. 浏览器中的 JavaScript 不能做什么？
+# 4. 浏览器中的 JavaScript 不能做什么？
 
 为了用户的（信息）安全，在浏览器中的 JavaScript 的能力是有限的。这样主要是为了阻止邪恶的网站获得或修改用户的私人数据。
 
@@ -113,7 +124,7 @@ JavaScript 的能力很大程度上依赖于它执行的环境。例如：Node.j
   
   浏览器环境外的 JavaScript 一般没有这些限制。例如服务端的 JavaScript 就没有这些限制。现代浏览器还允许安装可能会要求扩展权限的插件或扩展。
 
-## 5. 是什么使得 JavaScript 与众不同？
+# 5. 是什么使得 JavaScript 与众不同？
 
 * 和 HTML/CSS 完全的集成。
 * 使用简单的工具完成简单的任务。
@@ -127,7 +138,7 @@ JavaScript 的能力很大程度上依赖于它执行的环境。例如：Node.j
 
 
 
-## 6. 为什么学习 JavaScript?
+# 6. 为什么学习 JavaScript?
 
 JavaScript web 开发人员必须学习的 3 门语言中的一门：
 
@@ -137,7 +148,7 @@ JavaScript web 开发人员必须学习的 3 门语言中的一门：
 
 
 
-## 7. 比 JavaScript “更好”的语言
+# 7. 比 JavaScript “更好”的语言
 
 不同的人喜欢不同的功能，JavaScript 的语法也不能够满足所有人的需求。
 
@@ -160,7 +171,7 @@ JavaScript web 开发人员必须学习的 3 门语言中的一门：
 
 
 
-## 8. JavaScript由哪些部分组成
+# 8. JavaScript由哪些部分组成
 
 **由三部分组成：**
 
@@ -192,7 +203,7 @@ JavaScript web 开发人员必须学习的 3 门语言中的一门：
 
 
 
-## 总结
+# 总结
 
 * JavaScript 最开始是为浏览器设计的一门语言，但是现在也被用于很多其他的环境。
 * 现在，JavaScript 是一门在浏览器中使用最广、并且能够很好集成 HTML/CSS 的语言。
