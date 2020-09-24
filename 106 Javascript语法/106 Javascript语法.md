@@ -2,7 +2,7 @@
 
 # 106 Javascript语法
 
-[1要JavaScript 字面量](#1JavaScript 字面量)
+[1JavaScript字面量](#1JavaScript字面量)
 
 [总结](#总结)
 
@@ -10,7 +10,7 @@ JavaScript 是一个程序语言。语法规则定义了语言结构。
 
 
 
-## 1JavaScript 字面量
+## 1JavaScript字面量
 
 在编程语言中，一般固定值称为字面量，如 3.14、"Baakseng"等等
 
