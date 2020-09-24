@@ -2,7 +2,7 @@
 
 # 106 Javascript语法
 
-[1JavaScript 字面量](#1JavaScript 字面量)
+[1要JavaScript 字面量](#1JavaScript 字面量)
 
 [总结](#总结)
 
