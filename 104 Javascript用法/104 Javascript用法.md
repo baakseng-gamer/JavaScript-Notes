@@ -1,10 +1,8 @@
 # 104 Javascript用法
 
-[1script标签](#1script标签) [2行内使用](#2行内使用) [3内嵌使用](#3内嵌使用) [4外联式](#4外联式) [总结](#总结)
-
 HTML 中的脚本必须位于` <script>` 与` </script>` 标签之间。
 
-## 1script标签
+## 1. script标签
 
 JavaScript 程序可以在` <script> `标签的帮助下插入到 HTML 文档的任何地方。
 
@@ -14,7 +12,7 @@ JavaScript 程序可以在` <script> `标签的帮助下插入到 HTML 文档的
 
 
 
-## 2行内使用
+## 2. 行内使用
 
 ```
 <a href="https://www.baidu.com" onclick="alert('准备跳到百度')" target="_blank">通向百度</a>
@@ -26,9 +24,7 @@ JavaScript 程序可以在` <script> `标签的帮助下插入到 HTML 文档的
 
 
 
-## 3内嵌使用
-
-嵌入式，直接写在HTML页面中
+## 3. 内嵌使用（嵌入式）
 
 ### 3.1 body中的Javascript
 
@@ -100,9 +96,7 @@ head中的Javascript
 
 
 
-## 4外联式
-
-外部脚本
+## 4. 外联式（外部脚本）
 
 如果你有大量的 JavaScript 代码，我们可以将它放入一个单独的文件。
 
