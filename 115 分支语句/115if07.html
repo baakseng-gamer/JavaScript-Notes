@@ -2,6 +2,13 @@
     let score = prompt("输入分数");
     if (score >= 85 && score <= 100){
         alert("优秀");
+        if(score >=95){
+            alert("奖励10000块");
+        }else if(score >= 90 && score <95){
+            alert("奖励1000块");
+        }else {
+            alert("奖励100块");
+        }
     }else if (score >= 70 && score <85){
         alert("良好");
     }else if (score >= 60 && score < 70){
