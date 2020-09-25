@@ -30,9 +30,7 @@
 
 ## 备忘录：
 
-https://zh.javascript.info/ifelse
 
-https://www.bilibili.com/video/BV1ux411d75J?p=57
 
 
 
