@@ -528,7 +528,9 @@ boolean可以用来校验：
         console.log(a); //null
 ```
 
-注意JS是逐行执行的，a先被赋值后，console输出为被赋的值，不会被下面的a = null受影响。
+**==注意==**
+
+JS是逐行执行的，a先被赋值后，console输出为被赋的值，不会被下面的a = null受影响。
 
 实例： [11117null.html](11117null.html) 
 
