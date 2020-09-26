@@ -131,19 +131,19 @@ alert(massage); // BBB
 
 **==!WARING!==**
 
-声明两次会触发 error
+* 声明两次会触发 error
 
-```
-let massage = "ABC";
-let massage = "ABC";
-alert(massage);// Uncaught SyntaxError: Identifier 'massage' has already been declared
-```
+  ```
+  let massage = "ABC";
+  let massage = "ABC";
+  alert(massage);// Uncaught SyntaxError: Identifier 'massage' has already been declared
+  ```
 
-实例： [110letiables05.html](110letiables05.html) Console查看错误信息
+  实例： [110letiables05.html](110letiables05.html) Console查看错误信息
 
-一个变量应该只被声明一次。
+  一个变量应该只被声明一次。
 
-因此，我们对同一个变量应该只声明一次，之后在不使用`let` 的情况下对其进行引用。
+  因此，我们对同一个变量应该只声明一次，之后在不使用`let` 的情况下对其进行引用。
 
 
 
@@ -220,16 +220,16 @@ let 我的名字 = 'Baakseng';
 
 **==!WARING!==** **保留字**
 
-比如，let、class、return、function 都被保留了。
+* 比如，let、class、return、function 都被保留了。
 
-下面的代码将会抛出一个语法错误：
+  下面的代码将会抛出一个语法错误：
 
-```
-let let = 5; // 不能用 "let" 来命名一个变量，错误！
-let return = 5; // 同样，不能使用 "return"，错误！
-```
+  ```
+  let let = 5; // 不能用 "let" 来命名一个变量，错误！
+  let return = 5; // 同样，不能使用 "return"，错误！
+  ```
 
-具体的保留字列表可以上网翻阅
+​		具体的保留字列表可以上网翻阅
 
 
 

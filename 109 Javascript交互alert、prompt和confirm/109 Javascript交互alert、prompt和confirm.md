@@ -68,7 +68,7 @@ default为可选的第2个参数，input框的初始值
 
 **==注意==**
 
-上面代码段的第二行中的 ` 号（数字1键的左边），还有$号，后面会学到。
+* 上面代码段的第二行中的 ` 号（数字1键的左边），还有$号，后面会学到。
 
 
 
@@ -84,22 +84,23 @@ default为可选的第2个参数，input框的初始值
 
 **==!WARING==!**
 
-IE 浏览器会提供默认值
-第二个参数是可选的。但是如果我们不提供的话，Internet Explorer 会把 "undefined" 插入到 prompt。
+* IE 浏览器会提供默认值
 
-我们可以在 Internet Explorer 中运行下面这行代码来看看效果：
+* 第二个参数是可选的。但是如果我们不提供的话，Internet Explorer 会把 "undefined" 插入到 prompt。
 
-```
-let test = prompt("Test");
-```
+  我们可以在 Internet Explorer 中运行下面这行代码来看看效果：
 
-所以，为了 prompt 在 IE 中有好的效果，我们建议始终提供第二个参数：
+  ```
+  let test = prompt("Test");
+  ```
 
-```
-let test = prompt("Test", ''); //  用于 IE 浏览器
-```
+  所以，为了 prompt 在 IE 中有好的效果，我们建议始终提供第二个参数：
 
-实例： [10901prompt04IE.html](10901prompt04IE.html) 
+  ```
+  let test = prompt("Test", ''); //  用于 IE 浏览器
+  ```
+
+  实例： [10901prompt04IE.html](10901prompt04IE.html) 
 
 
 
