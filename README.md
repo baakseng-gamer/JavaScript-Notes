@@ -89,13 +89,9 @@ CSS3中的方案
 
 **视频**
 
-* web前端开发必会的技能，JavaScript从零基础入门到精通(黑马程序员Pink老师)
+* 【千锋】2020版JavaScript基础入门教程全集（强烈推荐）
 
-  https://www.bilibili.com/video/BV1ux411d75J
-
-* 前端基础进阶-JavaScript核心 DOM BOM操作(黑马程序员Pink老师)
-
-  https://www.bilibili.com/video/BV1k4411w7sV
+  https://www.bilibili.com/video/BV1pJ41157z8
 
 以上都有本地视频和配套的资料与源码
 
@@ -120,4 +116,6 @@ CSS3中的方案
 **认真看！认真学！认真做！**
 
 **学习时，代码一定要敲！不要复制粘贴然后执行看结果！**
+
+**拒绝当CV帝！！！**
 
