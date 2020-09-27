@@ -1,0 +1,22 @@
+<script>
+    let ABCD = prompt("输入A~D里不同等级显示不出分数段");
+    if(ABCD == "a" || "b" || "c" || "d"){
+        ABCD = ABCD.toUpperCase();
+    }
+    switch(ABCD) {
+        case "A":
+            alert("85~100");
+        break;
+        case "B":
+            alert("70~84");
+        break;
+        case "C":
+            alert("60~70");
+        break;
+        case "D":
+            alert("0~60");
+        break;
+        default:
+            alert("error");
+    }
+</script>

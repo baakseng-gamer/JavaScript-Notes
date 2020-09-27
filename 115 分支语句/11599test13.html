@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        html,body{
+            height: 100%;
+        }
+        body{
+            background-image: linear-gradient(to top, #333, #555);
+        }
+        .biaodan {
+            width: 800px;
+            height: 400px;
+            margin: 50px auto;
+        }
+        .biaodan .inputbox{
+            width: 400px;
+            height: 30px;
+            padding: 10px;
+            border: 2px solid #fff;
+            border-radius: 10px;
+            margin: 10px auto;
+            background: #444;
+        }
+        .biaodan .inputbox span{
+            height: 100%;
+            width: 100px;
+            display: inline-block;
+            line-height: 30px;
+            text-align: center;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <div class="biaodan">
+        <div class="inputbox">
+            <span>用户名:</span>
+            <input type="text" placeholder="请输入用户名">
+        </div>
+        <div class="inputbox">
+            <span>联系电话:</span>
+            <input type="text" placeholder="请输入电话号码">
+        </div>
+    </div>
+</body>
+</html>

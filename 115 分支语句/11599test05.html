@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <img src="./img/11511.png" alt="">
+    </div>
+    <p>请输入身高：</p>
+    <p><input type="text" id="height">M</p>
+    <p>请输入体重：</p>
+    <p><input type="text" id="weight">KG</p>
+    <button type="button" onclick="BMIjisuanqi()">提交</button>
+    <p id="BMIresult">您的BMI结果为：</p>
+</body>
+<script>
+    function BMIjisuanqi(){
+        let inputHeight = document.getElementById("height").value,
+            inputWeight = document.getElementById("weight").value;
+
+        let BMInum =  (inputWeight / (inputHeight ** 2)).toFixed(1);
+        //小数为1位
+
+        let fenlei;
+        //声明分类
+
+        if(BMInum <= 18.4){
+            fenlei = "偏瘦";
+        }else if (BMInum >= 18.5 && BMInum <= 23.9){
+            fenlei = "正常";
+        }else if (BMInum >= 24 && BMInum <= 27.9){
+            fenlei = "过重";
+        }else {
+            fenlei = "肥胖";
+        }
+        document.getElementById("BMIresult").innerHTML = "您的BMI结果为：" + fenlei;
+    }
+    
+</script>
+</html>

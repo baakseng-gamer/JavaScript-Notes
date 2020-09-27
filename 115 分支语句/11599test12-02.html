@@ -1,0 +1,13 @@
+<script>
+    let inputMonth = +prompt("输入月份");
+        inputYear = +prompt("输入年份");
+    if(inputMonth == 2 && inputYear % 4 == 0 && inputYear % 100 != 0 || inputYear % 400 == 0){
+        alert("29天");
+    }else if((inputMonth <= 6 && inputMonth % 2 != 0) || (inputMonth >= 7 && inputMonth <= 12 && inputMonth % 2 == 0)){
+        alert("31天");
+    }else if (inputMonth == 2){
+        alert("28天");
+    }else {
+        alert("30天");
+    }
+</script>
