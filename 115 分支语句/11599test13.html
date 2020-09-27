@@ -14,28 +14,59 @@
         }
         body{
             background-image: linear-gradient(to top, #333, #555);
+            position:relative;
         }
         .biaodan {
             width: 800px;
             height: 400px;
-            margin: 50px auto;
+            position: absolute;
+            top:100px;
+            left:50%;
+            margin-left:-400px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
         .biaodan .inputbox{
-            width: 400px;
-            height: 30px;
-            padding: 10px;
+            width: 300px;
+            height: 40px;
             border: 2px solid #fff;
             border-radius: 10px;
-            margin: 10px auto;
             background: #444;
+            padding: 5px;
+            margin-top:10px;
+            
         }
         .biaodan .inputbox span{
             height: 100%;
             width: 100px;
             display: inline-block;
-            line-height: 30px;
+            line-height: 40px;
             text-align: center;
             color: #fff;
+        }
+        .biaodan .inputbox input{
+            outline:none;
+            height: 20px;
+            border: 1px solid gray;
+        }
+        .biaodan button{
+            width: 100px;
+            height: 30px;
+            background: #444;
+            border: 2px solid #fff;
+            border-radius: 8px;
+            color: #fff;
+            outline:none;
+            margin-top: 10px;
+        }
+        .biaodan button:hover{
+            background:#fff;
+            color:#444;
+        }
+        .biaodan button:active{
+            background:#444;
+            color:#fff;
         }
     </style>
 </head>
@@ -43,12 +74,28 @@
     <div class="biaodan">
         <div class="inputbox">
             <span>用户名:</span>
-            <input type="text" placeholder="请输入用户名">
+            <input type="text" id="userName" placeholder="请输入用户名">
         </div>
         <div class="inputbox">
             <span>联系电话:</span>
-            <input type="text" placeholder="请输入电话号码">
+            <input type="text" id="userPhone" placeholder="请输入电话号码">
         </div>
+        <p><button type="button" onclick="tijiao()">提交</button></p>
     </div>
 </body>
+<script>
+    function tijiao(){
+        let phone = document.getElementById("userPhone").value;
+        let userName = document.getElementById("userName").value;
+        if(isNaN(+phone) == true || Boolean(phone) == false){
+            alert("error:电话号码不是数字");
+        }else if(Boolean(userName) == false){
+            alert("error:用户名不能为空");
+        }else {
+            alert("提交成功")
+        }
+        console.log(userName);
+    }
+    
+</script>
 </html>
