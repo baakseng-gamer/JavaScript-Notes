@@ -14,7 +14,7 @@
 
 # 1. alert
 
-这个我们前面已经看到过了。它会显示一条信息，并等待用户按下 “OK”。
+这个前面已经看到过了。它会显示一条信息，并等待用户按下 “OK”。
 
 ```
 alert("Hello Javascript!");
@@ -68,7 +68,7 @@ default为可选的第2个参数，input框的初始值
 
 **==注意==**
 
-* 上面代码段的第二行中的 ` 号（数字1键的左边），还有$号，后面会学到。
+* 上面代码段的第二行中的 ` 号（键盘数字1键的左边），还有$号，后面会学到。
 
 
 
@@ -118,7 +118,7 @@ confirm 函数显示一个带有 question 以及确定和取消两个按钮的�
 
 点击确定返回 true，点击取消返回 false。
 
-
+例子：
 
 ```
     var x = confirm("Are you ture or false");
@@ -127,7 +127,7 @@ confirm 函数显示一个带有 question 以及确定和取消两个按钮的�
 
 弹出模态窗口，如果按确定则返回ture值，按取消返回false值。
 
-
+实例： [10902confirm01.html](10902confirm01.html) 
 
 例子：你是高达吗？
 
@@ -151,7 +151,7 @@ confirm 函数显示一个带有 question 以及确定和取消两个按钮的�
 
 ```
     function OKorCancel(){
-        var x = confirm("按下按钮");
+        var x = confirm("按下确定或取消的按钮");
         var y;
         if (x == true ){
             y = "你按下了\"确定\"按钮！";

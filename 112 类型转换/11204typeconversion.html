@@ -5,13 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script>
-        let a = "120";
-        let b = "2";
-        console.log(a + b); //1202 string
-        console.log(a / b); //60
-        console.log(a % b); //0 取余
-        console.log(a * b); //240
-        console.log(a - b); //118
+        let a = "gundam";
+        let aNumber = Number(a);
+        console.log(aNumber);//NaN
+        console.log(typeof aNumber);//number
+
+        let b = "RX78";
+        console.log(Number(b)); //NaN
+        console.log(typeof Number(b)); //number
     </script>
 </head>
 <body>

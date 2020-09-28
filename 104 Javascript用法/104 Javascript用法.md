@@ -32,7 +32,7 @@ JavaScript 程序可以在` <script> `标签的帮助下插入到 HTML 文档的
 <a href="https://www.baidu.com" onclick="alert('准备跳到百度')" target="_blank">通向百度</a>
 ```
 
-注意`terget="_blank"`是在原网页中弹出，不是跳到新窗口弹出
+注意`alert('准备跳到百度')`是在原网页中弹出，不是跳到新窗口弹出
 
 实例：  [10401行内.html](10401行内.html) 
 
@@ -112,7 +112,7 @@ head中的Javascript
 
 # 4. 外联式（外部脚本）
 
-如果你有大量的 JavaScript 代码，我们可以将它放入一个单独的文件。
+如果有大量的 JavaScript 代码，可以将它放入一个单独的文件。
 
 脚本文件可以通过 src 特性（attribute）添加到 HTML 文件中。
 
@@ -182,9 +182,9 @@ function dianji() {
 </script>
 ```
 
-我们必须进行选择，要么使用外部的` <script src="…">`，要么使用正常包裹代码的 `<script>`。
+如果必须进行选择，要么使用外部的` <script src="…">`，要么使用正常包裹代码的 `<script>`。
 
-为了让上面的例子正常工作，我们可以将它分成两个`<script>` 标签，如下：
+为了让上面的例子正常工作，可以将它分成两个`<script>` 标签，如下：
 
 ```
 <script src="file.js"></script>
@@ -197,7 +197,7 @@ function dianji() {
 
 # 总结
 
-* 我们可以使用一个`<script> `标签将 JavaScript 代码添加到页面中。
+* 可以使用一个`<script> `标签将 JavaScript 代码添加到页面中。
 * type 和 language 特性（attribute）不是必需的。
 * 外部的脚本可以通过`<script src="path/to/script.js"></script>`的方式插入。
 

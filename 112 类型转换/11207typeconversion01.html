@@ -5,13 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script>
-        let a = "120";
-        let b = "2";
-        console.log(a + b); //1202 string
-        console.log(a / b); //60
-        console.log(a % b); //0 取余
-        console.log(a * b); //240
-        console.log(a - b); //118
+        let a = true;
+        console.log(typeof a);//boolean
+
+        let b = String(a);
+        console.log(b);
+        console.log(typeof b);
+
+        let c = Boolean(b);
+        console.log(c);
+        console.log(typeof c);
     </script>
 </head>
 <body>

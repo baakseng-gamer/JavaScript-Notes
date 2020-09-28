@@ -39,7 +39,9 @@ JavaScript 可以通过不同的方式来输出数据：
 
 实例： [10501windowAlert.html](10501windowAlert.html) 
 
-弹出来的提示框为 15。
+第一个弹出来的提示框为 15。
+
+第二个为 5 + 10
 
 注alert( )括号里可以计算，如果加引号就原封不动显示出来。
 
@@ -80,7 +82,7 @@ JavaScript 可以通过不同的方式来输出数据：
 
 # 4. 使用inner.HTML = " "写入到HTML元素
 
-如需从 JavaScript 访问某个 HTML 元素，您可以使用 document.getElementById(id) 方法。
+如需从 JavaScript 访问某个 HTML 元素，可以使用 document.getElementById(id) 方法。
 请使用 "id" 属性来标识 HTML 元素，并 innerHTML 来获取或插入元素内容。
 
 ```
@@ -97,7 +99,7 @@ JavaScript 可以通过不同的方式来输出数据：
 
 # 5. 使用console.log()写入到浏览器的控制台
 
-如果您的浏览器支持调试，你可以使用 console.log() 方法在浏览器中显示 JavaScript 值。
+如果您的浏览器支持调试，可以使用 console.log() 方法在浏览器中显示 JavaScript 值。
 
 浏览器中使用 F12 来启用调试模式， 在调试窗口中点击 "Console" 菜单。
 

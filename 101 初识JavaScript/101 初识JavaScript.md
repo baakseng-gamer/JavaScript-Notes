@@ -12,6 +12,8 @@
 - [8. JavaScript由哪些部分组成](#8-javascript由哪些部分组成)
 - [总结](#总结)
 
+***
+
 
 # 1. JavaScript历史
 
