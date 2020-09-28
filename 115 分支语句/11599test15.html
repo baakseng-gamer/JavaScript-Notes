@@ -9,6 +9,7 @@
     <p><input type="text" id="gongzi"></p>
     <button type="button" onclick="hanshui()">含税</button>
     <button type="button" onclick="buhanshui()">不含税</button>
+    <p>需上缴个个所得税为：<span id="GRSDS"></span>元</p>
 </body>
 <script>
     function hanshui(){
@@ -32,6 +33,31 @@
             jiaoshui = (gz - 5000) * 0.45 - 13505;
         }
         console.log(jiaoshui);
+        document.getElementById("GRSDS").innerHTML = jiaoshui;
     }
+    function buhanshui(){
+        let gz= document.getElementById("gongzi").value;
+        let jiaoshui;
+        if(gz < 5000){
+            jiaoshui = 0;
+        }else if( (gz - 5000) <= 1455){
+            jiaoshui = (gz - 5000) * 0.03;
+        }else if ( (gz - 5000) > 1455 && (gz - 5000) <= 4155){
+            jiaoshui = (gz - 5000) * 0.1 - 105;
+        }else if ( (gz - 5000) > 4155 && (gz - 5000) <= 7755){
+            jiaoshui = (gz - 5000) * 0.2 -555;
+        }else if ( (gz - 5000) > 7755 && (gz - 5000) <= 27255){
+            jiaoshui = (gz - 5000) * 0.25 - 1005;
+        }else if ( (gz - 5000) > 27255 && (gz - 5000) <= 41255){
+            jiaoshui = (gz - 5000) * 0.3 - 2755;
+        }else if ( (gz - 5000) > 41255 && (gz - 5000) <= 57505){
+            jiaoshui = (gz - 5000) * 0.35 - 5505;
+        }else{
+            jiaoshui = (gz - 5000) * 0.45 - 13505;
+        }
+        console.log(jiaoshui);
+        document.getElementById("GRSDS").innerHTML = jiaoshui;
+    }
+    
 </script>
 </html>
