@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // 思路：判断分母的奇偶并添加 - 还是 +
+        let i = 1,
+            sum = 0;
+        while(i <= 100){
+            if(i % 2 == 0){
+                sum = sum - 1 / i;
+            }else{
+                sum = sum + 1 / i;
+            }
+            i++;
+        }
+        document.write(sum);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
