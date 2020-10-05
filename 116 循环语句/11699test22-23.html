@@ -1,0 +1,11 @@
+<script>
+    let num = prompt("请输入数字并判断是合数还是质数");
+    for(let i = 2; i <= num; i++){
+        if(num % i == 0 && i != num){
+            alert("是合数");
+            break;
+        }else if(num == i){
+            alert("是质数");
+        }
+    }
+</script>

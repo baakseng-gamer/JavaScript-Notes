@@ -1,0 +1,19 @@
+<script>
+  let n = prompt("输入n以内自动输出所有质数");
+  for (var i = 1; i <= n; i++) {
+    var buer = true;
+    for (var j = 2; j < i; j++) {
+      if (i % j == 0) {
+        buer = false;
+        break;
+      }
+    }
+    if (buer) {
+      if (i == 1) {
+        continue;
+      } else {
+        document.write(i + "<br />");
+      }
+    }
+  }
+</script>

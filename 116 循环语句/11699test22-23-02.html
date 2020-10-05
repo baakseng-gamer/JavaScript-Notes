@@ -1,0 +1,12 @@
+<script>
+    let n = prompt("输入n以内自动输出所有质数");
+    for(let i = 2; i < n; i++){
+        for(let j = 2; j <= i; j++){
+            if(i % j == 0 && i != j){
+                break;
+            }else if(i == j){
+                document.write(i + "<br />");
+            }
+        }
+    }
+</script>

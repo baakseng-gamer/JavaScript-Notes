@@ -1,0 +1,15 @@
+<script>
+    let num = prompt("请输入数字判断是质数还是合数");
+    let isYes = false;
+    for(let i = 2; i < num; i++){
+        if(num % i == 0){
+            isYes = true;
+            break;
+        }
+    }
+    if(isYes){
+        alert("是合数");
+    }else{
+        alert("是质数");
+    }
+</script>
