@@ -1,0 +1,11 @@
+<script>
+    //思路：
+    //第一格麦子数1，第二格2， 第三格4，第四格8。。。即n = n * 2
+    let n = 1;  //第一格麦子数1粒
+    let sum = 0; //总计
+    for(let i = 0; i < 64; i++){
+        sum = sum + n;
+        n = n * 2;
+    }
+    document.write("一共" + sum + "粒 不用算，已帮你数好了是20位数");
+</script>

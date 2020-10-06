@@ -1,0 +1,9 @@
+<script>
+    //思路：
+    //第一格1，第二格2，第三格4，第四格8。。。就是2的数次方，用变量 i 当数次方
+    let sum = 0;
+    for(let i = 0; i < 64; i++){
+        sum += 2 ** (i);
+    }
+    document.write(sum);
+</script>

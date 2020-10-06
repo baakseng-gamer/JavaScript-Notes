@@ -1,0 +1,18 @@
+<script>
+    // 思路：三位数abc
+    // 最外的for 100~999
+    // 第2个for 计数 a
+    // 第3个for 计数 b
+    // 第四2个for 计数c 然后用if作比较
+    for(let i = 100; i < 1000; i++){
+        for(let a = 1; a <= 9; a++){
+            for(let b = 0; b <= 9; b++){
+                for(let c = 0; c <= 9; c++){
+                    if(i==(a*100 + b*10 + c) && i==(a**3 + b**3 + c**3)){
+                        document.write(i + "<br /> ");
+                    }
+                }
+            }
+        }
+    }
+</script>

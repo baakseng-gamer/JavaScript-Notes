@@ -1,0 +1,13 @@
+<script>
+    //思路：
+    //判断分母的奇偶性，然后添加 - 还是 +
+    let sum = 0;
+    for(let i = 1; i <= 100; i++){
+        if(i % 2 != 0){
+            sum += 1 / i;
+        }else {
+            sum -= 1 / i;
+        }
+    }
+    document.write(sum);
+</script>
