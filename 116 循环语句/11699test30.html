@@ -1,0 +1,14 @@
+<script>
+    // 思路：
+    // 取数法
+    // 首位数与尾位数对比，第2位数与倒数第2位数对比
+    for(let i = 10000; i < 100000; i++){
+        let a = i % 10,
+            b = parseInt(i / 10) % 10,
+            d = parseInt(i / 1000) % 10,
+            e = parseInt(i / 10000);
+        if(a == e & b == d){
+            document.write(i + "<br />");
+        }
+    }
+</script>

@@ -1,0 +1,15 @@
+<script>
+    // 思路：
+    // 取最大的数进行增序，直到能被两个数整除
+    let num1 = prompt("输入第1个数"),
+        num2 = prompt("输入第2个数并求这两个数的最小公倍数");
+    
+    
+    let maxNum = num1 > num2 ? num1 : num2;
+    for(maxNum; maxNum > 1; maxNum++){
+        if(maxNum % num1 == 0 && maxNum % num2 == 0){
+            break;
+        }
+    }
+    document.write("最大公倍数为：" + maxNum);
+</script>

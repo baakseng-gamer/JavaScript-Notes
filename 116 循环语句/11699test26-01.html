@@ -1,18 +1,18 @@
 <script>
-    // 思路：三位数 abc
-    // 取出a 用parseInt取整
+    // 思路：三位数 cba
+    // 取出a 取余
     // 取出b 用parseInt取整然后取余
-    // 取出c 取余
+    // 取出c 用parseInt取整然后取余
     // 求幂 a**3 就是a的三次方 或者 Math.pow(a, 3)也可以
     for(i = 100; i < 1000; i++){
-        let a = parseInt(i / 100),
+        let a = i % 10;
             b = parseInt(i / 10) % 10,
-            c = i % 10;
+            c = parseInt(i / 100);
 
-        // if((a**3 + b**3 + c**3) == (a*100 + b*10 +c)) document.write(i + "<br />");
-        // 这行代码太长，(a*100 + b*10 + c)没必要，因为前面 i 已计数且用除以100除以10取出了
+        // if((c**3 + b**3 + a**3) == (c*100 + b*10 +a)) document.write(i + "<br />");
+        // 这行代码太长，(c*100 + b*10 + a)没必要，因为前面 i 已计数且用除以100除以10取出了
 
-        if( i == (a**3 + b**3 + c**3)){
+        if( i == (c**3 + b**3 + a**3)){
             document.write(i + "<br />");
         }
     }

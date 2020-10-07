@@ -1,0 +1,13 @@
+<script>
+    let num1 = prompt("输入第一个数"); 
+    let num2 = prompt("输入第二个数并求这两个数的最大公约数");
+
+    let minNum = num1 > num2 ? num2 : num1;
+    while(1){
+        if(num1 % minNum == 0 && num2 % minNum == 0){
+            break;
+        }
+        minNum--;
+    }
+    document.write("最大公约数为" + minNum);
+</script>

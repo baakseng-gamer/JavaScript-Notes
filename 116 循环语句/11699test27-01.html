@@ -5,23 +5,13 @@
     let a = prompt("请输入第一个数");
     let b = prompt("请输入第2个数，并求这两个数的最大公约数")
 
-    //先取最小的数
-    let minNum;  
-    if(a > b){
-        minNum = b; 
-    }else{
-        minNum = a;
-    }
+
+    // 用三元运算符方法取最小数
+    let minNum = a > b ? b : a;
 
 
-    //选取最大的数
-    let maxNum; 
-    if(a > b){
-        maxNum = a;
-    }else{
-        maxNum = b;
-    }
-
+    // 用三元运算符方法最大数
+    let maxNum = a > b ? a : b;
 
     for(let i = minNum; i >= 1; i--){
         if(minNum % i == 0 && maxNum % i == 0){

@@ -1,0 +1,16 @@
+<script>
+    // 思路：
+    let a = 5; //数字
+    let n = 4; //个数
+    let s = a; //用来弄整十整百整千
+    let sum = 0; //总和
+
+    for(let i = 1; i <= n; i++){
+        console.log(a);//测试输出
+        sum = sum + a;
+        document.write("+" + a) //输出式子
+        a = a + (10 ** i) * s; //依次计算：第1个数a，第2个数aa，第3个数aaa。。。就是3，33，333，3333
+    }
+    document.write("=" + sum);//输出总和
+    
+</script>

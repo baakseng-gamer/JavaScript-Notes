@@ -1,0 +1,18 @@
+<script>
+    // 思路：
+    // 根据数学知识，两个数的乘积是最小公倍数与最大公约数的乘积，可以先求公约数再求公约数
+    // 取最小的数进行减序，直到同时能把这两个数整除
+    let num1 = prompt("输入第1个数"),
+        num2 = prompt("输入第2个数并求这两个数的最小公倍数");
+    
+    
+    let minNum = num1 > num2 ? num2 : num1;
+    for(minNum; minNum >= 1; minNum--){
+        if(num1 % minNum == 0 && num2 % minNum == 0){
+            break;
+        }
+    }
+    document.write("最大公约数为：" + minNum + "<br />");
+    document.write("最大公倍数为：" +  (num1 * num2 / minNum));
+
+</script>

@@ -1,0 +1,18 @@
+<script>
+    // 思路：
+    // 先取最小的数进行减序
+    // 直到同时能把两个数整除
+    let a = prompt("请输入第一个数");
+    let b = prompt("请输入第2个数，并求这两个数的最大公约数")
+
+
+    // 用三元运算符方法取最小数
+    let minNum = a > b ? b : a;
+
+    for(minNum; minNum >= 1; minNum--){
+        if(a % minNum == 0 && b % minNum == 0){
+            break; //发现最大公约数就跳出循环体
+        }
+    }
+    document.write("最大公约数为：" + minNum);
+</script>
