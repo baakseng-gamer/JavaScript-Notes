@@ -1,6 +1,10 @@
 <script>
-    function showNull(){    }
-    console.log(typeof showNull()); //undefined
-    console.log(typeof showNull); //function
-    console.log(showNull() === undefined); //true
+    let age = prompt("请输入你的年龄", 18);
+    function showMSG(age){
+        if(!age){ //试试去掉!号
+            return;
+        }
+        alert("abcd")
+    }
+    showMSG();
 </script>

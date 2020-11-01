@@ -1,17 +1,8 @@
 <script>
-    function checkAge(age){
-        if(age >= 18){
-            return true;
-        }else {
-            return false;
-        }
+    function sum(a, b){
+        return a + b;
+        //取消上一行试试看
+        console.log("测试代码");
     }
-
-    let age = prompt("多大啦你？", 18);
-
-    if(checkAge(age)){
-        alert("同意访问");
-    }else {
-        alert("禁止访问");
-    }
+    document.write(sum(2, 5));//7
 </script>

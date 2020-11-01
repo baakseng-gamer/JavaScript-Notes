@@ -114,7 +114,7 @@ function myFunction(a, b) { return a * b;}
 
 在编程语言中，变量用于存储数据值。
 
-JavaScript 使用关键字 var 来定义变量， 使用等号来为变量赋值。
+JavaScript 使用关键字 var 或 let 来定义变量， 使用等号来为变量赋值。
 
 后面会讲let和var的区别和使用方法
 
@@ -135,17 +135,15 @@ JavaScript 使用关键字 var 来定义变量， 使用等号来为变量赋值
 
 
 
-
-
 # 3. JavaScript 操作符
 
-JavaScript使用 算术运算符 来计算值
+JavaScript使用**运算符**来计算值。
 
 **算术运算符：**
 
 ```
     var x = (9 + 1) * 2;
-    console.log(x);
+    console.log(x); //20
 ```
 
 控制台Console菜单里查看
@@ -182,9 +180,9 @@ JavaScript语言有多种类型的运算符，后面会讲到
 
 语句是执行行为（action）的语法结构和命令。
 
-我们已经见过了 alert('Hello, world!') 这样可以用来显示消息的语句。
+前面已经见过了 alert('Hello, world!') 这样可以用来显示消息的语句。
 
-我们可以在代码中编写任意数量的语句。语句之间可以使用分号进行分割。
+可以在代码中编写任意数量的语句。语句之间可以使用分号进行分割。
 
 例如，我们将 “Hello World” 这条信息一分为二：
 
@@ -237,6 +235,8 @@ JavaScript 同样保留了一些关键字，这些关键字在当前的语言版
 | delete   | implements | return     | volatile     |
 | do       | import     | short      | while        |
 | double   | in         | static     | with         |
+
+详细的可在网上查阅。
 
 
 

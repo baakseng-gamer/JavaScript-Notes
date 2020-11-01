@@ -1,10 +1,17 @@
 <script>
-    let age = prompt("请输入你的年龄", 18);
-    function showMSG(age){
-        if(!age){ //试试去掉!号
-            return;
+    function checkAge(age){
+        if(age >= 18){
+            return true;
+        }else {
+            return false;
         }
-        alert("abcd")
     }
-    showMSG();
+
+    let age = prompt("多大啦你？", 18);
+
+    if(checkAge(age)){
+        alert("同意访问");
+    }else {
+        alert("禁止访问");
+    }
 </script>

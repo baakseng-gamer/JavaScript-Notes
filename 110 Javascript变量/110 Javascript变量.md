@@ -61,7 +61,7 @@ alert(massage);// Hello Javascript
 
 
 
-上面代码更简洁一点：
+上面代码可以更简洁一点：
 
 ```
 let massage = "Hello Javascript!"; //定义变量并赋值
@@ -286,7 +286,7 @@ alert(color); // #FF7F00
 
 
 
-好处：
+**好处：**
 
 * COLOR_ORANGE 比 "#FF7F00" 更容易记忆。
 * 比起 COLOR_ORANGE 而言，"#FF7F00" 更容易输错。
@@ -304,7 +304,7 @@ const pageLoadTime = /* 网页加载所需的时间 */;
 
 上面的pageLoadTime 的值在页面加载之前是未知的，所以采用常规命名。但是它仍然是个常量，因为赋值之后不会改变。
 
-换句话说，大写命名的常量仅用作“硬编码（hard-coded）”值的别名。
+换句话说，大写命名的常量仅用作“**硬编码（hard-coded）**”值的别名。
 
 
 
@@ -312,9 +312,9 @@ const pageLoadTime = /* 网页加载所需的时间 */;
 
 var和let区别在于：
 
-var是全局变量
+* var用来声明全局变量
 
-let是局部变量
+* let用来声明局部变量，是块级的变量
 
 在function中局部变量推荐使用let变量，避免变量名冲突。
 
@@ -323,8 +323,6 @@ let是局部变量
 **作用域规则**
 
 let 声明的变量只在其声明的块或子块中可用，这一点，与var相似。二者之间最主要的区别在于var声明的变量的作用域是整个封闭函数。
-
-
 
 ```
     function varTest(){
