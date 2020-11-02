@@ -83,7 +83,7 @@ JavaScript 可以通过不同的方式来输出数据：
 # 4. 使用inner.HTML = " "写入到HTML元素
 
 如需从 JavaScript 访问某个 HTML 元素，可以使用 document.getElementById(id) 方法。
-使用 "id" 属性来标识 HTML 元素，并 innerHTML 来获取或插入元素内容。
+使用 "id" 属性来标识 HTML 元素，并用 innerHTML 来获取或插入元素内容。
 
 ```
     <p>使用innerHTML = " "写入到HTML元素</p>
