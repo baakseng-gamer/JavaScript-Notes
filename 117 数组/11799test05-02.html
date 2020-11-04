@@ -1,0 +1,11 @@
+<script>
+    let arrStr = ['GUNDAM', 'ZAKU', 'Baakseng','Gamer'];
+    document.write(arrStr + "<br />");
+    document.write("把这些字符串合并在一起，并两词之间添加 | 号<br />");
+
+    let msgSTR = arrStr[0];
+    for(let i = 1; i < arrStr.length; i++){
+        msgSTR = msgSTR + "|" + arrStr[i];
+    }
+    document.write(msgSTR);
+</script>

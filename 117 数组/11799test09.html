@@ -1,0 +1,12 @@
+<script>
+    let arrSTR = ['GUNDAM', 'ZAKU', 'Baakseng','Gamer'];
+    document.write(arrSTR + "<br />");
+    //思路
+    //声明一个新的空数组
+    //计数器倒序
+    let new_arrSTR = [];
+    for(let i = arrSTR.length - 1; i >= 0; i--){
+        new_arrSTR[new_arrSTR.length] = arrSTR[i];
+    }
+    document.write("翻转后：" + new_arrSTR);
+</script>

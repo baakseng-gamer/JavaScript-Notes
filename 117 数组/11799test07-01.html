@@ -1,0 +1,11 @@
+<script>
+    let arrNUM_OLD = [2, 0, 6, 1, 77, 0, 52, 0, 25, 7];
+    document.write(arrNUM_OLD + "<br />");
+    let arrNUM_NEW = [];
+    for(let i = 0; i < arrNUM_OLD.length; i++){
+        if(arrNUM_OLD[i] > 10){
+            arrNUM_NEW.push(arrNUM_OLD[i]);
+        }
+    }
+    document.write("大于10的:" + arrNUM_NEW);
+</script>

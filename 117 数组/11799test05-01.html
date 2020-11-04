@@ -1,0 +1,12 @@
+<script>
+    let arrStr = ['GUNDAM', 'ZAKU', 'Baakseng','Gamer'];
+    document.write(arrStr + "<br />");
+    document.write("把这些字符串合并在一起 <br />");
+    //思路：
+    //声明新变量msgSTR用来一个一个保存数组里所有字符串，先赋值空字符
+    let msgSTR = '';
+    for(let i = 0; i < arrStr.length; i++){
+        msgSTR += arrStr[i];
+    }
+    document.write(msgSTR);
+</script>

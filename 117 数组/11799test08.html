@@ -1,0 +1,15 @@
+<script>
+    let arrNUM = [2, 0, 6, 1, 77, 0, 52, 0, 25, 7];
+    document.write(arrNUM + "<br />");
+    //思路
+    // 声明一个新的空数组
+    // 用关系运算符
+    let NEWarrNUM = [];
+    let j = 0;
+    for(let i = 0; i < arrNUM.length; i++){
+        if(arrNUM[i] != 0){
+            NEWarrNUM[NEWarrNUM.length] = arrNUM[i];
+        }
+    }
+    document.write("不含0：" + NEWarrNUM);
+</script>

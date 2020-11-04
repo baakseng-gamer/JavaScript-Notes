@@ -1,0 +1,12 @@
+<script>
+    // 思路：
+    // 声明一个新的空数组
+    // 用循环方式的计数器i存放到这个空的数组
+    // 注意索引号开头是0，故计数器从0开始，存入的数组就+1
+    let NUM = prompt("输入一个整数，然后输出从1到这个整数的所有自然数");
+    let arrNUM = [];
+    for(let i = 0; i < NUM; i++){
+        arrNUM[i] = i + 1;
+    }
+    document.write(arrNUM);
+</script>

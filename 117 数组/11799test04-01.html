@@ -1,0 +1,11 @@
+<script>
+    let numGroup = [2,6,1,77,52,25,7];
+    document.write(numGroup + "<br />");
+    let MAXNUM = numGroup[0];
+    for(let i = 1; i < numGroup.length; i++){
+        if(numGroup[i] > MAXNUM){
+            MAXNUM = numGroup[i];
+        }
+    }
+    document.write("最大值为：" + MAXNUM);
+</script>

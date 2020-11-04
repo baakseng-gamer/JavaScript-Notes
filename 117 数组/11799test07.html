@@ -1,0 +1,16 @@
+<script>
+    let arrNUM_OLD = [2, 0, 6, 1, 77, 0, 52, 0, 25, 7];
+    document.write(arrNUM_OLD + "<br />");
+    // 思路
+    // 声明一个新的空数组
+    // 把大于10的放进新的数组
+    let arrNUM_NEW = [];
+    let j = 0;
+    for(let i = 0; i < arrNUM_OLD.length; i++){
+        if(arrNUM_OLD[i] > 10){
+            arrNUM_NEW[j] = arrNUM_OLD[i];
+            j++;
+        }
+    }
+    document.write("大于10的:" + arrNUM_NEW);
+</script>

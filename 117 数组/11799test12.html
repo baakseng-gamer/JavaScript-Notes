@@ -1,0 +1,15 @@
+<script>
+    //过程
+    // Jazz, Blues
+    // Jazz, Bues, Rock - n - Roll
+    // Jazz, Classics, Rock - n - Roll
+    // Classics, Rock - n - Roll
+    // Rap, Reggae, Classics, Rock - n - Roll
+    let styles =['Jazz', 'Blues'];
+    styles.push('Rock - n -Roll');
+    styles[Math.floor((styles.length - 1) / 2)] = 'Classics';
+    //Math.floor() 向下取整
+    alert(styles.shift()); //题目要求是去掉并显示它
+    styles.unshift('Rap', 'Reggae');
+    console.log(styles);
+</script>

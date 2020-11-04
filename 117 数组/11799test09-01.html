@@ -1,0 +1,11 @@
+<script>
+    let arrSTR = ['GUNDAM', 'ZAKU', 'Baakseng','Gamer'];
+    document.write(arrSTR + "<br />");
+
+    let new_arrSTR = [];
+    for(let i = 0; i < arrSTR.length; i++){
+        // 接收方           输送方
+        new_arrSTR[i] = arrSTR[arrSTR.length - 1 - i];
+    }
+    document.write("翻转后：" + new_arrSTR);
+</script>

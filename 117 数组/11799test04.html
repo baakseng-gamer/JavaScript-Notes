@@ -1,0 +1,19 @@
+<script>
+    //求数组中的最大值
+    //思路：
+    //1.声明一个变量MAXNUM来保存最大值
+    //2.任意取数组中的一个元素数字
+    //3.遍历数组里的元素和变量做比较
+    let numGroup = [2,6,1,77,52,25,7];
+    document.write(numGroup + "<br />");
+    let MAXNUM = numGroup[0];
+    for(let i = 1; i < numGroup.length; i++){
+        // 因为索引号1的数字先被保存到变量MAXNUM，所以从索引号为1开始，即 i = 1;
+        if(MAXNUM > numGroup[i]){
+            MAXNUM = MAXNUM;
+        }else {
+            MAXNUM = numGroup[i];
+        }
+    }
+    document.write("最大值为：" + MAXNUM);
+</script>
