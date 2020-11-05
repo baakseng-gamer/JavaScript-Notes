@@ -1,0 +1,42 @@
+<script>
+    // 思路
+    // 创建函数
+    // 声明新的空数组
+    // 循环输入数字
+    // 检查输入的内容是否空格、空字符、非数字，是的话则跳出循环，点击取消也跳出循环
+    // 空字符和点击取消（null）的布尔型为false
+    // 开始冒泡排序 从小到大
+    // 注意输入内容的类型为字符串，需要用 + 号转换为数字
+    function NUM_ShowAndSum() {
+        let arrNum = [];
+        for (let i = 0; i >= 0; i++){
+            let numInput = prompt("请输入数字", 0);
+            if(isNaN(numInput) == true || Boolean(numInput) == false || numInput == " "){
+                break;
+            }
+            arrNum.push(numInput);
+        }
+        document.write("数组：" + arrNum + "<br />");
+
+        //开始冒泡排序
+
+        // 比较的轮数 = 数组长度 - 1
+        for(let k = 0; k < arrNum.length - 1; k++){
+            // 每一轮比较的次数
+            for(let l = 0; l < arrNum.length - k - 1; l++){
+                // 输入的内容为字符串，需要用 + 号转换为数字
+                if(+arrNum[l] > +arrNum[l + 1]){
+                    // 交换两个数
+                    // 较小的数放临时地
+                    let tmp = arrNum[l + 1]; 
+                    // 较大的数放到往右的位置 就是索引号+1的位置
+                    arrNum[l + 1] = arrNum[l];
+                    // 临时地的较小的数放到往左的位置，即索引号-1的位置
+                    arrNum[l] = tmp;
+                }
+            }   
+        }
+        document.write(arrNum);
+    }
+    NUM_ShowAndSum()
+</script>

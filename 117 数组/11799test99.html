@@ -1,11 +1,15 @@
 <script>
-    let arr = [1,2,3,4,5];
-    let newarr = [];
-    newarr[0] = arr[1];
-    arr[1] = arr[0];
-    arr[0] = newarr[0];
-
-    console.log(arr);
-    console.log(newarr);
-
+    
+    
+    function countOfNum(num){
+                //1、声明一个数组，存放取下的数
+                var arr = [];
+                while(num){
+                    arr.push(num % 10);
+                    num = parseInt(num / 10);
+                }
+                arr.reverse();
+                alert("一共是：" + arr.length + "位" + "，每一位分别是" + arr);
+            }
+    countOfNum(216);
 </script>

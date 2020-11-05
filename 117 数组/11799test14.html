@@ -1,0 +1,25 @@
+<script>
+    // 思路
+    // 声明一个新的数组
+    // prompt判断是否数字，是否空格" "， 是否空字符""， 是否取消(null)
+    function sumInput(){
+        let arrNum = [];
+        for(let i = 0; i >= 0; i++){
+            let num = prompt('请输入数字', 0);
+            if(isNaN(num) == false && num != " " && num != "" && num != null){
+                arrNum.push(num);
+            }else{
+                break;
+            }
+        }
+
+        let sum = 0;
+        for(let j = 0; j < arrNum.length; j++){
+            sum += (+arrNum[j]);
+        }
+        // console.log(arrNum);
+        document.write("数组：" + arrNum + "<br />");
+        document.write("总和为：" + sum);
+    }
+    sumInput();
+</script>
