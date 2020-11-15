@@ -1,0 +1,35 @@
+<script>
+    let originNums = [6, 9, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
+    let JSSum = 0, //前12位数奇数位总和
+        OSSum = 0, // 前12位偶数位总和
+        JSSumAnd3OSSumSUM, //JSSum和OSSum的3倍相加 
+        SUMgeweishu; //相加后的个位数
+    
+    // 计算奇数位和与偶数位和
+    for(let i = 0; i < originNums.length; i++){
+        // 因为索引号 0 就是第1位数，故 i % 2 == 0 就是奇数位
+        if(i % 2 == 0){
+            JSSum += originNums[i];
+        }else if(i % 2 != 0){
+            OSSum += originNums[i];
+        }
+    }
+
+    //JSSum和OSSum的3倍相加 
+    JSSumAnd3OSSumSUM = JSSum + OSSum * 3;
+
+    // 求相加后的个位数
+    SUMgeweishu = JSSumAnd3OSSumSUM % 10;
+
+    // 计算最终的验证码 10 - 个位数
+    originNums.push(10 - SUMgeweishu);
+
+    // 显示最终的13位条形码
+    console.log(originNums);
+
+    // console.log(SUMgeweishu);
+    // console.log(JSSumAnd3OSSumSUM);
+    // console.log(JSSum);
+    // console.log(OSSum);
+    // console.log(originNums + " " + originNums.length);
+</script>

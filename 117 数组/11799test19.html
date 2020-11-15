@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p>
+      原数组：
+      <span id="showARRNUM"></span>
+    </p>
+    <p>点击按钮将数组中的每个元素乘于输入框指定的值，并返回新数组。</p>
+    <p>
+      倍数：
+      <input type="text" id="beishu" />
+      <button onclick="run()">点击</button>
+    </p>
+    <p>计算后：<span id="showRESULT"></span></p>
+  </body>
+  <script>
+    // 声明一个有一些数字的数组
+    let arrNum = [4, 11, 25];
+    // 获取倍数
+    document.getElementById("showARRNUM").innerHTML = arrNum;
+
+    // 封装计算方法的函数
+    function jisuan(num){
+        return num * document.getElementById("beishu").value;
+    }
+
+    // 返回新的数组
+    function run(){
+        document.getElementById("showRESULT").innerHTML = arrNum.map(jisuan);
+    }
+  </script>
+</html>

@@ -1,0 +1,16 @@
+<script>
+    let arr = [3, 8, 22, 12, 8, 61, 8, 3, 78];
+    function noRepeat(){
+        for(var i = 0; i < arr.length - 1; i++){
+            for(var j = i + 1; j < arr.length; j++){
+                if(arr[i] === arr[j]){
+                    //将后面这个数删除
+                    arr.splice(j, 1);
+                    j--;
+                }
+            }
+        }
+        console.log(arr);
+    }
+    noRepeat();
+</script>

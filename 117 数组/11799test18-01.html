@@ -1,0 +1,35 @@
+<script>
+    // 思路
+    // 声明一个新的空数组
+    // 采用while循环，条件为true，不断循环
+    // 声明一个变量，输入数字放到新的空数组里，注意输入内容为字符串型，需要转换
+    // 空字符 ""， 空格 " "，非数值NaN，取消键就跳出循环体，用break
+    // 显示已输入一些数字的数组
+    // 开始冒泡排序
+    // 显示已排序好的数组
+    function MSGofNUM(){
+        let arrNum = [];
+        while(true){
+            let inputNum = prompt("请输入数字");
+            if(isNaN(inputNum) == true || inputNum == '' || inputNum == ' ' || inputNum == null){
+                // 非数字  空字符串 空格 取消键 跳出循环
+                break;
+            }
+            arrNum.push(+inputNum);
+        }
+        document.write("输入的数组：" + arrNum + "<br />");
+
+        // 开始冒泡排序
+        for(let i = 0; i < arrNum.length - 1; i++){
+            for(let j = 0; j < arrNum.length - i - 1; j++){
+                if(arrNum[j] > arrNum[j + 1]){
+                    let tmp = arrNum[j];
+                    arrNum[j] = arrNum[j + 1];
+                    arrNum[j + 1] = tmp;
+                }
+            }
+        }
+        document.write("排好的数组：" + arrNum);
+    }
+    MSGofNUM();
+</script>

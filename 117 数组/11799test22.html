@@ -1,0 +1,20 @@
+<script>
+    // 思路
+    // 声明一个新的数组，里面随便几个重复的数字
+    // 用for循环，拿第1位，与往后几位做对比，若同样则用slice()删除 注意用全等
+    
+    // 声明一个数组 9个
+    let arr = [3, 8, 22, 12, 8, 61, 8, 3, 78];
+    for(let i = 0; i < arr.length; i++){
+        for(let j = 1; j < arr.length; j++){
+            
+            //开始条件判断
+            if(arr[i] == arr[i + j]){
+
+                // 去掉重复的
+                arr.splice(i + j, 1);
+            }
+        }
+    }
+    console.log(arr);
+</script>
