@@ -23,7 +23,7 @@
 * <a href="115 分支语句\115 分支语句.md">115 分支语句</a> if...else & switch
 * <a href="116 循环语句\116 循环语句.md">116 循环语句</a> Loop
 * <a href="117 数组\117 数组.md">117 数组</a> Array
-* <a href="117 函数\117 函数.md">117 函数</a> Function-Basic
+* <a href="118 函数\118 函数.md">118 函数</a> Function-Basic
 
 
 

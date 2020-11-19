@@ -4,12 +4,12 @@
     // 声明一个变量，用来存放输入数字的内容，注意要转换为数字
     // 对这个现有的数组做冒泡排序
     // 输入的数字放到现有的数组并自动排序
-    function ShowNum(){
+    function ShowNum() {
         let arrNum = [18, 90, 23, 11, 25, 9, 53];
         //声明一个现有的数组
         console.log("原来数组：" + arrNum);
         console.log("个数：" + arrNum.length);
-        
+
         let inputNum = +prompt("请输入数字");
         // +号作用是把输入内容转换为数字型
         arrNum.push(inputNum);
@@ -18,18 +18,18 @@
         console.log("个数：" + arrNum.length);
 
         // 开始进行冒泡排序
-        for(let i = 0; i < arrNum.length - 1; i++){
-            for(let j = 0; j < arrNum.length - i -1; j++)
-                if(arrNum[j] > arrNum[j + 1]){
+        for (let i = 0; i < arrNum.length - 1; i++) {
+            for (let j = 0; j < arrNum.length - i - 1; j++)
+                if (arrNum[j] > arrNum[j + 1]) {
                     let tmp = arrNum[j + 1];
                     arrNum[j + 1] = arrNum[j];
                     arrNum[j] = tmp;
-            }
+                }
         }
         console.log("排序好后：" + arrNum);
 
 
-        
+
     }
     ShowNum();
 </script>

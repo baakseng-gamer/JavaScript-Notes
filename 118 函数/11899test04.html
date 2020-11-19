@@ -1,0 +1,16 @@
+<script>
+    let arrNum1 = [5, 2, 99, 101, 67, 77];
+    let arrNum2 = [10, 99, 501, 5, 88];
+    function showMaxNum(arrNum){
+        let tmp = 0;
+        for(let i = 0; i < arrNum.length; i++){
+            if(tmp < arrNum[i]){
+                tmp = arrNum[i];
+            }
+        }
+        console.log(tmp);
+    }
+
+    showMaxNum(arrNum1);
+    showMaxNum(arrNum2);
+</script>

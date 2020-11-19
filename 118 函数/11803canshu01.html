@@ -1,0 +1,11 @@
+<script>
+    function MSG(personal, text){
+        document.write(personal + ": " + text + "<br />");
+    }
+    MSG("卡尔玛", "夏亚，你算计我");  //卡尔玛: 夏亚，你算计我
+    MSG("夏亚", "啊哈哈！");        //夏亚: 啊哈哈！
+    MSG();                        //undefined: undefined
+    MSG("Baakseng");              //Baakseng: undefined
+    // MSG( , "Hi"); 出错
+    MSG("Baakseng", "");          //Baakseng:
+</script>

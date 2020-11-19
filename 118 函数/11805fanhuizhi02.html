@@ -1,0 +1,17 @@
+<script>
+    function checkAge(age){
+        if(age >= 18){
+            return true;
+        }else {
+            return false;
+        }
+    }
+
+    let age = prompt("多大啦你？", 18);
+
+    if(checkAge(age)){
+        alert("同意访问");
+    }else {
+        alert("禁止访问");
+    }
+</script>

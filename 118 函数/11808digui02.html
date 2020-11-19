@@ -1,0 +1,12 @@
+<script>
+    function powNum(x, n){
+        if(n === 1){
+            return x;
+        }else {
+            return x * powNum(x, n-1);
+        }
+    }
+    console.log(powNum(2, 2)); //4
+    console.log(powNum(3, 3)); //27
+    console.log(powNum(2, 5)); //32
+</script>

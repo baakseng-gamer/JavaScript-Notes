@@ -1,0 +1,15 @@
+<script>
+    //定义一个获取数组中最大数的函数
+    function getMaxFromArr(numArray) {
+        var maxNum = 0;
+        for (var i = 0; i < numArray.length; i++) {
+            if (numArray[i] > maxNum) {
+                maxNum = numArray[i];
+            }
+        }
+        return maxNum;
+    }
+    var arrNum = [5, 2, 99, 101, 67, 77];
+    var maxN = getMaxFromArr(arrNum); // 这个实参是个数组
+    alert('最大值为：' + maxN);
+</script>

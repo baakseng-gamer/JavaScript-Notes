@@ -1,0 +1,15 @@
+<script>
+    function SumOfMtoN(m, n){
+        let sum = 0;
+        // 和值初始化
+        for(let i = m; i <= n; i++){
+            // 开头一个数赋值给 i ， 末尾数当作循环结束
+            sum += i;
+            // 开始累加
+        }
+        console.log(sum);
+    }
+    SumOfMtoN(1, 100); // 5050
+    SumOfMtoN(51, 100); // 3775
+    SumOfMtoN(1, 10); // 55
+</script>

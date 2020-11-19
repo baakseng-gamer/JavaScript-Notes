@@ -1,0 +1,8 @@
+<script>
+    function fn(){
+        console.log(arguments);
+    }
+    fn(33, 66, 99, 77, 11); //[33, 66, 99, 77, 11]
+    
+    console.log(arguments); //Uncaught ReferenceError: arguments is not defined
+</script>
