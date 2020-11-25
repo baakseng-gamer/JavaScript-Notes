@@ -1,0 +1,13 @@
+<script>
+    function getMaxNum(){
+        let MaxNum = 0;
+        for(let i = 0; i < arguments.length; i++){
+            if(MaxNum < arguments[i]){
+                MaxNum = arguments[i];
+            }
+        }
+        console.log(MaxNum);
+    }
+    getMaxNum(1, 55, 3, 24, 99, 8);
+    getMaxNum(101, 222, 89);
+</script>

@@ -1,0 +1,18 @@
+<script>
+    function AllNumsPro(n){
+        if(n == 1){
+            return 1;
+        }
+        return AllNumsPro(n-1) * n;
+    }
+    console.log(AllNumsPro(4));
+    console.log(AllNumsPro(6));
+    console.log(AllNumsPro(10));
+
+    // 方法
+    // 1. 首先去找临界值，即无需计算，获得的值，比如 1
+    // 2. 找这一次和上一次的关系
+    // 3. 假设当前函数已经可以使用，调用自身计算上一次
+    // pro(100) = pro(99) * 100
+    // pro(n) = pro(n-1) * n
+</script>

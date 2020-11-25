@@ -1,0 +1,21 @@
+<script>
+    let n1input = +prompt("输入第1个数值："),
+        n2input = +prompt("输入第2个数值："),
+        n3input = +prompt("输入第3个数值：");
+
+    function getMaxNum(n1, n2, n3){
+        let tmp = 0;
+        if(n1 > n2){
+            tmp = n1;
+        }else {
+            tmp = n2;
+        }
+
+        if(tmp < n3){
+            tmp = n3;
+        }
+
+        alert("最大的数为：" + tmp);
+    }
+    getMaxNum(n1input, n2input, n3input);
+</script>

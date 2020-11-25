@@ -1,0 +1,21 @@
+<script>
+    // 思路
+    // 冒泡排序
+    function arrPaixu(arr){
+        for(let i = 0; i < arr.length - 1; i++){
+            for(let j = 0; j < arr.length - i - 1; j++){
+                if(arr[j] > arr[j+1]){
+                    let tmp = arr[j];
+                    arr[j] = arr[j+1];
+                    arr[j+1] = tmp;
+                }
+            }
+        }
+        console.log(arr);
+    }
+
+    let nums1 = [99, 5, 10, 101, 57, 23];
+    let nums2 = [8, 501, 33, 23, 2];
+    arrPaixu(nums1);
+    arrPaixu(nums2);
+</script>

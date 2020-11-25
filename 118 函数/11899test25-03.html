@@ -1,0 +1,21 @@
+<script>
+    function print(n) {
+        if (n == 0) {
+            return;
+        }
+        document.write("hello world<br/>");
+
+        // document.write(n + ".hello world<br/>"); 
+        // 这是倒序的
+        // 5.hello world
+        // 4.hello world
+        // 3.hello world
+        // 2.hello world
+        // 1.hello world
+
+
+        return print(n - 1);
+    }
+
+    print(5);
+</script>

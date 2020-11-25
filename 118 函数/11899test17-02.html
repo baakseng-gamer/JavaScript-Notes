@@ -1,0 +1,22 @@
+<script>
+        // 原始：
+/*     function checkAge(age) {
+        if (age > 18) {
+            return true;
+        } else {
+            return confirm('Do you have your parents permission to access this page?');
+        }
+    } */
+
+    // 使用 或运算符 || 重写：
+    function checkAge(age){
+        return (age > 18) || confirm('Did parents allow you?');
+    }
+
+    checkAge(20);
+    // checkAge(17);
+
+    // 解析：
+    // 大于18 返回true
+    // 小于等于18 返回confirm('Did parents allow you?')
+</script>

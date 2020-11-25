@@ -1,0 +1,27 @@
+<script>
+    function jisuan(){
+        let xuanxiang = +prompt("欢迎使用简易计算器：\n 1.加法运算； \n 2.减法运算； \n 3.乘法运算； \n 4.除法运算； \n 5.退出 \n 请输入你的选项：");
+        // +prompt是因为switch条件是全等即（不止内容，还有数据类型）
+
+        if(xuanxiang == 5){
+            return "已退出";
+        }
+        while(xuanxiang){
+            let num1 = +prompt("请输入第一个数值：");
+            let num2 = +prompt("请输入第二个数值：");
+            if(xuanxiang == 1){
+                return num1 + num2;
+            }
+            if(xuanxiang == 2){
+                return num1 - num2;
+            }
+            if(xuanxiang == 3){
+                return num1 * num2;
+            }
+            if(xuanxiang == 4){
+                return num1 / num2;
+            }
+        }
+    }
+    alert(jisuan());
+</script>

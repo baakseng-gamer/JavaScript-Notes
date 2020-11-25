@@ -1,0 +1,20 @@
+<script>
+    function showMSG(n){
+        if(n == 1){
+            return (n + ". hello world <br />");
+        }
+        
+        return showMSG(n-1) + (n + ". hello world <br />");
+    }
+    document.write(showMSG(5));
+
+// 下面一块代码也可行
+/*     function showMSG(n){
+        if(n == 1){
+            return (document.write(n + ". hello world <br />"));
+        }
+        
+        return showMSG(n-1) + (document.write(n + ". hello world <br />"));
+    }
+    showMSG(5); */
+</script>

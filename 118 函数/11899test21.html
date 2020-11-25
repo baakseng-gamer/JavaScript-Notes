@@ -1,0 +1,21 @@
+<script>
+    // 思路
+    // 用arguments方法
+    function paixu(){
+        for(let i = 0; i < arguments.length - 1; i++){
+            for(let j = 0; j < arguments.length - i - 1; j++){
+                if(arguments[j] > arguments[j+1]){
+                    let tmp = arguments[j];
+                    arguments[j] = arguments[j+1];
+                    arguments[j+1] = tmp;
+                }
+            }
+        }
+
+        console.log(arguments);
+    }
+
+    paixu(5, 22, 18); // [5 18 22]
+    paixu(99, 3, 55); // [3, 55, 99]
+    paixu(43, 2, 101, 8, 99); // [2, 8, 43, 99, 101]
+</script>

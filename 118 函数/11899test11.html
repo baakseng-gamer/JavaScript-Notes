@@ -1,0 +1,14 @@
+<script>
+    // 思路
+    // 闰年：能被4整除并且不能被100整数，或者能被400整除
+    function isRunnian(year){
+        if((year % 4 == 0 && year % 100 != 0) || year % 400 == 0){
+            return "是闰年";
+        }else {
+            return "不是闰年";
+        }
+    }
+    console.log(isRunnian(2012));
+    console.log(isRunnian(2009));
+    console.log(isRunnian(1900));
+</script>

@@ -1,0 +1,26 @@
+<script>
+    let numInput1 = +prompt("输入第一个数值："),
+        fuhaoInput = prompt("输入符号：+ - * /"),
+        numInput2 = +prompt("输入第二个数值：");
+        
+    
+    function result(num1, num2, fuhao){
+        let jieguo;
+        switch(fuhao){
+            case "+":
+                jieguo = num1 + "+" + num2 + "=" + (num1 + num2);
+                break;
+            case "-":
+                jieguo = num1 + "-" + num2 + "=" + (num1 - num2);
+                break;
+            case "*":
+                jieguo = num1 + "*" + num2 + "=" + (num1 * num2);
+                break;
+            case "/":
+                jieguo = num1 + "/" + num2 + "=" + (num1 / num2);
+                break;
+        }
+        alert(jieguo);
+    }
+    result(numInput1, numInput2, fuhaoInput);
+</script>

@@ -1,0 +1,25 @@
+<script>
+    // 思路
+    // 先用if判断是否奇偶
+    // 然后循环累加和
+    function sum(){
+        let numInput = +prompt("请输入数值：");
+        let sum = 0;
+        if(numInput % 2 != 0){
+            for(let i = 1; i <= numInput; i+=2){
+                sum += (1 / i);
+                document.write("+1/" + i);
+            }
+            document.write("=" + sum);
+        }
+
+        if(numInput % 2 == 0){
+            for(let i = 2; i <= numInput; i+=2){
+                sum += (1 / i);
+                document.write("+1/" + i);
+            }
+            document.write("=" + sum);
+        }
+    }
+    sum();
+</script>

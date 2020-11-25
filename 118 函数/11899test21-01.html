@@ -1,0 +1,27 @@
+<script>
+    // 思路
+    // 声明一个新的空数组
+    // 循环三次输入数字放到空数组
+    // 然后冒泡排序
+    function paixuThreeNum(){
+        let nums = [];
+        for(let i = 1; i <= 3; i++){
+            let numInput = +prompt(`请输入第 ${i} 个数字，共3个：`);
+            nums.push(numInput);
+        }
+        document.write("原数组：" + nums + "<br />")
+
+        for(let i = 0; i < nums.length - 1; i++){
+            for(let j = 0; j < nums.length - i - 1; j++){
+                if(nums[j] > nums[j+1]){
+                    let tmp = nums[j];
+                    nums[j] = nums[j+1];
+                    nums[j+1] = tmp;
+                }
+            }
+        }
+
+        document.write("排序后：" + nums);
+    }
+    paixuThreeNum();
+</script>

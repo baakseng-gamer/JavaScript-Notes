@@ -1,0 +1,12 @@
+<script>
+    function checkAge(age) {
+        if (age > 18) {
+            return true;
+        }
+        // ...
+        return confirm('Did parents allow you?');
+    }
+    console.log(checkAge());
+
+    // 测试checkAge(10)和checkAge(20)
+</script>

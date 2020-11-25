@@ -1,0 +1,17 @@
+<script>
+    function maxNum(n1, n2, n3){
+        let tmp = 0;
+        if(n1 > n2){
+            tmp = n1;
+        }else {
+            tmp = n2;
+        }
+
+        if(tmp < n3){
+            tmp = n3;
+        }
+
+        return tmp;
+    }
+    console.log(maxNum(29, 280, 10));
+</script>

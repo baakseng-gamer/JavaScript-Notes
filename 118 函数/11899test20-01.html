@@ -1,0 +1,25 @@
+<script>
+    function operation(num1, operator, num2) {
+        //operator根据运算符的符号，进行不同的运算
+        switch (operator) {
+            case "+":
+                return num1 + num2;
+                break;
+            case "-":
+                return num1 - num2;
+                break;
+            case "*":
+                return num1 * num2;
+                break;
+            case "/":
+                return num1 / num2;
+                break;
+            default:
+                alert("error");
+                break;
+        }
+    }
+
+    var res = operation(10, "-", 5);
+    alert(res); 
+</script>

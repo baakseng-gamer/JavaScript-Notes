@@ -1,0 +1,21 @@
+<script>
+    // 
+    // 剩下的天数    还剩的桃子数
+    // 1天          1
+    // 2天          4
+    // 3天          10    
+    // 4天          22
+    // 5天          46
+    // 6天          94          
+    // 
+    // peach(10) = peach(9)*2 + 2
+    // peach(9)  = peach(8)*2 + 2
+    // peach(n)  = peach(n-1)*2 + 2
+    function peach(n){
+        if(n == 1){
+            return 1;
+        }
+        return peach(n-1)*2 + 2
+    }
+    console.log(peach(6));
+</script>

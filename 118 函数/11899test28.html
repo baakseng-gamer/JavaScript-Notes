@@ -1,0 +1,14 @@
+<script>
+    // 思路
+    // n % 7 == 0 就是能被7整除
+    function sevenBeishu(n){
+        let arr7Beishu = [];
+        for(let i = 0; i <= n; i++){
+            if(i % 7 == 0 && i != 0){
+                arr7Beishu.push(i);
+            }
+        }
+        return arr7Beishu;
+    }
+    document.write(sevenBeishu(100));
+</script>

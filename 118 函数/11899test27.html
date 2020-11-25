@@ -1,0 +1,13 @@
+<script>
+    // 思路
+    // 用arguments方法
+    // 循环乘积
+    function product(){
+        let product = 1;
+        for(let i = 0; i < arguments.length; i++){
+            product *= arguments[i];
+        }
+        return product;
+    }
+    console.log(product(1, 2, 3, 4)); // 24 即 1 * 2 * 3 * 4 = 24
+</script>

@@ -1,0 +1,12 @@
+<script>
+    function pow(){
+        let x = +prompt("请输入x的n次方中的x：");
+        let n = +prompt("请输入x的n次方中的n：");
+        let jieguo = 1;
+        for(let i = 0; i < n; i++){
+            jieguo *= x;
+        }
+        document.write(x + "的" + n + "次方为：" + jieguo);
+    }
+    pow();
+</script>

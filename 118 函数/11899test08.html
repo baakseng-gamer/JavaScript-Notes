@@ -1,0 +1,18 @@
+<script>
+    let num = prompt("输入一个数字，判断是否素数（质数）");
+    function prime(){
+        let yesno;
+        for(let i = 2; i <= num; i++){
+            if(num % i == 0 && i != num){
+                yesno = "不是素数";
+                break;
+                // 能被整除就用break终止并返回合数（不是素数）
+            }else if(num == i){
+                // 从2开始循环到 输入的数字 不能整除 输入的数字，就是返回是素数（质数）
+                yesno = "是素数";
+            }
+        }
+        return yesno;
+    }
+    alert(prime());
+</script>

@@ -1,0 +1,22 @@
+<script>
+    let numInput = +prompt("输入数值n，然后显示从1到n所有质数。")
+    // 思路
+    // 返回值只能是1个，故用数组组成所有质数并被返回。
+    function showAllPrime(){
+        // 声明数组用来存储质数
+        let arrPrime = [];
+        for(let i = 2; i <= numInput; i++){
+            for(let j = 2; j <= i; j++){
+                if(i % j == 0 && j != i){
+                    // j能整除i，break终止内循环
+                    break;
+                }else if(j == i){
+                    // j循环到i为止，不能整除i，就推入质数的数组
+                    arrPrime.push(i);
+                }
+            }
+        }
+        return arrPrime;
+    }
+    console.log(showAllPrime());
+</script>

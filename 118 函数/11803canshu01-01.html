@@ -1,0 +1,15 @@
+<script>
+    // 测试用
+    function sum(a, b) {
+        if (arguments.length === 2) {
+            console.log("第1个参数和第二个参数的和是:" + a + b);
+        } else if (arguments.length === 1) {
+            console.log("block,只传了一个参数 " + a + "，让我如何相加")
+        } else {
+            console.log("我拒绝运算！")
+        }
+    }
+    sum(10, 8);//第1个参数和第二个参数的和是:108
+    sum(10);//block,只传了一个参数 10，让我如何相加
+    sum();//我拒绝运算！
+</script>

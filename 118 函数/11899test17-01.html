@@ -1,0 +1,19 @@
+<script>
+    // 原始：
+/*     function checkAge(age) {
+        if (age > 18) {
+            return true;
+        } else {
+            return confirm('Do you have your parents permission to access this page?');
+        }
+    } */
+
+    // 用问号运算符 ? 重写：
+    function checkAge(age){
+        return (age > 18) ? true : confirm('Do you have your parents permission to access this page?');
+    }
+
+    checkAge(20);
+    // checkAge(17);
+    
+</script>

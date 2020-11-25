@@ -1,0 +1,18 @@
+<script>
+    // 思路
+    // 声明一个新数组
+    // for循环，第一个放到新数组最后一个，第二个放到新数组倒数第二个
+    function showNewArr(arr){
+        let newArr = [];
+        for(let i = 0; i < arr.length; i++){
+            newArr[i] = arr[arr.length - i - 1];
+        }
+        return newArr;
+    }
+
+    let arr1 = [5, 4, 3, 2, 1];
+    let arr2 = [88, 13, 5, 10, 101, 2];
+
+    console.log(showNewArr(arr1));
+    console.log(showNewArr(arr2));
+</script>

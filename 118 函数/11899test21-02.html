@@ -1,0 +1,27 @@
+<script>
+    function numsPaixu(){
+        let nums = [];
+        for(let i = 1; i > 0; i++){
+            let numInput = +prompt(`请输入第 ${i} 个数字：`);
+            if(isNaN(numInput) == false && numInput != '' && numInput != '' && numInput != null){
+                nums.push(numInput);
+            }else{
+                break;
+            }
+        }
+        document.write("一共输入了" + nums.length + "个数字：" + nums + "<br />");
+        
+        for(let i = 0; i < nums.length - 1; i++){
+            for(let j = 0; j < nums.length - i - 1; j++){
+                if(nums[j] > nums[j+1]){
+                    let tmp = nums[j];
+                    nums[j] = nums[j+1];
+                    nums[j+1] = tmp;
+                }
+            }
+        }
+        document.write("排序后：" + nums);
+    }
+
+    numsPaixu();
+</script>
