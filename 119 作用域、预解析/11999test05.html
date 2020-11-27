@@ -1,0 +1,19 @@
+<script>
+    var num = 10;
+    fun();
+    function fun() {
+        console.log(num);
+        var num = 20;
+    }
+    // undefined
+    
+    // 相当于以下代码:
+    
+/*  var num;
+    function fun(){
+        var num;
+        console.log(num);
+        num = 20;
+    }
+    fun(); */
+</script>

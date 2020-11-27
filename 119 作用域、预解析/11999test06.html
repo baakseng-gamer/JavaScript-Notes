@@ -1,0 +1,21 @@
+<script>
+    var num = 10;
+    function fn() {
+        console.log(num);
+        var num = 20;
+        console.log(num);
+    }
+    fn();
+    // undefined
+    // 20
+
+    // 相当于以下代码：
+/*  var num;
+    function fn(){
+        var num;
+        console.log(num);
+        num = 20;
+        console.log(num);
+    }
+    fn() */
+</script>
