@@ -1,0 +1,22 @@
+<script>
+    function hero(name, type, blood, attack){
+        this.name = name;
+        this.type = type;
+        this.blood = blood;
+        this.attack = attack;
+    }
+    
+    let lianpo = new hero('廉颇', '坦克型', 500, '近战');
+    console.log(lianpo);
+    document.write("<h2>廉颇</h2>");
+    for(let k in lianpo){
+        document.write(k + " : " + lianpo[k] + "<br />");
+    }
+
+    let houyi = new hero('后羿', '射手', 10, '远程');
+    console.log(houyi);
+    document.write("<h2>后羿</h2>");
+    for(let k in houyi){
+        document.write(k + " : " + houyi[k] + "<br />");
+    }
+</script>

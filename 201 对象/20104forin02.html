@@ -1,0 +1,16 @@
+<script>
+    let person = {
+        name : 'Baakseng',
+        sex : '男',
+        age : 18,
+        hobby : 'play game'
+    }
+
+    let x;
+    let msg = '';
+    
+    for(x in person){
+        console.log(x + ':' + person[x]); // 显示在控制台上
+        document.write(x + ":" + person[x] + "<br />"); // 显示在页面上
+    }
+</script>

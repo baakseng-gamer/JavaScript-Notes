@@ -1,0 +1,15 @@
+<script>
+    function person(name, age, sex){
+        this.name = name;
+        this.age = age;
+        this.sex = sex;
+        this.sayHi = function(){
+            alert('我的名字叫：' + this.name + '，' + this.age + '岁' + '，' + this.sex);
+        }
+    }
+    let Baakseng = new person('Baakseng', 18, '男');
+    let GUNDAM = new person('GUNDAM', 18, '男');
+    console.log(Baakseng.name); // Baakseng
+    Baakseng.sayHi(); // 我的名字叫：Baakseng，18岁，男
+    console.log(GUNDAM.sex); // 男
+</script>

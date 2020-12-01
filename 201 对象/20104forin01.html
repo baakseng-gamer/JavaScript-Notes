@@ -1,0 +1,17 @@
+<script>
+    let person = {
+        name : 'Baakseng',
+        sex : '男',
+        age : 18,
+        hobby : 'play game'
+    }
+
+    let x;
+    let msg = '';
+    
+    for(x in person){
+    // for(let x in person) 也可行
+        console.log(x); // 得到的是对象属性名
+        console.log(person[x]); // 得到的是对象属性值
+    }
+</script>

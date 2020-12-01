@@ -14,16 +14,23 @@
 | <a href="110 Javascript变量\110 Javascript变量.md">110 Javascript变量</a>  Variables | <a href="111 Javascript数据类型\111 Javascript数据类型.md">111 Javascript数据类型</a> Datatypes | <a href="112 类型转换\112 类型转换.md">112 类型转换</a> Type-conversion |
 | <a href="113 运算符\113 运算符.md">113 运算符</a> Operator   | <a href="114 流程控制语句\114 流程控制语句.md">114 流程控制语句</a> | <a href="115 分支语句\115 分支语句.md">115 分支语句</a> if...else & switch |
 | <a href="116 循环语句\116 循环语句.md">116 循环语句</a> Loop | <a href="117 数组\117 数组.md">117 数组</a> Array            | <a href="118 函数\118 函数.md">118 函数</a> Function-Basic   |
-| <a href="119 作用域、预解析\119 作用域、预解析.md">119 作用域、预解析</a> Scope | <a href="120 对象\120 对象.md">120 对象</a> Object           |                                                              |
+| <a href="119 作用域、预解析\119 作用域、预解析.md">119 作用域、预解析</a> Scope |                                                              |                                                              |
 |                                                              |                                                              | <a href="199 JavaScript特性总结\199 JavaScript特性总结.md">199 JavaScript特性总结</a> Specials |
 
 
+
+## 对象Object
+
+|                                                    |      |      |
+| -------------------------------------------------- | ---- | ---- |
+| <a href="201 对象\201 对象.md">201 对象</a> Object |      |      |
+|                                                    |      |      |
 
 
 
 ## 备忘录：
 
-120 对象
+202 对象 Math
 
 ## 其它(以下内容以后分类)
 

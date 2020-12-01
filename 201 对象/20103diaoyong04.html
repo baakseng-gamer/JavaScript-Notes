@@ -1,0 +1,17 @@
+<script>
+    let person = {
+        name : 'Baakseng',
+        age : 18,
+        disability : 'deaf',
+        myAlert : function (){
+            alert('I am deaf');
+        }
+    }
+    person.myAlert(); // I am deaf
+
+    person.myAlert; // 不添加括号啥都没反应
+
+    console.log(person.myAlert); // 控制台显示的是函数 function 的内容
+
+    console.log(person.myAlert()); // I am deaf 会弹出警告框的
+</script>
