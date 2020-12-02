@@ -1,0 +1,14 @@
+<script>
+    let arr = [18, 56, 13, 23];
+
+    let min = Math.min(...arr);
+    let max = Math.max(...arr);
+    console.log(min); //56
+    console.log(max); //13
+
+    // 使用apply()方法
+    let min1 = Math.min.apply(null, arr);
+    let max1 = Math.max.apply(null, arr);
+    console.log(min1); //56
+    console.log(max1); //13
+</script>

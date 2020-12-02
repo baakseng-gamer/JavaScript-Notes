@@ -1,0 +1,12 @@
+<script>
+    function getRandomNum(lowerNum, upperNum){
+        let a = upperNum - lowerNum + 1;
+        return Math.floor(Math.random() * a + lowerNum);
+    }
+    console.log(getRandomNum(1, 100));
+    console.log(getRandomNum(1, 100));
+    // 就算两行都随机取 [1, 100] 内的值，输出结果是不同的
+    // 比如：第一行随机从 [1, 100] 取值 56，第二行取值43，但是有概率取值一样数字
+
+    console.log(getRandomNum(100, 1000)); // 永远不会出现 100以下（不含100）的数值
+</script>
