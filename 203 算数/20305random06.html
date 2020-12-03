@@ -1,0 +1,11 @@
+<script>
+    let arrs = ['谢谢参与', '谢谢参与', '谢谢参与', '游戏机', '谢谢参与', '谢谢参与'];
+
+    function getRandomNum(lowerNum, upperNum){
+        let x = upperNum - lowerNum + 1;
+        return Math.floor(Math.random() * x - lowerNum);
+    }
+
+    let arr = arrs[getRandomNum(0, arrs.length - 1)];
+    console.log(arr);
+</script>

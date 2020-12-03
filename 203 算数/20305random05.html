@@ -1,11 +1,9 @@
 <script>
-    let arrs = ['谢谢参与', '谢谢参与', '谢谢参与', '游戏机', '谢谢参与', '谢谢参与'];
-
-    function getRandomNum(lowerNum, upperNum){
-        let x = upperNum - lowerNum + 1;
-        return Math.floor(Math.random() * x - lowerNum);
+    function getRandomIntNum(min, max) {
+        min = Math.ceil(min); // 向上取整
+        max = Math.fround(max); // 向下取整
+        return Math.floor(Math.random() * (max - min + 1)) + min; // 含最小值，含最大值
+        // 如果去掉 + 1，就是含最小值，不含最大值
     }
-
-    let arr = arrs[getRandomNum(0, arrs.length - 1)];
-    console.log(arr);
+    document.write(getRandomIntNum(1, 10));
 </script>

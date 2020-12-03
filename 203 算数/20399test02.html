@@ -1,0 +1,16 @@
+<script>
+    let randomNum = Math.floor(Math.random() * (10 - 1 + 1) +1) ; 
+
+    while(true){
+        let inputNum = +prompt("请输入1~10以内的整数，猜对中止循环");
+        if(inputNum > randomNum){
+            alert("数字大了，请继续猜");
+        }else if(inputNum < randomNum){
+            alert("数字小了，请继续猜");
+        }else if(inputNum == randomNum){
+            alert("猜对了，程序结束");
+            break;
+        }
+    }
+    console.log(randomNum);
+</script>
