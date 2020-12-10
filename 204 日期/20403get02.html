@@ -1,0 +1,48 @@
+<script>
+    let DATE = new Date(2008, 07, 08, 20, 00, 00);
+
+    let year = DATE.getFullYear();
+
+    let month = DATE.getMonth() + 1;
+    month = month < 10 ? '0' + month : month;
+
+    let date = DATE.getDate();
+    date = date < 10 ? '0' + date : date;
+
+    let day = DATE.getDay();
+
+    let hours = DATE.getHours();
+    hours = hours < 10 ? '0' + hours : hours;
+
+    let minutes = DATE.getMinutes();
+    minutes = minutes < 10 ? '0' + minutes : minutes;
+
+    let seconds = DATE.getSeconds();
+    seconds = seconds < 10 ? '0' + seconds : seconds;
+
+    switch (day) {
+        case 0:
+            day = '日';
+            break;
+        case 1:
+            day = '一';
+            break;
+        case 2:
+            day = '二';
+            break;
+        case 3:
+            day = '三';
+            break;
+        case 4:
+            day = '四';
+            break;
+        case 5:
+            day = '五';
+            break;
+        case 6:
+            day = '六';
+            break;
+    }
+
+    document.write(year + "年" + month + "月" + date + "日 " + hours + ":" + minutes + ":" + seconds + " 星期" + day);
+</script>

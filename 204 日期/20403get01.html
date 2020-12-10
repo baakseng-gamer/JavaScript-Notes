@@ -1,0 +1,31 @@
+<script>
+    let year = new Date().getFullYear();
+    console.log(year); // 2020
+
+    let month = new Date().getMonth();
+    console.log(month); // 11 就是12月份，因为0~11
+
+    let date = new Date().getDate();
+    console.log(date); // 6 6号，1~31
+
+    let day = new Date().getDay();
+    console.log(day); // 0 星期日为0，0 ~ 6
+
+    let hours = new Date().getHours();
+    console.log(hours); // 15 下午3点
+
+    let minutes = new Date().getMinutes();
+    console.log(minutes); // 40 下午3点40分
+
+    let seconds = new Date().getSeconds();
+    console.log(seconds); // 56 下午3点40分56秒
+
+    let milliseconds = new Date().getMilliseconds();
+    console.log(milliseconds); // 650毫秒
+
+    let time = new Date().getTime();
+    console.log(time); // 1607240629041
+
+    let timeZone = new Date().getTimezoneOffset();
+    console.log(timeZone); // -480 单位为分钟 8小时
+</script>

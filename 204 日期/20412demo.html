@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function clock(){
+            let d = new Date();
+            let h = d.getHours();
+                h = h > 9 ? h : '0' + h;
+            let m = d.getMinutes();
+                m = m > 9 ? m : '0' + m;
+            let s = d.getSeconds();
+                s = s > 9 ? s : '0' + s;
+
+            let show = h + ":" + m + ":" + s;
+            document.getElementById("clock").innerHTML = show;
+
+            setTimeout("clock()", 1000);
+        }
+    </script>
+</head>
+<body onload="clock()">
+    <h2 id="clock"></h2>
+</body>
+</html>

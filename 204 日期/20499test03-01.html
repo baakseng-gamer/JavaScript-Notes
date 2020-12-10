@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        
+        function showTime() {
+            let date = new Date();
+            let hours = date.getHours();
+            hours = hours > 9 ? hours : '0' + hours;
+            let minutes = date.getMinutes();
+            minutes = minutes > 9 ? minutes : '0' + minutes;
+            let seconds = date.getSeconds();
+            seconds = seconds > 9 ? seconds : '0' + seconds;
+
+            let show = hours + ':' + minutes + ':' + seconds;
+            document.getElementById("showtime").innerHTML = show;
+            setTimeout("showTime()", 1000);
+        }
+    </script>
+</head>
+
+<body onload="showTime()">
+    <p id="showtime">1</p>
+</body>
+
+</html>

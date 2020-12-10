@@ -1,0 +1,12 @@
+<script>
+    let date2008 = new Date(2008, 07, 08);
+    let year = date2008.getFullYear();
+    let month = date2008.getMonth() + 1;
+        month = month < 10 ? '0' + month : month;
+    let date = date2008.getDate();
+        date = date < 10 ? '0' + date : date;
+    let day = date2008.getDay();
+    let arrWeek = ['日', '一', '二', '三', '四', '五', '六']
+
+    document.write(year + "年" + month + "月" + date + "日 " + "星期" + arrWeek[day]);
+</script>

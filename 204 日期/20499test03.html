@@ -1,0 +1,15 @@
+<script>
+    let date = new Date();
+    function showTime(){
+        let hours = date.getHours();
+            hours = hours > 9 ? hours : '0' + hours;
+        let minutes = date.getMinutes();
+            minutes = minutes > 9 ? minutes : '0' + minutes;
+        let seconds = date.getSeconds();
+            seconds = seconds > 9 ? seconds : '0' + seconds;
+
+        let show = hours + ':' + minutes + ':' + seconds;
+        return show;
+    }
+    console.log(showTime());
+</script>

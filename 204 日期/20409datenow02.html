@@ -1,0 +1,14 @@
+<script>
+    let start = +Date.now();
+    console.log(start);
+
+    // 调用函数
+    for(let i = 0; i < 100000000; i++){
+        let yunxing = i * i * i * i * i;
+    }
+
+    let end = +Date.now();
+    console.log(end);
+    console.log("运行时间：" + (end - start));
+    // 调用函数所花的耗时为毫秒数
+</script>
