@@ -1,0 +1,14 @@
+<script>
+    // 思路
+    // 创建日期对象
+    // new Date(year, month, 0)
+    let inputYear = prompt('请输入年份');
+    let inputMonth = prompt('请输入月份');
+    function getLastDayOfMonth(year, month){
+        // 根据输入创建一个日期对象
+        let date = new Date(year, month, 0);
+        let show = '这月最后一天是' + date.getDate();
+        return show;
+    }
+    alert(getLastDayOfMonth(inputYear, inputMonth));
+</script>

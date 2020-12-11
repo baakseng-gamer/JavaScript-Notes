@@ -1,5 +1,5 @@
 function clock() {
-    let date = new Date(2020, 11, 11);
+    let date = new Date(2021, 00, 01);
     let now  = new Date();
     // console.log(date);
     // console.log(now);
@@ -19,7 +19,6 @@ function clock() {
     document.getElementById("HOUR").innerHTML = Hdiff;
     document.getElementById("MINUTE").innerHTML = Mdiff;
     document.getElementById("SECOND").innerHTML = Sdiff;
-
 }
 // clock();
 setInterval(clock, 1000);

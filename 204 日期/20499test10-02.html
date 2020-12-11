@@ -1,0 +1,9 @@
+<script>
+    // 另一种解决方法是获取 hours/minutes/seconds，然后把它们转换为秒数：
+    function getSecondsToday() {
+        let d = new Date();
+        return d.getHours() * 3600 + d.getMinutes() * 60 + d.getSeconds();
+    };
+
+    alert(getSecondsToday());
+</script>

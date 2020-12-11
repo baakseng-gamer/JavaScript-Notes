@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function time() {
+            // 设目标日期
+            let date = new Date('2021-01-01T00:00:00+08:00');
+            // 设置当前日期
+            let now = new Date();
+            // 声明变量时间差，采用单位为秒
+            let timediff = parseInt( (date.getTime() - now.getTime()) / 1000 );
+
+            // 设置天数差
+            let D = parseInt(timediff / 60 / 60 / 24);
+                D = D < 10 ?  '0' + D : D;
+
+            // 设置小时差
+            let H = parseInt(timediff / 60 / 60 %24);
+                H = H < 10 ? '0' + H : H;
+
+            // 设置分钟差
+            let M = parseInt(timediff / 60 % 60)
+                M = M < 10 ? '0' + M : M;
+
+            // 设置秒数差
+            let S = parseInt(timediff % 60);
+                S = S < 10 ? '0' + S : S;
+
+            // 显示剩余时间
+            let showDHMS = D + '天' + H + ':' + M + ':' + S;
+            document.getElementById("show").innerHTML = showDHMS;
+        }
+        setInterval(time, 1000);
+    </script>
+</head>
+<body>
+    <h2>距2020年还剩</h2>
+    <h2 id="show"></h2>
+</body>
+</html>

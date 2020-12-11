@@ -1,0 +1,9 @@
+<script>
+    function getWeekDay(date){
+        let day = date.getDay();
+        let dayArr = ['SU', 'MO', 'TU', 'WE', 'TH', 'FR', 'SA'];
+        return dayArr[day];
+    }
+    let today = new Date()
+    alert('Today is ' + getWeekDay(today) + '.');
+</script>

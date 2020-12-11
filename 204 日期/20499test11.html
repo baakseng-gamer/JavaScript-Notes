@@ -1,0 +1,11 @@
+<script>
+    function getSecondsToTomorrow() {
+        // 创建现在的日期
+        let now = new Date();
+        // 创建明天的日期对象(获取现在的年份，获取现在的月份，获取现在的日份+1)
+        let tomorrow = new Date(now.getFullYear(), now.getMonth(), now.getDate()+1);
+        let Sdiff = Math.round( (tomorrow - now) / 1000);
+        return Sdiff;
+    }
+    alert(`距离明天还有 ${getSecondsToTomorrow()} 秒`);
+</script>

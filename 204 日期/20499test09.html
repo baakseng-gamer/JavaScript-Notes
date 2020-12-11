@@ -1,0 +1,35 @@
+<script>
+    // 思路
+    // 根据输入年份月份创建日期对象
+    // 设置下个月的1号
+    // 比如：
+    // 我要输入月份是2月份，但是我设置为3月1日
+    // 创建新的日期对象 复制 之前创建的日期对象
+    // 设置 setDate(0)
+    // 因为 setDate(1)，是设置1日，(2)是2日
+    // setDate(0) 就是设置前一天，即前个月的最后一天
+    // 注意：不能setDate(-1)
+    let inputYear = prompt('请输入年份');
+    let inputMonth = prompt('请输入月份');
+    function getLastDayOfMonth(year, month){
+        // 先声明日期
+        let date = new Date();
+        // 设置年份
+        date.setFullYear(year);
+        // JS的月份是0~11
+        date.setMonth(month);
+        // 设置下个月的1号
+        date.setDate(1);
+        // 示例
+        // 输入2020年3月 这个date就是2020年4月1日
+        
+        // 复制日期对象
+        let dateCopy = new Date(date);
+        // 设置 复制的日期对象 前一天
+        dateCopy.setDate(0);
+        
+        alert('这月最后一天是' + dateCopy.getDate());
+    }
+
+    getLastDayOfMonth(inputYear, inputMonth);
+</script>

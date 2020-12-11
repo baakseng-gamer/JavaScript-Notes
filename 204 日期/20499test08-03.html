@@ -1,0 +1,13 @@
+<script>
+    let today = new Date();
+    function getDateAgo(date, days) {
+        let dateCopy = new Date(date);
+        // 复制时注意要用 new Date 构造
+        dateCopy.setDate(date.getDate() - days);
+        let show = days + '天前是' + dateCopy.getDate() + '号（当前日期为' + date.toDateString() + '）';
+        return show;
+    }
+    alert(getDateAgo(today, 1));
+    alert(getDateAgo(today, 5));
+    alert(getDateAgo(today, 365));
+</script>

@@ -1,0 +1,15 @@
+<script>
+    function getSecondToday(){
+        let now = new Date();
+
+        let today = new Date();
+        today.setHours(0);
+        today.setMinutes(0);
+        today.setSeconds(0);
+        today.setMilliseconds(0);
+        let getSeconds = parseInt( (now.getTime() - today.getTime()) / 1000);
+        let show = '今天经过了' + getSeconds + '秒';
+        return show;
+    }
+    alert(getSecondToday());
+</script>

@@ -1,0 +1,17 @@
+<script>
+    let now = new Date();
+    function getDateAgo(date, days){
+        // 1天等于 86400000 毫秒
+        let ms = days * 24 * 60 * 60 * 1000;
+        // 声明变量毫秒差
+        let msdiff = date.getTime() - ms;
+        // 声明前 n 天的某日期
+        let dateAgo = new Date(msdiff);
+        // 显示
+        let show = days + '天前是' + dateAgo.getDate() + '号（当前日期为：' + date.toDateString() + '）';
+        return show;
+    }
+    alert(getDateAgo(now, 1));
+    alert(getDateAgo(now, 5));
+    alert(getDateAgo(now, 365));
+</script>

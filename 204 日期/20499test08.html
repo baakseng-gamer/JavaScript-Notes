@@ -1,0 +1,14 @@
+<script>
+    let now = new Date();
+    function getDateAgo(date, days){
+        // 1天等于 86400000 毫秒
+        let ms = days * 24 * 60 * 60 * 1000;
+        // 声明变量毫秒差
+        let msdiff = date.getTime() - ms;
+        // 声明前 n 天的某一天
+        let dateAgo = new Date(msdiff);
+
+        return dateAgo;
+    }
+    console.log(getDateAgo(now, 2));
+</script>
