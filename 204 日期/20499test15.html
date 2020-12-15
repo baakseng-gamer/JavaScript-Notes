@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+
+<body onload="showDATE()">
+<!-- <body> -->
+    
+    <h2 id="showDate"></h2>
+    <script>
+        function showDATE() {
+            let now = new Date();
+
+            // 获取日期
+            let YEAR = now.getFullYear();
+            let MONTH = now.getMonth() + 1;
+            let DATE = now.getDate();
+            let DAY = now.getDay();
+            let arrDAY = ['日', '一', '二', '三', '四', '五', '六'];
+            let HH = now.getHours();
+            let MM = now.getMinutes();
+            let SS = now.getSeconds();
+
+            // 需要加零的
+            MONTH = MONTH > 9 ? MONTH : '0' + MONTH;
+            DATE = DATE > 9 ? DATE : '0' + DATE;
+            HH = HH > 9 ? HH : '0' + HH;
+            MM = MM > 9 ? MM : '0' + MM;
+            SS = SS > 9 ? SS : '0' + SS;
+
+            // 展示
+            let showDate = `${YEAR}年${MONTH}月${DATE} 星期${arrDAY[DAY]} ${HH}:${MM}:${SS}`;
+            // 在页面上展示
+            document.getElementById("showDate").innerHTML = showDate;
+            // 动态（每一次循环）
+            setTimeout("showDATE()", 1000);
+
+        }
+
+        // <body onload="showDATE()"> 与 setTimeout("showDATE()", 1000); 联动
+        // <body> 与 setInterval(showDATE, 1000); 联动
+        // 两选一即可
+
+
+    </script>
+</body>
+
+</html>

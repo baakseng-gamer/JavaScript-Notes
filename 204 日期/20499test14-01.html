@@ -1,0 +1,12 @@
+<script>
+    /* 
+    输入n，输出n天后的时间。
+ */
+    function afterOfDate(n) {
+        var d = new Date();
+        var day = d.getDate();
+        d.setDate(day + n);
+        return d;
+    }
+    alert(afterOfDate(30));
+</script>

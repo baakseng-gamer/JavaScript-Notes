@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<body>
+    <!-- 页面显示 -->
+    <h3>当前日期：<span id="nowTime"></span></h3>
+    <p>输入可以负数（代表往前的日期）</p>
+    <input type="text" id="howDay">天后
+    <button type="button" onclick="showAfterDate()">点击</button>
+    <h3 id="afterDate"></h3>
+
+    <script>
+        // 创建当前日期
+        let now = new Date();
+        // 在页面上显示当前日期
+        document.getElementById("nowTime").innerHTML = now.toDateString();
+
+        // n 天后的日期函数
+        function showAfterDate(){
+            // 获取输入框的天数
+            let n = +document.getElementById("howDay").value;
+            // 创建与输入天数相关的日期（复制日期，用来展示的）
+            let afterDate = new Date();
+            // 设定
+                afterDate.setDate(now.getDate() + n);
+
+            document.getElementById("afterDate").innerHTML = afterDate.toDateString();
+        }
+    </script>
+</body>
+</html>

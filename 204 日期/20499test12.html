@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let now = new Date(2020, 11, 12, 23, 00);
+        function formatDate(date){
+
+            // 以秒表示的差值
+            let diff = parseInt((now.getTime() - date.getTime()) / 1000);
+
+            // 格式化 时:分 年-月-日
+            let H = date.getHours();
+                H = H < 10 ? '0' + H : H;
+            let M = date.getMinutes();
+                M = M < 10 ? '0' + M : M;
+            let Y = date.getFullYear();
+            let Month = date.getMonth() + 1;
+                Month = Month < 10 ? '0' + Month : Month;
+            let Date = date.getDate();
+                Date = Date < 10 ? '0' + Date : Date;
+            
+            if(diff < 1){
+                // 当前时间
+                return "right now【";
+            }else if(diff < 60){
+                // 不到 1 分钟，输出 "n sec. ago"。
+                return diff + 'sec.ago【';
+            }else if(diff < 60 * 60){
+                // 不到 1 小时，输出 "m min. ago"。
+                return parseInt(diff / 60) + 'min.ago【';
+            }else{
+                // 时:分 年-月-日
+                return `${H} : ${M} ${Y}-${Month}-${Date}【`;
+            }
+        }
+
+
+        let date1 = new Date('2020-12-12T23:00:00');
+        let date2 = new Date('2020-12-12T22:59:35');
+        let date3 = new Date('2020-12-12T22:15:35');
+        let date4 = new Date('2020-12-11T01:00:00');
+
+        document.write('假如设定当前时间：' + now + '<br />');
+
+        document.write('发帖时间：' + formatDate(date1) + date1 + '<br />');
+        document.write('发帖时间：' + formatDate(date2) + date2 + '<br />');
+        document.write('发帖时间：' + formatDate(date3) + date3 + '<br />');
+        document.write('发帖时间：' + formatDate(date4) + date4 + '<br />');
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

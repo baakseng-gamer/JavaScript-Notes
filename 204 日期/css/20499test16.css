@@ -1,0 +1,68 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+ul, li{
+    list-style: none;
+}
+html, body{
+    height: 100%;
+}
+body{
+    background: linear-gradient(to top,#222,#333);
+}
+
+#miaobiaoBox{
+    width: 400px;
+    height: 600px;
+    /* background: tomato; */
+    margin: 100px auto;
+    border: 1px solid #8E8E8E;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px black;
+}
+#miaobiaoBox .miaobiao{
+    width: 100%;
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+}
+#miaobiaoBox .miaobiao span{
+    font-size: 70px;
+    text-align: center;
+    color: #E0E0E0;
+}
+#miaobiaoBox .miaobiao span:nth-child(2n+1){
+    border-bottom: 1px solid #8E8E8E;
+}
+
+#miaobiaoBox .dianji{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+#miaobiaoBox .dianji button{
+    width: 80px;
+    height: 40px;
+    font-size: 20px;
+    color: #fff;
+    background-image: linear-gradient(to top,#222,#333);
+    border: 1px solid black;
+    border-radius: 8px;
+    margin: 0 10px 0 2px;
+}
+
+#miaobiaoBox .showList{
+    width: 100%;
+    /* background: tomato; */
+    margin-top: 30px;
+}
+#miaobiaoBox .showList ul{
+    text-align: center;
+}
+#miaobiaoBox .showList ul li{
+    font-size: 50px;
+    margin: 10px 0 0 10px;
+    color: #E0E0E0;
+}
