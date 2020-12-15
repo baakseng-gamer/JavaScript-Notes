@@ -1,0 +1,11 @@
+<script>
+    let myName = new String('Baakseng');
+    console.log(myName.__proto__); // String
+    console.log(myName.__proto__.__proto__); // Object
+    console.log(myName.__proto__.__proto__.__proto__); // null
+
+    let test1 = myName.indexOf('B');
+    let test2 = myName.__proto__.indexOf('B');
+    console.log(test1); // 0
+    console.log(test2); // -1
+</script>

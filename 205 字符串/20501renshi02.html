@@ -1,0 +1,13 @@
+<script>
+    let myName;
+    // 生成临时变量
+    let tmp = new String('Baakseng');
+    // 赋值给我们的字符串
+    myName = tmp;
+    // 销毁临时变量
+    tmp = null;
+    console.log(myName); // 输出结果在下图所示
+    console.log(typeof myName); // object
+    console.log(tmp); // null
+    console.log(typeof tmp); // object
+</script>
