@@ -1,0 +1,10 @@
+<script>
+    let start = Date.now();
+    let str = '';
+    for(let i = 0; i < 100000; i++){
+        str += i;
+    }
+    console.log(str);
+    let end = Date.now();
+    console.log(end - start); // 24毫秒
+</script>

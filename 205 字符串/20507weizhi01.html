@@ -1,0 +1,14 @@
+<script>
+    let person = 'Baakseng';
+    let weizhi = person.indexOf('k', 0);
+    console.log(weizhi); // 3 k 在索引号3的位置
+    console.log(person.indexOf('e')); // 5 无位置的参数，即默认从0开始
+
+    let str1 = 'abcdabcd';
+
+    console.log(str1.indexOf('a', 0)); // 0
+    // a在索引号0的位置，只能显示首次出现的
+
+    console.log(str1.indexOf('a', 2)); // 4 
+    // 从索引号2开始寻找字符 a 的位置，首次出现在4的位置
+</script>
