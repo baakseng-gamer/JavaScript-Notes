@@ -1,0 +1,14 @@
+<script>
+    let str = 'abcabcabc'; // 索引号 0~8
+    console.log(str.lastIndexOf('c', 0)); // -1
+    console.log(str.lastIndexOf('c', 1)); // -1
+    console.log(str.lastIndexOf('c', 2)); // 2
+    // 讲解：
+    // 第一行 从索引值0往左查找，找不到 c 则返回 -1
+    // 第二行 从索引值1往左查找，找不到 c 则返回 -1
+    // 第二行 从索引值2往左查找，找到 c 则返回 2
+
+    console.log(str.lastIndexOf('c', 6)); // 5
+    console.log(str.lastIndexOf('c', str.length)); // 8
+    console.log(str.lastIndexOf('c', 10)); // 8
+</script>
