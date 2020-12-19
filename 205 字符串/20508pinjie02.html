@@ -1,0 +1,23 @@
+<script>
+    let str = 'abc';
+    let strnum = '123';
+    let num = 123;
+    let bool = true;
+    let un = undefined;
+    let NULL = null;
+    
+    console.log(str.concat(num)); // abc123
+    console.log(strnum.concat(num)); // 123
+
+    console.log(typeof bool); // boolean
+    console.log(str.concat(bool)); // abctrue
+
+    console.log(typeof un); // undefined
+    console.log(str.concat(un)); // abcundefined
+
+    console.log(typeof NULL); // object 
+    // 虽然显示是obj 但正确是null JS的致命失误
+    console.log(str.concat(NULL)); // abcnull
+
+    // 管它什么数据类型，用 concat 方法拼接前通通转成字符串
+</script>

@@ -1,0 +1,33 @@
+<script>
+    let str = 'Baakseng-Gamer';
+    console.log(str.length); // 14个字符 0~13
+
+    console.log(str.slice(-5)); // Gamer
+    // 负数则从结尾开始往左计算位置
+    // r 在 -1
+    // e 在 -2
+    // m 在 -3
+    // a 在 -4
+    // G 在 -5
+    // 故从 G 开始往后截取
+    // 还有一个方法，length - 5 即 14 - 5 = 9
+    // 从索引号9开始截取
+    console.log(str.slice(9)); // Gamer
+    // 和 substr() 一个参数负数一样的截取方法
+
+    console.log(str.slice(-3, -1)); // me
+    // m 在 -3
+    // e 在 -2
+    // r 在 -1 但 end 位置字符不被包含。
+    // 另一个方法： length - 3 = 11, length - 1 = 13
+    console.log(str.slice(11, 13)) // me
+    // 所以 slice(-3, -1) 等价于 slice(11, 13)，前提 length 为14
+
+    console.log(str.slice(-3, -5)); // 空字符
+    // 等价于 slice(11, 9)
+
+    console.log(str.slice(2, -2)); // akseng-Gam
+    // 从索引2 到倒数第2个位置截取
+    // 等价于 slice(2, 12);
+    console.log(str.slice(2, 12)); // akseng-Gam
+</script>

@@ -1,0 +1,19 @@
+<script>
+    let str = 'Baakseng-Gamer';
+    console.log(str.length); // 14个字符 0~13
+
+    console.log(str.substring(-1)); // Baakseng-Gamer
+    console.log(str.substring(-2)); // Baakseng-Gamer
+    // 当参数为负数时，会转换成零 和 substring(0) 一样
+
+    console.log(str.substring(-3, 3)); // Baa
+    // 等价于
+    console.log(str.substring(0, 3)); // Baa
+
+    console.log(str.substring(4, -5)); // Baak
+    // 步骤：
+    // 1. substring(4, -5);
+    // 2. substring(4, 0);
+    // 3. substring(0, 4)
+    console.log(str.substring(0, 4)); // Baak
+</script>

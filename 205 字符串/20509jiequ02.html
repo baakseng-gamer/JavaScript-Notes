@@ -1,0 +1,22 @@
+<script>
+    let str = 'Baakseng-Gamer';
+    console.log(str.length); // 14个字符 位置0~13
+    console.log(str.substr(-5)); // Gamer
+    // 负数则从结尾开始往左计算位置
+    // r 在 -1
+    // e 在 -2
+    // m 在 -3
+    // a 在 -4
+    // G 在 -5
+    // 故从 G 开始往后截取
+    // 还有一个方法，length - 5 即 14 - 5 = 9
+    // 从索引号9开始截取
+    console.log(str.substr(9)); // Gamer
+
+    console.log(str.substr(3, -1)); //  空字符串
+    console.log(str.substr(3, -5)); //  空字符串
+    // 等价于 substr(3, 0)
+
+    console.log(str.substr(-5, 2)); // Ga 第二个参数截取2个字符
+    console.log(str.substr(-5, -1)); // 空字符串
+</script>
