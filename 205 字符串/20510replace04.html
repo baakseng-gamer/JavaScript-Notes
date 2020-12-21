@@ -1,0 +1,16 @@
+<script>
+    let str = '<p>';
+    let str1 = '<h2>';
+    function toHTML(str){
+        return str.replace(/[<>]/g, function(fuhao){
+            switch(fuhao){
+                case '<':
+                    return "&lt;";
+                case '>':
+                    return "&gt;";
+            }
+        });
+    }
+    document.write(toHTML(str));
+    document.write(toHTML(str1));
+</script>

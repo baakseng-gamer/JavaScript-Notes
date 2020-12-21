@@ -1,0 +1,22 @@
+<script>
+    let str = 'bar car dar ear';
+    let newStr = str.replace('ar', 'ag');
+    console.log(newStr); // bag car dar ear
+
+    console.log(str.replace('Ar', 'ag')) // bar car dar ear
+    // 对大小写敏感的，匹配不到就返回原字符串
+
+    console.log(str.replace('ar c', 'AR C')); // bAR Car dar ear
+
+    console.log(str.replace('', 'abc')); // abcbar car dar ear
+    // 第一个参数为空字符则在首个字符前面添加
+
+    console.log(str.replace(' ', '*')); // bar*car dar ear
+    // 只能替换一次，不能全局替换
+
+    console.log(str.slice(8, str.length).replace('ar', 'ag')); // dag ear
+    // 可使用截取再替换，双重方法
+
+    console.log(str); // bar car dar ear
+    // 原字符串没有被修改
+</script>

@@ -1,0 +1,11 @@
+<script>
+    let str = 'bar car dar ear';
+    console.log(str.replace(/ar/, 'ag')); // bag car dar ear
+
+    console.log(str.replace(/ar/g, 'ag')); // bag cag dag eag
+    // /ar/g 中的 修饰符 g 为全局
+
+    let str2 = 'bar cAr daR eAR';
+    console.log(str2.replace(/ar/gi, 'ag')); // bag cag dag eag
+    // g 为全局，i 为忽略大小写
+</script>

@@ -1,0 +1,33 @@
+<script>
+    let str = 'bar car dar ear';
+
+    // 使用 空格 作为分隔符来分割字符串
+    let arr = str.split(' ');
+    console.log(arr);
+    // ["bar", "car", "dar", "ear"]
+
+    console.log(str.split(' ', 2));
+    // ["bar", "car"]
+    console.log(str.split(' ', 2).length); // 2
+    // 第2个参数为 2 时，返回数组的个数为2个
+    
+    // 使用 r 作为分隔符分割
+    console.log(str.split('r'));
+    // ["ba", " ca", " da", " ea", ""]
+    // 为何 length 是5个
+    // [ba] r [ ca] r [ da] r [ea] r []
+    // 最后一个分隔符 r 进行分隔，右边会建立一个元素，即空字符
+    console.log(str.split('r').length); // 5
+    console.log( (str.split('r'))[4] ); // 空字符 
+    console.log(typeof (str.split('r'))[4] ); // string
+
+
+    let str1 = 'ab|ac|ae||ad';
+    console.log(str1.split('|'));
+    // ["ab", "ac", "ae", "", "ad"]
+    // 两个分割符相邻，会产生一个空字符串 ""
+
+    let str2 = 'ab|ac|ae|||ad';
+    console.log(str2.split('|'));
+    // ["ab", "ac", "ae", "", "", "ad"]
+</script>

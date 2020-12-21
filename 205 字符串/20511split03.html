@@ -1,0 +1,11 @@
+<script>
+    let str = 'AA,BB*CC*DD,EE';
+    // 使用正则表达式移出标点符号
+    console.log(str.split(/[,*]/));
+    // ["AA", "BB", "CC", "DD", "EE"]
+
+    // 提取纯字母 需要移出标点符号和空格
+    let str1 = 'AA, BB*CC DD. EE';
+    console.log(str1.split(/\s*(?:[,*.\s]|$)\s*/))
+    // ["AA", "BB", "CC", "DD", "EE"]
+</script>

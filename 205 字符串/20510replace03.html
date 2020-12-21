@@ -1,0 +1,29 @@
+<script>
+    let str = 'bar car dar ear';
+
+    console.log(str.replace('ar', 'word($&)'));
+    // bword(ar) car dar ear
+    // $& 为插入匹配的字符
+    // 不是正则，所以替换一次
+
+    console.log(str.replace(/(.ar)/g, 'word($`)'));
+    // word() word(bar ) word(bar car ) word(bar car dar )
+    // $` 为插入匹配的字符左边内容
+    // bar 转换成 word 后，括号里为 bar 左边的空字符
+    // car 转换成 word 后，括号里为 car 左边的字符，即/bar /
+    // dar 转换成 word 后, 括号里为 dar 左边的字符，/bar car /
+    // 以此类推
+
+    console.log(str.replace(/(.ar)/g, "word($')"));
+    // 注意单双引号
+    // word( car dar ear) word( dar ear) word( ear) word()
+    // $' 为插入匹配字符右边的内容
+    // bar 转换成 word 后，括号里为 bar 右边的字符/  car dar ear/
+    // car 转换成 word 后，括号里为 car 右边的字符/ dar ear/
+    // 以此类推
+    // 最后一个为 word()，括号里没有的
+
+    console.log(str.replace(/(.ar)/g, 'word($1)'));
+    // word(bar) word(car) word(dar) word(ear
+    // .ar 中的 . 为任意字符
+</script>
