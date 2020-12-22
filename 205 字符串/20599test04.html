@@ -1,0 +1,12 @@
+<script>
+    function ucFirst(str){
+        // 提取 索引0 的字符，再转换成大写
+        // 新字符串 = 大写 + 索引1往后全部字符
+        let strOne = str.charAt(0).toUpperCase();
+        let newStr = strOne + str.slice(1);
+        return newStr;
+    }
+    console.log(ucFirst('john')); // John
+    console.log(ucFirst('abc')); // Abc
+    console.log(ucFirst('baakseng')); // Baakseng
+</script>

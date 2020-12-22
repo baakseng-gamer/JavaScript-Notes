@@ -1,0 +1,10 @@
+<script>
+    function ucFirst(str){
+        let newStr = str[0].toUpperCase() + str.slice(1);
+        return newStr;
+    }
+    console.log(ucFirst('John'));
+    console.log(ucFirst('Baakseng'));
+    console.log(ucFirst('')); // 报错
+    // undefined 没有 toUpperCase() 方法
+</script>

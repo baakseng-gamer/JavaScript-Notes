@@ -1,0 +1,29 @@
+<script>
+    let str = 'abaasdffggghhjjkkgfddsssss3444343';
+    let strObj = {}
+    
+    for(let i = 0; i < str.length; i++){
+        // 从原字符串获取的字符当作对象的 属性名
+        let char = str.charAt(i);
+        if(strObj[char]){ // 得到属性名的属性值
+            strObj[char]++; // 属性值自增
+        }else {
+            strObj[char] = 1;
+        }
+    }
+    console.log(strObj); // 查看对象的内容
+
+    // 开始遍历 输出 次数最多的字符 和 最多次数
+    let maxStr = '';
+    let maxNum = 0;
+    for(let x in strObj){
+        if(strObj[x] > maxNum){
+            // 属性名的属性值
+            maxNum = strObj[x];
+
+            // 属性名
+            maxStr = x;
+        }
+    }
+    console.log(maxStr, maxNum); // s 6
+</script>

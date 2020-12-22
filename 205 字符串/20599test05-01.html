@@ -1,0 +1,14 @@
+<script>
+    // 思路
+    // 先把原字符串生成一个全部小写的
+    // 然后检测
+    function checkSpam(str) {
+        // 转换成小写
+        let xiaoxie = str.toLowerCase();
+        // 返回 true 还是 false
+        return (xiaoxie.includes('viagra') || xiaoxie.includes('xxx'));
+    }
+    console.log(checkSpam('buy ViAgRA now')); // true
+    console.log(checkSpam('free xxxxx')); // true
+    console.log(checkSpam("innocent rabbit")); // false
+</script>

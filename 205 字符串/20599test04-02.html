@@ -1,0 +1,17 @@
+<script>
+    function ucFirst(str){
+        if(!str) return str;
+        // 其作用是若是空字符就返回去
+        return str[0].toUpperCase() + str.slice(1);
+    }
+    console.log(ucFirst('baakseng')); // Baakseng
+    console.log(ucFirst('')); // 空字符串
+
+    // !str 具体作用是什么
+    // Boolean('abc') 返回 true
+    // Boolean('') 返回false
+    // !'abc' 返回 false ，执行不了 if 语句
+    // !'' 返回 true ，可执行 if 语句，则把空字符串原地返回去
+    
+    // if(str[0] != undefined) return str; 也可行的
+</script>

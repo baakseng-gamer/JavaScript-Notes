@@ -1,0 +1,19 @@
+<script>
+    // 注意是忽略大小写的
+    // 思路
+    // 使用 indexOf() 方法
+    // 用 if 语句 
+    // indexOf() 为 !-1 返回 true 就是找到返回 true
+    // indexOf() 为 -1 返回 false 找不到返回false
+    function checkSpam(str) {
+        let xiaoxie = str.toLowerCase();
+        if(xiaoxie.indexOf('viagra') != -1 || xiaoxie.indexOf('xxx') != -1){
+            return true;
+        }else if(xiaoxie.indexOf('viagra') == -1 || xiaoxie.indexOf('xxx') == -1){
+            return false;
+        }
+    }
+    console.log(checkSpam('buy ViAgRA now')); // true
+    console.log(checkSpam('free xxxxx')); // true
+    console.log(checkSpam("innocent rabbit")); // false
+</script>

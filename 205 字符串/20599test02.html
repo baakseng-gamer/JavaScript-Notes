@@ -14,9 +14,10 @@
 
         for(let i = 0; i < testStr.length; i++){
             // 声明一个属性，赋值 字符串 的每一个字符
+            // 作用是从原字符串获取的字符当作对象的 属性名
             let chars = testStr.charAt(i);
             if(charBox[chars]){ // 得到属性值
-                charBox[chars]++; // 自增
+                charBox[chars]++; // 属性值自增
             }else {
                 charBox[chars] = 1;
             }

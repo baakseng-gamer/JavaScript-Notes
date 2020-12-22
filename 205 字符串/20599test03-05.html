@@ -1,0 +1,18 @@
+<script>
+    let str = 'abaasdffggghhjjkkgfddsssss3444343';
+    // 截取指定开始位置到结束位置的字符串，如：取得1-5的字符；
+
+    console.log(str.slice(1, 6)); // baasd
+    // 位置 1-5 
+    // 索引1、索引2、索引3、索引4、索引5
+    // 因为 end 不包含 end 位置的字符，故要 +1
+    // 是 slice(1, 6)，而不是 slice(1, 5)
+
+    let start = 1;
+    let end = 5;
+    let LENGTH = end - start + 1
+    // 使用 substr()，length = end - start + 1 即可
+    console.log(str.substr(start, LENGTH)); // baasd
+
+    console.log(str.substring(1, 6)); // baasd
+</script>

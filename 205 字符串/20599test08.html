@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #writeText{
+            width: 300px;
+            height: 200px;
+        }
+        #showText{
+            width: 400px;
+            height: 200px;
+            border: 1px solid brown;
+        }
+    </style>
+    <script>
+        // 思路
+        // regexp 可以放在数组中
+        // 过滤【操、靠、tmd（包含大写）、nm】
+        // 用 replace() 方法
+        function dianji() {
+            // 获取 HTML 中的 id
+            let inputText = document.getElementById("writeText").value;
+            let showText = document.getElementById("showText");
+
+            // 过滤词的数组
+            let fuckWordArr = [/操/g, /靠/g, /tmd/gi, /nm/gi];
+
+            let guolvText = inputText.replace();
+
+            for(let i = 0; i < fuckWordArr.length; i++){
+                guolvText = guolvText.replace(fuckWordArr[i], '*');
+            }
+            
+            showText.innerHTML = guolvText;
+        }
+    </script>
+</head>
+<body>
+    <textarea name="" id="writeText" cols="30" rows="10"></textarea>
+    <br />
+    <button type="button" id="dianji" onclick="dianji()">发送</button>
+    <br />
+    <div id="showText"></div>
+</body>
+</html>
