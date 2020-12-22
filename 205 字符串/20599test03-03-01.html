@@ -1,0 +1,37 @@
+<script>
+    let str = 'abaasdffggghhjjkkgfddsssss3444343';
+    // 是否存在 i、c、b等
+
+    // 声明 是否存在 icb 的变量 
+    // 好处是可以换别的字符 比如 a g h等，可以任意数量
+    let cunzai = 'icb';
+    // let cunzai = 'a3';
+
+    for(let i = 0; i < cunzai.length; i++){
+        // 获取 cunzai 的字符
+        let getcunzai = cunzai.charAt(i);
+
+        // 开始判断
+        if(str.indexOf(`${getcunzai}`) != -1){
+            console.log(`存在${getcunzai}`);
+        }else {
+            console.log(`不存在${getcunzai}`);
+        }
+    }
+    // 执行过程解析：
+    // 因为 'icb' 的 length 是 3，故循环3次
+    // 第一次：i = 0
+    //     getcunzai = cunzai.charAt(0)
+    //     getcunzai = 'i'
+    //     判断 if(str.indexOf('i') != -1) 符合条件输出“存在 i”，不符合输出“不存在 i”
+
+    // 第二次：i = 1
+    //     getcunzai = cunzai.charAt(1)
+    //     getcunzai = 'c'
+    //     判断 if(str.indexOf('c') != -1) 符合条件输出“存在 c”，不符合输出“不存在 c”
+    
+    // 第三次：i = 2
+    //     getcunzai = cunzai.charAt(2)
+    //     getcunzai = 'b'
+    //     判断 if(str.indexOf('b') != -1) 符合条件输出“存在 b”，不符合输出“不存在 b”
+</script>

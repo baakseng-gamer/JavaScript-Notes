@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // 创建对象 
+        // 使用 charAt() 遍历
+        // 存在就为 1，还有存在就 +1
+        let testStr = 'abcoefoxyozzopp';
+        let charBox = {};
+        console.log(charBox); // 此时没有任何属性
+
+        for(let i = 0; i < testStr.length; i++){
+            // 声明一个属性，赋值 字符串 的每一个字符
+            let chars = testStr.charAt(i);
+            if(charBox[chars]){ // 得到属性值
+                charBox[chars]++; // 自增
+            }else {
+                charBox[chars] = 1;
+            }
+        }
+        console.log(charBox);
+        // 此时有属性名和属性值
+
+
+        // 遍历对象
+        // 声明 出现次数的 变量
+        let max = 0;
+        // 声明 字符的 变量
+        let maxStr = '';
+        // 开始遍历
+        for(let charX in charBox){ 
+            // charX 得到的是属性名
+            // charBox[charX] 得到的是属性值
+            
+            if(charBox[charX] > max){
+                // 属性值 大于 max 时
+                // max 被赋值 属性值
+                // 字符串 maxStr 被赋值属性名
+                max = charBox[charX];
+                maxStr = charX;
+            }
+        }
+        console.log('出现次数最多的字符：' + maxStr);
+        console.log('出现次数：' + max);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

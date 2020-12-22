@@ -1,0 +1,16 @@
+<script>
+    let str = 'abaasdffggghhjjkkgfddsssss3444343';
+    // g 替换为 22，ss 替换为 b
+    
+    // 思路
+    // 需要连续两次用 replace()
+    console.log( (str.replace(/g/g, '22')).replace(/ss/g, 'b') );
+
+    // 第一次：
+    //     str.replace(/g/g, '22')
+    //     此时的 ss 还没被替换为 b
+
+    // 第二次：
+    //     (str.replace(/g/g, '22')).replace(/ss/g, 'b');
+    //     英文句号 . 左边 (str.replace(/g/g, '22')) 已把 g 替换为 22
+</script>

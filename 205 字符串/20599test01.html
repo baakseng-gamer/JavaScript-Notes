@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        document.write('"abcoefoxyozzopp" 中所有 o 出现的位置以及次数。<br />')
+        // 所有 o 出现的位置以及次数。
+        let str = "abcoefoxyozzopp";
+        // 字符可更换，选 o 以外的字母
+        let word = 'o';
+        // let word = 'p'
+
+        // 声明 出现位置 的字符串变量，空字符串
+        let indexNum = '';
+        // 声明 出现次数 的变量，初始为零
+        let showTime = 0;
+        
+        // 使用 for 循环
+        // 用 charAt(i) 方法进行比较
+        for(let i = 0; i < str.length; i++){
+            if(str.charAt(i) == word){
+                // 符合 word 时赋值 indexNum
+                indexNum = indexNum + `${i} `;
+                // 符合 word 时 showTime 自增
+                showTime ++;
+            }
+        }
+        // 展示
+        document.write('索引号：' + indexNum + '<br />');
+        document.write('次数：' + showTime);
+    </script>
+</head>
+<body>
+</body>
+</html>

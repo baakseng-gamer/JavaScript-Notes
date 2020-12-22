@@ -1,0 +1,21 @@
+<script>
+    let str = 'abaasdffggghhjjkkgfddsssss3444343';
+    for(let i = 0; i < str.length; i++){
+        // 规律
+        let indexNum = Math.pow(2, i) + 1
+        // 第一次 indexNum = 3 需要使用 if 语句把 indexNum 弄成 0
+        // 第二次 indexNum = 3
+        // 第三次 indexNum = 5
+        // 第四次 indexNum = 9 终止执行
+
+        if(i == 0){
+            indexNum = 0;
+        }
+
+        document.write(str.charAt(indexNum));
+        
+        if(indexNum >= 9){
+            break;
+        }
+    }
+</script>

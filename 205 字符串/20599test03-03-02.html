@@ -1,0 +1,26 @@
+<script>
+    let str = 'abaasdffggghhjjkkgfddsssss3444343';
+    // 是否存在 i、c、b等
+
+    function cunzaiYesNo(cunzai){
+        for(let i = 0; i < cunzai.length; i++){
+            // 获取 cunzai 的字符
+            let getcunzai = cunzai.charAt(i);
+
+            // 开始判断
+            if(str.indexOf(`${getcunzai}`) != -1){
+                console.log(`存在${getcunzai}`);
+            }else {
+                console.log(`不存在${getcunzai}`);
+            }
+        }
+    }
+
+    let str1 = 'icb';
+    let str2 = 'xy';
+    let str3 = '345';
+
+    cunzaiYesNo(str1); // 不存在i 不存在c 存在b
+    cunzaiYesNo(str2); // 不存在x 不存在y
+    cunzaiYesNo(str3); // 存在3 存在4 不存在5
+</script>

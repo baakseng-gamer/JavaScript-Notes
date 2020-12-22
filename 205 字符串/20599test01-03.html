@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let str = "abcoefoxyozzopp";
+        let showTime = 0;
+        let index = str.indexOf('o');
+        for(let i = 0; i < 100; i++){
+            if(index != -1){
+                console.log(index);
+                showTime++;
+                index = str.indexOf('o', index+1);
+            }else if(index == -1){
+                break;
+            }
+        }
+        console.log('出现次数：' + showTime);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
