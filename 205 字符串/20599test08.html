@@ -19,21 +19,27 @@
         // 思路
         // regexp 可以放在数组中
         // 过滤【操、靠、tmd（包含大写）、nm】
+        // 声明一个 过滤内容 的变量
+        // 用 for 循环，次数为过滤数组的 length
         // 用 replace() 方法
+        // 连接替换脏话词
         function dianji() {
             // 获取 HTML 中的 id
             let inputText = document.getElementById("writeText").value;
             let showText = document.getElementById("showText");
 
             // 过滤词的数组
-            let fuckWordArr = [/操/g, /靠/g, /tmd/gi, /nm/gi];
+            let fuckWordArr = [/操/g, /靠/g, /tmd/gi, /nm/gi, /sb/gi];
 
-            let guolvText = inputText.replace();
+            // 创建过滤后的新字符串 用来展示（复制的）
+            let guolvText = inputText;
 
+            // 循环替换掉脏话词
             for(let i = 0; i < fuckWordArr.length; i++){
                 guolvText = guolvText.replace(fuckWordArr[i], '*');
             }
             
+            // 过滤后的内容输出到页面上
             showText.innerHTML = guolvText;
         }
     </script>
