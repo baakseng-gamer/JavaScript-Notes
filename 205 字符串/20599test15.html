@@ -1,0 +1,18 @@
+<script>
+    // 传入："Welcome to Beijing"
+    // 返回："Beijing to Welcome"
+    // 思路
+    // 以空格作为分割
+    // 用 split() 方法 
+    // ('分割符'[, length]) length 为数组个数，可不用
+    // 声明一个新的字符串
+    // 用 for 循环把数组倒序变成字符串
+
+    let str = "Welcome to Beijing";
+    let arr = str.split(' ');
+    let newStr = ''
+    for(let i = 0; i < arr.length; i++) {
+        newStr = newStr + arr[arr.length - i - 1] + ' ';
+    }
+    console.log(newStr);
+</script>

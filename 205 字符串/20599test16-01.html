@@ -1,0 +1,14 @@
+<script>
+    let arr = ['A', 'B', 'C'];
+    let newArr = arr;
+    console.log(newArr); // ["A", "B", "C"]
+
+    newArr.push('D');
+    console.log(arr); // ["A", "B", "C", "D"]
+    // 注意此时
+    // arr 不是 ['A', 'B', 'C']， 
+    // 而是["A", "B", "C", "D"]
+    // 因为 arr 和 newArr 同时指向 此时["A", "B", "C", "D"]的数组
+    // 就算 newArr 用别的方法（增删）改动
+    // arr 也会跟着改动
+</script>

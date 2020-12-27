@@ -1,0 +1,49 @@
+<script>
+    //判断单个字符是否是字母
+    function isABC(charStr) {
+        if (charStr >= "a" && charStr <= "z" || charStr >= "A" && charStr <= "Z") {
+            return true;
+        } else {
+            return false;
+        }
+    }
+    function countOfWord(str) {
+        var count = 0;
+        for (var i = 0; i < str.length - 1; i++) {
+            if (isABC(str[i]) && !isABC(str[i + 1])) {
+                count++;
+            }
+        }
+        return count;
+    }
+
+    let str = "Yes, she*is%my@love.";
+    console.log(countOfWord(str)); // 5个单词
+    // 执行过程 
+    // str 的 length 有 20 个
+    // i = 0 时
+    // 【Ye】 不会自增
+
+    // i = 1 时
+    // 【es】 不会自增
+
+    // i = 2 时
+    // 【s,】 自增 count = 1
+    
+    // i = 3 时
+    // 【, 】 不会自增
+
+    // i = 4 时
+    // 【 s】 不会自增
+
+    // i = 5 时
+    // 【sh】 不会自增
+
+    // i = 6 时
+    // 【he】 不会自增
+
+    // i = 7 时
+    // 【e*】 自增 count = 2
+
+    // ... 懂了吧
+</script>

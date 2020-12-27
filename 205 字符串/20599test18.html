@@ -1,0 +1,26 @@
+<script>
+    // 思路
+    // 先用 indexOf() 取索引号
+    // 符合就次数 +1
+    // 得出的索引号 +1当 indexOf() 的第2个参数，继续循环
+    let str1 = 'abcabcabc';
+    let sonStr1 = 'abc';
+    function sonOfStrTime(str, sonStr) {
+        let INDEX = str.indexOf(sonStr);
+        let TIME = 0;
+        
+        for(let i = 0; i >= 0; i++) {
+            if (INDEX != -1) {
+                TIME++;
+                INDEX = str.indexOf(sonStr, INDEX+1);
+            } else if (INDEX == -1) {
+                break
+            }
+        }
+        return TIME;
+        
+    }
+    sonOfStrTime(str1, sonStr1);
+
+
+</script>

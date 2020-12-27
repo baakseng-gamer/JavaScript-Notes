@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+
+
+        // 随机生成验证码 
+        // A-Z：65-90
+        // 0-9：57-48
+        function randomCode() {
+            // 创建空字符串，用来显示验证码
+            let showRandomCode = '';
+            // for 循环 长度为4位，即 i < 4；
+            // 取 1 - 9 时，直接拼接
+            // 取 65 - 90 时，使用String.fromCharCode() 方法转换 对应是 A - Z
+            // 取其它数字就 i-- 重新循环
+            for (let i = 0; i < 4; i++) {
+                // Math.random() * (max - min + 1)) + min 取值范围 min - max
+                // 必须在 for 里使用随机，这样才能刷新不同的，如果在代码外，只能固定一次
+                let numRandom = parseInt(Math.random() * (90 - 1 + 1) + 1);
+                if (numRandom >= 1 && numRandom <= 9) {
+                    showRandomCode = showRandomCode + numRandom;
+                } else if (numRandom >= 65 && numRandom <= 90) {
+                    showRandomCode = showRandomCode + String.fromCharCode(numRandom);
+                } else {
+                    i--;
+                }
+            }
+            return showRandomCode;
+        }
+
+        // 储存随机生成后的验证码，注意是随机生成后的
+        let YZM = "";
+        // 点击输入框显示验证码 再次点击会再次随机生成验证码
+        function showYanzhengma() {
+            // 点击提交后这个变量会保存一次生成的
+            YZM = randomCode();
+            document.getElementById("showYanzhengma").innerHTML = YZM;
+        }
+
+        // 匹配验证码
+        function tijiaoYanzhengma() {
+            let inputCode = document.getElementById("inputYanzhengma").value;
+            if (inputCode.toLowerCase() == YZM.toLowerCase()) {
+                alert('验证成功');
+            } else {
+                alert('验证失败');
+            }
+        }
+
+    </script>
+</head>
+
+<body>
+    <p>验证码：</p>
+    <input type="text" id="inputYanzhengma" onclick="showYanzhengma()">
+    <span id="showYanzhengma"></span>
+    <br />
+    <button type="button" onclick="tijiaoYanzhengma()">提交</button>
+</body>
+
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+
+        // 随机生成验证码 
+        // A-Z：65-90
+        // 0-9：57-48
+        function Yanzhengma(){
+        
+            let yanzheng01 = function() {
+                if(Math.random() > 0.5){
+                    return Math.floor(Math.random() * (57 - 48 + 1)) + 48;
+                }else {
+                    return Math.floor(Math.random() * (90 - 65 + 1)) + 65;
+                }
+            }
+        
+            let yanzheng02 = function() {
+                if(Math.random() > 0.5){
+                    return Math.floor(Math.random() * (57 - 48 + 1)) + 48;
+                }else {
+                    return Math.floor(Math.random() * (90 - 65 + 1)) + 65;
+                }
+            }
+        
+            let yanzheng03 = function() {
+                if(Math.random() > 0.5){
+                    return Math.floor(Math.random() * (57 - 48 + 1)) + 48;
+                }else {
+                    return Math.floor(Math.random() * (90 - 65 + 1)) + 65;
+                }
+            }
+        
+            let yanzheng04 = function() {
+                if(Math.random() > 0.5){
+                    return Math.floor(Math.random() * (57 - 48 + 1)) + 48;
+                }else {
+                    return Math.floor(Math.random() * (90 - 65 + 1)) + 65;
+                }
+            }
+            
+            // 全部从 Unicode 编码转换成对应的字符
+            let yanzhengma = String.fromCharCode(yanzheng01()) + String.fromCharCode(yanzheng02()) + String.fromCharCode(yanzheng03()) + String.fromCharCode(yanzheng04());
+        
+            return yanzhengma;
+        }
+
+        // 声明一个变量 储存保持不动的验证码
+        let bbb = '';
+        // 点击输入框显示验证码，再次点击又随机生成
+        function showYanzhengma() {
+            bbb = Yanzhengma();
+            let a = document.getElementById("showYanzhengma");
+            a.innerHTML = bbb;
+            console.log(bbb);
+        }
+        // 提交是否匹配验证码
+        function tijiaoYanzhengma() {
+            let b = document.getElementById("inputYanzhengma").value;
+            if(b.toLowerCase() == bbb.toLowerCase()) {
+                alert('注册成功');
+            }else {
+                alert('注册失败');
+            }
+        }
+        
+
+    </script>
+</head>
+<body>
+    <p>验证码：</p>
+    <input type="text" id="inputYanzhengma" onclick="showYanzhengma()">
+    <span id="showYanzhengma"></span>
+    <br />
+    <button type="button" onclick="tijiaoYanzhengma()">提交</button>
+</body>
+</html>

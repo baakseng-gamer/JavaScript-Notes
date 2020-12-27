@@ -1,0 +1,17 @@
+<script>
+    // 思路
+    // 用正则表达式搞定
+    
+    function noBiaodian(str) {
+        // 创建新的字符串对象
+        // 然后用 replace() 方法的RegExp替换掉
+        let newStr = str.replace(/[^A-Za-z,.]/g, " ");
+        
+        // 用空格作为分割符分隔成数组，可以直接出单词个数
+        let newArr = newStr.split(" ");
+
+        return newArr.length;
+    }
+    let str = "Yes, she*is%my@love.";
+    console.log(noBiaodian(str)); // 5个单词
+</script>

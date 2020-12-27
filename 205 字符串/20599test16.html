@@ -1,0 +1,20 @@
+<script>
+    
+    // 因为数组指向的问题，采用双重循环
+    // 先正序添加，再倒序添加
+    function duichengArr(arr) {
+        let newArr = [];
+        for(let i = 0; i < arr.length; i++) {
+            newArr.push(arr[i]);
+        }
+        for(let i = 0; i <arr.length; i++) {
+            newArr.push(arr[arr.length - i - 1]);
+        }
+        return newArr;
+    }
+    let arr = ["One", "Two", "Three"];
+    console.log(duichengArr(arr));
+
+    let arr1 = [1, 2, 3, 4, 5];
+    console.log(duichengArr(arr1));
+</script>

@@ -1,0 +1,27 @@
+<script>
+    // 传入："HelloMyWorld"
+    // 返回："Hello my world"
+    // 思路
+    // 声明一个新字符串 先赋值 原字符串的 索引0
+    // 开始 for 循环一个一个用 + 号运算符拼接原字符串的字符
+    // 当匹配到大写时，先用空格分开，再转小写
+
+    
+    function NEWSTR() {
+        // 声明一个新的字符串并赋值原字符串的索引号 0 字符
+        let newStr = str[0];
+
+        // 开始循环 从索引号1开始哦
+        for(let i = 1; i < str.length; i++){
+            // 匹配到大写时执行
+            if(str[i] >= 'A' && str[i] <= 'Z'){
+                newStr = newStr + ' ' + str[i].toLowerCase();
+            }else {
+                newStr = newStr + str[i];
+            }
+        }
+        return newStr;
+    }
+    let str = "HelloMyWorld";
+    console.log(NEWSTR(str));
+</script>
