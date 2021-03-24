@@ -1,0 +1,19 @@
+<script>
+    // supStr 为原字符串，subStr 为子串
+    // 这里是把子串作为分割符
+    // 用 split() 方法分割出数组
+    // 然后数组 length - 1 就是出现次数
+    function countOfStr(supStr, subStr) {
+        var arr = supStr.split(subStr);
+        console.log(arr);
+        return arr.length - 1;
+    }
+
+    let str1 = 'abcabcabc';
+    let sonStr1 = 'abc';
+    console.log(countOfStr(str1, sonStr1)); // 3
+
+    let str2 = 'ffefadife23fe0dfe';
+    let sonStr2 = 'fe';
+    console.log(countOfStr(str2, sonStr2)); // 4
+</script>

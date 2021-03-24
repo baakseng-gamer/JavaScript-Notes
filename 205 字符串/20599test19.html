@@ -1,0 +1,74 @@
+<script>
+    // 思路
+    // 首先创建 布尔型 的变量 isYes = true;
+    // 声明 @ 的位置
+    // 寻找 @ 位置
+    // 找不到就 isYes = false 找不到就是-1
+    // 先匹配 @1000phone.com 
+    // -1 赋值false
+    // 检测 @1000phone.com 是否在结尾
+    // -1 赋值false
+    // 符合 @1000phone.com 然后进行下一步
+    // 判断邮箱格式 是否包含字母数字下划线
+    // 不符合就赋值false 需要for循环遍历 @前面一段字符
+    // 还有首位只能是数字或字母，不能是下划线
+    // **还要另建判断数字字母下划线的函数
+
+
+    function isEmail(mailStr) {
+        // 先声明 布尔型的变量
+        let isYes = true;
+        // 先找 @ 的位置
+        let index = mailStr.indexOf('@');
+
+        // 开始检测
+        if (index == -1) {
+            // 找不到 @ 赋值false
+            isYes = false;
+        } else if (mailStr.indexOf('@1000phone.com') == -1) {
+            // 找不到 @1000phone.com 赋值false
+            isYes = false;
+        } else if (mailStr.slice(index) != '@1000phone.com') {
+            // 判断结尾是否为 @1000phone.com
+            // 即 slice(@的位置) 是否等于 '@1000phone.com'
+            // 不等于 就赋值false
+            isYes = false;
+        } else if (mailStr.charAt(0) == '_') {
+            // 首位是否下划线
+            // 是就赋值false
+            isYes = false;
+        } else {
+            // 假设全部符合后，继续下一步
+            // 截取 @ 前面的一段字符
+            let before = mailStr.slice(0, index);
+            // 遍历 @ 位置前面的是否数字字母下划线
+            for (let i = 0; i < before.length; i++) {
+                if (isABCandNUM(before[i]) == false) {
+                    // 如果非数字字母下划线 isYes = false
+                    isYes = false;
+                    break;
+                }
+            }
+        }
+        return isYes;
+    }
+
+    // 判断邮箱每一个字符是否符合 1-9 A-Z a-z 或下划线
+    // 作用是被调用
+    function isABCandNUM(abcnum) {
+        if (abcnum >= 0 && abcnum <= 9 || abcnum >= 'A' && abcnum <= 'Z' || abcnum >= 'a' && abcnum <= 'z' || abcnum == '_') {
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+    console.log(isEmail('mail@1000phone.com')); // true
+    console.log(isEmail('$mail@1000phone.com')); // false
+    console.log(isEmail('mail@1000phone.comp')); // false
+    console.log(isEmail('mail1000phone.comp')); // false
+    console.log(isEmail('_mail@1000phone.com')); // false
+    console.log(isEmail('mail_abc@1000phone.com')); // true
+    console.log(isEmail('m1234ail_abc@1000phone.com')); // true
+    console.log(isEmail('m12$34ail_abc@1000phone.com')); // false 其中有$ 非数字字母下划线
+</script>

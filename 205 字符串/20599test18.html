@@ -3,8 +3,7 @@
     // 先用 indexOf() 取索引号
     // 符合就次数 +1
     // 得出的索引号 +1当 indexOf() 的第2个参数，继续循环
-    let str1 = 'abcabcabc';
-    let sonStr1 = 'abc';
+    
     function sonOfStrTime(str, sonStr) {
         let INDEX = str.indexOf(sonStr);
         let TIME = 0;
@@ -20,7 +19,13 @@
         return TIME;
         
     }
-    sonOfStrTime(str1, sonStr1);
 
+    let str1 = 'abcabcabc';
+    let sonStr1 = 'abc';
+    console.log(sonOfStrTime(str1, sonStr1)); // 3
+
+    let str2 = 'ffefadife23fe0dfe';
+    let sonStr2 = 'fe';
+    console.log(sonOfStrTime(str2, sonStr2)); // 4
 
 </script>

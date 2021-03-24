@@ -1,8 +1,27 @@
 <script>
-    let str = 'abcabcabc';
-    let str1 = 'abef13abfe468abfebacfe78fezx';
 
-    function sonOfStrTime(str) {
-        
+    function recurStr(s) {
+        var map = {}, t, i, j;
+        for (i = 0; i <= s.length; i++) {
+            for (j = i + 2; j < s.length; j++) {
+                // 截取不同长度的字符串，放入map中（长度大于1）
+                t = s.substring(i, j);
+                if (map[t] != null) {
+                    map[t]++;
+                } else {
+                    map[t] = 1;
+                }
+            }
+        }
+        for (i in map) {
+            t = map[i];
+            if (typeof t == 'number' && t > 1)
+                console.log(i, ':', t);
+        }
     }
+    recurStr('asdffasdssfff');
+    // as : 2
+    // asd : 2
+    // sd : 2
+    // ff : 2
 </script>

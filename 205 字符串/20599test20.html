@@ -1,0 +1,74 @@
+<script>
+    // 思路
+    // 创建数组，存放 name age sex 用来循环当对象的属性名
+    // 创建对象 存放 个人信息
+    // 观察规律
+    // 发现 = 的位置和 & 的位置
+
+    function setKeyValue(str) {
+        // 初始化字符 = 的首次位置
+        let DENGYUindex = str.indexOf('=');
+        // 初始化字符 & 的首次位置
+        let ANDindex = str.indexOf('&');
+        // 检测位置
+        console.log(DENGYUindex);
+        console.log(ANDindex);
+
+        // 把属性名放进数组里
+        // 初始化数组第一个元素为 name
+        let keyArr = [str.slice(str.indexOf('?')+1, DENGYUindex)];
+        // 赋值好第一个元素后，DENGYUindex +1 就是往右寻找第二个字符 =
+        DENGYUindex = str.indexOf('=', DENGYUindex+1);
+        // 开始循环获取属性名：age, sex, addr
+        // 获取区间：& 与 = 之间是属性名 &age=, &sex= &addr=
+        for(let i = 0; i < str.length; i++){
+            // 获取成功后添加到数组里
+            keyArr.push(str.slice(ANDindex+1, DENGYUindex));
+            // 获取成功后 & 就+1，即再往右寻找，= 同理
+            ANDindex = str.indexOf('&', ANDindex+1);
+            DENGYUindex = str.indexOf('=', DENGYUindex+1);
+            // 注意 当 & 找不到（就是-1） 或者 = 找不到时终止循环，不然获取一大堆没用的字符
+            if(ANDindex == -1 || DENGYUindex == -1) {
+                break;
+            }
+        }
+        // for 循环过程
+        // 第一次捕获：&age=，然后 & 和 = 的位置分别+1
+        // 第二次捕获：&sex=，然后 & 和 = 的位置分别+1
+        // 第三次捕获：&addr=，然后 & 和 = 的位置分别+1
+        // 需要判断 -1 就终止循环，不然继续截取一大堆没用的子串
+
+        // 检查数组里的元素能否当作属性名 key 
+        console.log(keyArr);
+        
+        // 重新初始化 = 和 & 的位置，用来获取属性值
+        DENGYUindex = str.indexOf('=');
+        ANDindex = str.indexOf('&');
+        // 创建对象 存放个人信息
+        let userInfo = {};
+        for (let i = 0; i < keyArr.length; i++) {
+            // 开始循环放进对象
+            // 捕获区间： = 与 & 之间是属性值 =avery&, =20& ...
+            userInfo[keyArr[i]] = str.slice(DENGYUindex + 1, ANDindex);
+            // 对象里面的内容：
+            // name:"avery",
+            // age:20,
+            // ...
+            if (i == keyArr.length - 1) {
+                // 这里需要设 if 语句 当 i 等于 数组最后一个元素时，触发以下代码
+                userInfo[keyArr[i]] = str.slice(DENGYUindex + 1, str.length);
+            } else {
+                DENGYUindex = str.indexOf('=', DENGYUindex+1);
+                ANDindex = str.indexOf('&', ANDindex+1);
+            }
+        }
+        // 检查对象
+        console.log(userInfo);
+
+    }
+    let httpStr1 = "https://www.baidu.com/s?name=avery&age=20&sex=male&addr=canton";
+    setKeyValue(httpStr1);
+
+    let httpstr2 = 'https://www.abc.com/s?msname=gundam&height=18&weight=50';
+    setKeyValue(httpstr2);
+</script>

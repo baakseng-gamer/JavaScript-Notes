@@ -1,0 +1,99 @@
+<script>
+    // 出现最多的子串和次数
+    // 需要放进对象 Obj 
+    // 用 slice() 方法 截取字符
+    // 存在就 +1，又存在再次 +1
+    // 遍历对象挑出出现次数最多的字符和出现次数
+
+
+    function sonOfStrTime(str) {
+        // 创建对象，用来存放子串
+        // 属性名（子串） ： 属性值（出现次数）
+        let Obj = {};
+
+        // 开始循环
+        // 外循环为原字符串每一个字符
+        // 内循环为原字符串每一个字符的 start 到 end 
+        // i 为 srart，j 为 end
+        for (let i = 0; i < str.length; i++) {
+            for (let j = i + 2; j < str.length + 1; j++) {
+                // 注意要设 j < str.length + 1
+                // slice(start, end) 左闭右开的原则
+                let char = str.slice(i, j);
+                if (Obj[char] != null) {
+                    Obj[char]++;
+                } else {
+                    Obj[char] = 1;
+                }
+            }
+        }
+
+        // 如果用 str1 = 'abef13abfe468abfebacfe78fezx';
+        // 执行过程
+
+        // 第一次
+        // 当 i = 0，j = 2 时
+        // 截取子串 【ab】放进对象
+        // {ab:1}
+
+        // 第二次
+        // 当 i = 0，j = 3 时
+        // 截取子串【abe】放进对象
+        // {ab:1, abe:1}
+
+        // 第三次
+        // i = 0，j = 4 时
+        // 截取子串【abef】
+        // {ab:1, abe:1, abef:1}
+
+        // ....
+
+        // i = 2，j = 5 时
+        // 截取子串【ef1】
+        // {ab:1, abe:1, abef:1..... ef1:1}
+
+        // 查看此时对象里是什么
+        // console.log(Obj);
+        // 此时对象里有多少个属性
+        // console.log(Object.getOwnPropertyNames(Obj).length);
+
+        // 开始遍历对象
+        // 挑选出现次数最多的子串和出现的次数
+        let maxStr = '';
+        let maxNum = 0;
+        for (let i in Obj) {
+            if (Obj[i] > maxNum) {
+                maxNum = Obj[i];
+                maxStr = i;
+            }
+        }
+        // 已经挑出了出现次数最多的子串和其次数
+
+        // 但是万一别的子串也是出现次数最多呢
+        // 比如 'ab13abef13dabi13'，其中 ab 和 13 都一样最多出现
+        // 故需要再次遍历对象，
+        // 把等于 第一个出现次数最多的子串 的【子串】 都放进 【次数最多的对象】
+        // 比如 已经找出 ab ，还要遍历等于 ab 次数一样的子串 就是13
+        // 创建出现次数最多的子串的集合数组
+        let maxStrArr = [];
+        for (let j in Obj) {
+            if(Obj[j] == maxNum) {
+                maxStrArr.push(j);
+            }
+        }
+        console.log('出现次数最多的子串' + maxStrArr + ' 出现次数' + maxNum);
+        
+        
+    }
+
+    let str = 'abcabcabc';
+    sonOfStrTime(str);
+    let str1 = 'abef13abfe468abfebacfe78fezx';
+    sonOfStrTime(str1);
+
+    let str2 = 'dnf34dnf34dnf34';
+    sonOfStrTime(str2);
+
+    let str3 = 'ab13abef13dabi13';
+    sonOfStrTime(str3);
+</script>
